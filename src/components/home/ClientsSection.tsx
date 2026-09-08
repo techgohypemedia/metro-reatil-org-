@@ -5,15 +5,26 @@ import React from 'react';
 
 const ClientsSection = () => {
   const baseClients = [
+    { name: "Safari Bags", logo: "/logos/safari.png" },
+    { name: "Uppercase", logo: "/logos/uppercase.webp" },
+    { name: "IT Luggage", logo: "/logos/itluggage.png" },
+    { name: "Peach Mode", logo: "/logos/peachmode.png" },
+    { name: "Cashify", logo: "/logos/cashify.svg" },
+    { name: "Van Heusen", logo: "/logos/vanheusen.png" },
     { name: "Wendy's", logo: "/logos/Wendys-logo.png" },
     { name: "Biba", logo: "/logos/biba logo.png" },
     { name: "Raymond", logo: "/logos/raymond .png" },
     { name: "Red Tape", logo: "/logos/red-tape-logo-png_seeklogo-304782.png" },
-    { name: "Client 1", logo: "/logos/images (1).jpg" },
-    { name: "Client 2", logo: "/logos/images (1).png" },
-    { name: "Client 3", logo: "/logos/images (2).jpg" },
-    { name: "Client 4", logo: "/logos/images.jpg" },
-    { name: "Client 5", logo: "/logos/images.png" },
+    { name: "BlackBerry", logo: "/logos/images (1).png" },
+    { name: "Samsung", logo: "/logos/images (2).jpg" },
+    { name: "Domino's", logo: "/logos/images.jpg" },
+    { name: "KFC", logo: "/logos/images.png" },
+    { name: "Urban Jungle", logo: "/logos/urban-jungle.svg" },
+    { name: "Kiaasa", logo: "/logos/kiaasa.svg" },
+    { name: "Flying Machine", logo: "/logos/flying-machine.svg" },
+    { name: "Smytten", logo: "/logos/smytten.svg" },
+    { name: "Puma", logo: "/logos/puma.png" },
+    { name: "United Colors of Benetton", logo: "/logos/united-colors-of-benetton.svg" },
   ];
 
   // Repeat the array a few times so the first half is guaranteed to be wider than the screen
@@ -35,7 +46,7 @@ const ClientsSection = () => {
               {/* Top Line: OUR CLIENTS (Black) */}
               <div
                 className="section-title text-brand-dark flex justify-center items-center mb-4 flex-wrap"
-                style={{ fontFamily: 'var(--font-cinzel), serif' }}
+                
               >
                 {"OUR CLIENTS".split("").map((char, i) => (
                   <motion.span

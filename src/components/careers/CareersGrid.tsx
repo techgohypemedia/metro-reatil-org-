@@ -112,7 +112,7 @@ export default function CareersGrid({ initialRoles }: CareersGridProps) {
                     <span className="text-brand-gold bg-brand-gold/10 px-3 py-1 rounded-sm text-xs font-semibold">{role.category}</span>
                     <span className="text-neutral-400 text-xs">{role.location}</span>
                   </div>
-                  <h3 className="text-xl font-bold mb-3 font-serif tracking-wide uppercase group-hover:text-brand-gold transition-colors">{role.title}</h3>
+                  <h3 className="text-xl font-bold mb-3 font-sans tracking-wide uppercase group-hover:text-brand-gold transition-colors">{role.title}</h3>
                   <p className="text-neutral-600 text-sm leading-relaxed mb-6">
                     {role.description}
                   </p>
@@ -138,7 +138,7 @@ export default function CareersGrid({ initialRoles }: CareersGridProps) {
                           <span className="text-brand-gold bg-brand-gold/10 px-3 py-1 rounded-sm text-xs font-semibold">{role.category}</span>
                           <span className="text-neutral-400 text-xs">{role.location}</span>
                         </div>
-                        <h3 className="text-lg font-bold mb-3 font-serif tracking-wide uppercase">{role.title}</h3>
+                        <h3 className="text-lg font-bold mb-3 font-sans tracking-wide uppercase">{role.title}</h3>
                         <p className="text-neutral-600 text-xs leading-relaxed mb-6">
                           {role.description}
                         </p>

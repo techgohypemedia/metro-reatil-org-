@@ -29,14 +29,14 @@ export default function DesignStyleDetailPage() {
               <PenTool size={12} /> Design Execution Style
             </span>
             <h1
-              className="mobile-heading-balance text-xl sm:text-2xl md:text-4xl lg:text-5xl font-serif text-white uppercase tracking-tight leading-[1.2] text-center break-words hyphens-auto w-full"
-              style={{ fontFamily: 'var(--font-cinzel), serif' }}
+              className="mobile-heading-balance text-xl sm:text-2xl md:text-4xl lg:text-5xl font-sans text-white uppercase tracking-tight leading-[1.2] text-center break-words hyphens-auto w-full"
+              
             >
               {data.title}
             </h1>
             <p
               className="hidden md:block text-neutral-300 text-base sm:text-sm md:text-xl font-light italic mt-2 max-w-2xl mx-auto text-center px-4"
-              style={{ fontFamily: 'var(--font-playfair), serif' }}
+              
             >
               {data.tagline}
             </p>
@@ -64,14 +64,14 @@ export default function DesignStyleDetailPage() {
               <div className="space-y-3">
                 <span className="text-brand-gold text-[10px] font-bold uppercase tracking-[0.5em] block">Aesthetic Overview</span>
                 <h2
-                  className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-serif text-brand-dark uppercase tracking-tight"
-                  style={{ fontFamily: 'var(--font-cinzel), serif' }}
+                  className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-sans text-brand-dark uppercase tracking-tight"
+                  
                 >
                   {data.title}
                 </h2>
                 <p
                   className="hidden md:block text-neutral-400 text-sm md:text-xl font-light italic"
-                  style={{ fontFamily: 'var(--font-playfair), serif' }}
+                  
                 >
                   {data.tagline}
                 </p>
@@ -97,7 +97,7 @@ export default function DesignStyleDetailPage() {
                       <div className="text-brand-gold mb-3">
                         <Icon size={20} strokeWidth={1.5} />
                       </div>
-                      <div className="text-xl font-serif text-brand-dark leading-tight">{stat.value}</div>
+                      <div className="text-xl font-sans text-brand-dark leading-tight">{stat.value}</div>
                       <div className="text-[9px] font-bold uppercase tracking-wider text-neutral-400 mt-1">{stat.label}</div>
                     </div>
                   );
@@ -124,10 +124,10 @@ export default function DesignStyleDetailPage() {
           <div className="w-full px-6 md:px-12">
             <div className="text-center mb-8 md:mb-16">
               <h2
-                className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-serif text-brand-dark uppercase tracking-tight"
-                style={{ fontFamily: 'var(--font-cinzel), serif' }}
+                className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-sans text-brand-dark uppercase tracking-tight"
+                
               >
-                {data.title} <span className="text-brand-gold italic font-normal text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl ml-2" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>Elements We Create</span>
+                {data.title} <span className="text-brand-gold italic font-normal text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl ml-2" >Elements We Create</span>
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
@@ -148,7 +148,7 @@ export default function DesignStyleDetailPage() {
                     <div className="absolute inset-0 bg-brand-dark/10 group-hover:bg-transparent transition-colors duration-500" />
                   </div>
                   <div className="p-8 text-center md:text-left">
-                    <h3 className="text-lg md:text-xl lg:text-lg xl:text-xl font-serif text-brand-dark mb-3 leading-snug">{service.title}</h3>
+                    <h3 className="text-lg md:text-xl lg:text-lg xl:text-xl font-sans text-brand-dark mb-3 leading-snug">{service.title}</h3>
                     <p className="text-neutral-500 text-sm md:text-base lg:text-xs xl:text-sm font-light leading-relaxed">{service.description}</p>
                   </div>
                 </a>
@@ -166,8 +166,8 @@ export default function DesignStyleDetailPage() {
           <div className="text-center mb-8 md:mb-16">
             <span className="text-brand-gold text-[10px] font-bold uppercase tracking-[0.5em] mb-4 block">Execution</span>
             <h2
-              className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-serif text-brand-dark uppercase tracking-tight"
-              style={{ fontFamily: 'var(--font-cinzel), serif' }}
+              className="text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-sans text-brand-dark uppercase tracking-tight"
+              
             >
               How We Deliver This Style
             </h2>

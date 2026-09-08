@@ -134,14 +134,14 @@ export default function SubcategoryDetailPage() {
                 Inspire & Transform
               </span>
               <h1
-                className="hero-title-1 font-serif text-brand-dark leading-tight uppercase"
-                style={{ fontFamily: 'var(--font-cinzel), serif' }}
+                className="hero-title-1 font-sans text-brand-dark leading-tight uppercase"
+                
               >
                 {data.title}
               </h1>
               <p
                 className="text-neutral-500 text-lg font-light leading-relaxed"
-                style={{ fontFamily: 'var(--font-playfair), serif', fontStyle: 'italic' }}
+                
               >
                 {data.intro}
               </p>
@@ -158,7 +158,7 @@ export default function SubcategoryDetailPage() {
               <div className="flex items-center gap-4 mb-8">
                 <Calendar className="text-brand-gold" size={24} strokeWidth={1.5} />
                 <div>
-                  <h3 className="text-base font-serif text-brand-dark uppercase tracking-tight">Book Spatial Consultation</h3>
+                  <h3 className="text-base font-sans text-brand-dark uppercase tracking-tight">Book Spatial Consultation</h3>
                   <p className="text-[9px] font-bold uppercase tracking-widest text-neutral-400 mt-1">Get custom execution quotes</p>
                 </div>
               </div>
@@ -234,7 +234,7 @@ export default function SubcategoryDetailPage() {
                     animate={{ opacity: 1, scale: 1 }}
                   >
                     <CheckCircle className="text-brand-gold mx-auto mb-6" size={56} strokeWidth={1} />
-                    <h4 className="text-lg font-serif text-brand-dark uppercase tracking-tight mb-3">Consultation Registered</h4>
+                    <h4 className="text-lg font-sans text-brand-dark uppercase tracking-tight mb-3">Consultation Registered</h4>
                     <p className="text-neutral-400 text-xs font-light max-w-xs mx-auto leading-relaxed">
                       Thank you. Our technical spatial designer will reach out to you within 24 hours to schedule the session.
                     </p>
@@ -259,7 +259,7 @@ export default function SubcategoryDetailPage() {
           <div className="flex items-center gap-4 mb-8 md:mb-16">
             <ImageIcon className="text-brand-gold font-light" size={28} strokeWidth={1.5} />
             <div>
-              <h2 className="section-title text-brand-dark" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
+              <h2 className="section-title text-brand-dark" >
                 Delivered Projects & Inspirations
               </h2>
             </div>
@@ -284,7 +284,7 @@ export default function SubcategoryDetailPage() {
       <div className="relative border-t border-neutral-100 bg-white">
         <div className="w-full px-6 pt-16 text-center">
           <span className="text-neutral-400 text-[10px] font-bold uppercase tracking-[0.3em] block mb-2">Continue Exploring</span>
-          <p className="text-neutral-400 text-sm font-serif italic mb-2">Loop back into our complete services range below</p>
+          <p className="text-neutral-400 text-sm font-sans italic mb-2">Loop back into our complete services range below</p>
         </div>
         <FullServicesSection />
       </div>

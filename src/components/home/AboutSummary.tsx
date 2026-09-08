@@ -15,10 +15,10 @@ const AboutSummary = () => {
             className="lg:col-span-6 relative flex flex-col items-center text-center lg:items-start lg:text-left"
           >
             <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-brand-gold mb-8 block text-center lg:text-left">Our Legacy</span>
-            <h2 className="section-title text-center lg:text-left mb-8 md:mb-12 text-white" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-              Precision in Every <br className="hidden lg:inline" /> <span className="text-brand-gold italic inline lg:block mt-0 lg:mt-2 ml-1.5 lg:ml-0 font-normal" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>Square Foot</span>
+            <h2 className="section-title text-center lg:text-left mb-8 md:mb-12 text-white" >
+              Precision in Every <br className="hidden lg:inline" /> <span className="text-brand-gold italic inline lg:block mt-0 lg:mt-2 ml-1.5 lg:ml-0 font-normal" >Square Foot</span>
             </h2>
-            <div className="space-y-6 md:space-y-8 text-neutral-400 font-light leading-relaxed text-sm md:text-base lg:text-lg text-center lg:text-left" style={{ fontFamily: 'var(--font-playfair), serif', fontStyle: 'italic' }}>
+            <div className="space-y-6 md:space-y-8 text-neutral-400 font-light leading-relaxed text-sm md:text-base lg:text-lg text-center lg:text-left" >
               <p>
                 Metro Retail Solutions has established itself as a premier retail space design expert in the Middle East. We offer turnkey interior solutions and luxury retail interior design, understanding the commercial pulse and the ergonomic needs of modern spaces.
               </p>

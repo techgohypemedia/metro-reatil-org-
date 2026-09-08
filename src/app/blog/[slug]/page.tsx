@@ -66,8 +66,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             </Link>
             
             <h1 
-              className="text-white text-3xl md:text-4xl lg:text-5xl mb-6 font-serif leading-tight uppercase tracking-wide"
-              style={{ fontFamily: 'var(--font-cinzel), serif' }}
+              className="text-white text-3xl md:text-4xl lg:text-5xl mb-6 font-sans leading-tight uppercase tracking-wide"
+              
             >
               {post.title}
             </h1>
@@ -92,7 +92,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <section className="py-16 md:py-24">
         <div className="w-full px-6 max-w-4xl">
           <div 
-            className="prose prose-lg prose-neutral max-w-none prose-headings:font-serif prose-headings:text-brand-dark prose-a:text-brand-gold hover:prose-a:text-yellow-600 prose-img:rounded-sm"
+            className="prose prose-lg prose-neutral max-w-none prose-headings:font-sans prose-headings:text-brand-dark prose-a:text-brand-gold hover:prose-a:text-yellow-600 prose-img:rounded-sm"
             style={{ 
               // Adding some custom styling for the content since Tailwind Typography might not be installed, 
               // but we use prose classes just in case it is. We also apply basic styles inline.

@@ -47,9 +47,9 @@ const ManufacturingSection = () => {
 
           {/* Right: Content */}
           <div className="lg:col-span-6 flex flex-col items-center text-center lg:items-start lg:text-left space-y-4 md:space-y-6">
-            <h2 className="section-title text-brand-dark w-full lg:text-left" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
+            <h2 className="section-title text-brand-dark w-full lg:text-left">
               VISIT OUR IN-HOUSE <br className="block lg:hidden" />
-              <span className="text-brand-gold italic font-normal lg:ml-2 mt-2 lg:mt-0 inline-block lg:inline whitespace-nowrap" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>Manufacturing Unit</span>
+              <span className="text-brand-gold italic font-normal lg:ml-2 mt-2 lg:mt-0 inline-block lg:inline">Manufacturing Unit</span>
             </h2>
             <div className="text-neutral-500 text-sm xl:text-base font-light leading-relaxed max-w-xl text-center lg:text-left space-y-4">
               <p>
@@ -61,15 +61,15 @@ const ManufacturingSection = () => {
             </div>
             <div className="grid grid-cols-3 gap-3 md:gap-8 text-center lg:text-left w-full mt-4">
               <div>
-                <span className="text-2xl md:text-4xl font-serif text-brand-gold mb-2 block"><CountUp end={25} suffix="+" /></span>
+                <span className="text-2xl md:text-4xl font-sans text-brand-gold mb-2 block"><CountUp end={25} suffix="+" /></span>
                 <span className="text-[8px] md:text-[10px] font-bold uppercase tracking-widest text-brand-dark">Years of Experience</span>
               </div>
               <div>
-                <span className="text-2xl md:text-4xl font-serif text-brand-gold mb-2 block"><CountUp end={9} suffix="K+" /></span>
+                <span className="text-2xl md:text-4xl font-sans text-brand-gold mb-2 block"><CountUp end={9} suffix="K+" /></span>
                 <span className="text-[8px] md:text-[10px] font-bold uppercase tracking-widest text-brand-dark">Square Feet</span>
               </div>
               <div>
-                <span className="text-2xl md:text-4xl font-serif text-brand-gold mb-2 block"><CountUp end={100} suffix="+" /></span>
+                <span className="text-2xl md:text-4xl font-sans text-brand-gold mb-2 block"><CountUp end={100} suffix="+" /></span>
                 <span className="text-[8px] md:text-[10px] font-bold uppercase tracking-widest text-brand-dark">Master Artisans</span>
               </div>
             </div>

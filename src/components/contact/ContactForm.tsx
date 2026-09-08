@@ -261,8 +261,8 @@ export default function ContactForm({ dark = false }: { dark?: boolean }) {
         </div>
         <div className="space-y-3 max-w-sm">
           <h3
-            className={`text-2xl md:text-3xl font-serif uppercase tracking-tight ${dark ? "text-white" : "text-brand-dark"}`}
-            style={{ fontFamily: "var(--font-cinzel), serif" }}
+            className={`text-2xl md:text-3xl font-sans uppercase tracking-tight ${dark ? "text-white" : "text-brand-dark"}`}
+            
           >
             Message Sent
           </h3>

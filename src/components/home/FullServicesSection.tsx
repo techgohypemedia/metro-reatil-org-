@@ -82,7 +82,7 @@ const FullServicesSection = ({
     { title: "Restaurant & F&B Fitout", image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=600", category: "RESTAURANT FITOUT", id: "restaurant-fitout" },
     { title: "Commercial & Turnkey Solutions", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=600", category: "COMMERCIAL FITOUT", id: "commercial-contractors" },
     { title: "Fitout", image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=600", category: "FITOUT EXECUTION", id: "fitout" },
-    { title: "Carpentry", image: "https://images.unsplash.com/photo-1534224039826-c7a0dea0e66a?auto=format&fit=crop&q=80&w=600", category: "bespoke carpentry", id: "carpentry" },
+    { title: "Carpentry", image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80&w=600", category: "bespoke carpentry", id: "carpentry" },
     { title: "Kitchens & Wardrobes", image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=600", category: "KITCHEN WARDROBE", id: "kitchens-wardrobes" },
     { title: "Decorative Paints", image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&q=80&w=600", category: "DECORATIVE FINISHES", id: "decorative-paint" },
 
@@ -101,7 +101,7 @@ const FullServicesSection = ({
     { title: "Air Quality", image: "https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&q=80&w=600", category: "AIR QUALITY SYSTEMS", id: "air-quality" },
     { title: "Contracting", image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=600", category: "GENERAL CONTRACTING", id: "contracting" },
     { title: "Window Glazing", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600", category: "WINDOW GLAZING", id: "window-glazing" },
-    { title: "Tile Installation", image: "https://images.unsplash.com/photo-1502005229762-fc1b2b812ca5?auto=format&fit=crop&q=80&w=600", category: "TILE INSTALLATION", id: "tile-installation" },
+    { title: "Tile Installation", image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600", category: "TILE INSTALLATION", id: "tile-installation" },
     { title: "Marble Installation", image: "https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?auto=format&fit=crop&q=80&w=600", category: "MARBLE WORKS", id: "marble-installation" },
     { title: "Gypsum Works", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=600", category: "GYPSUM WORKS", id: "gypsum-works" },
     { title: "Property Audits", image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=600", category: "PROPERTY AUDITS", id: "property-audits" },
@@ -115,8 +115,8 @@ const FullServicesSection = ({
       <div className="w-full px-6 md:px-12">
         <div className="flex flex-col items-center text-center mb-4 md:mb-6 gap-1 md:gap-2">
           <div className="flex flex-col items-center">
-            <h2 className="section-title text-center text-brand-dark flex items-center justify-center flex-wrap gap-2 sm:gap-3" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-              <span>{title}</span> <span className="text-brand-gold italic inline-block whitespace-nowrap" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>{subtitle}</span>
+            <h2 className="section-title text-center text-brand-dark flex items-center justify-center flex-wrap gap-2 sm:gap-3" >
+              <span>{title}</span> <span className="text-brand-gold italic font-normal inline-block whitespace-nowrap" >{subtitle}</span>
             </h2>
           </div>
           {showTabs && (
@@ -130,7 +130,7 @@ const FullServicesSection = ({
                 <button 
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id as any)} 
-                  className={`shrink-0 whitespace-nowrap px-3 sm:px-4 py-2 sm:py-3 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-wider sm:tracking-widest transition-all relative ${
+                  className={`shrink-0 whitespace-nowrap px-3 sm:px-4 py-2 sm:py-3 text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider sm:tracking-widest transition-all relative ${
                     activeTab === tab.id ? 'text-brand-gold' : 'text-neutral-400 hover:text-brand-dark'
                   }`}
                 >
@@ -167,7 +167,7 @@ const FullServicesSection = ({
                   <div className="absolute inset-0 bg-brand-dark/5 group-hover:bg-transparent transition-colors duration-500" />
 
                   {/* Category Tag Overlay */}
-                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 text-[8px] font-bold uppercase tracking-widest text-brand-dark shadow-sm">
+                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 text-[8px] font-semibold uppercase tracking-widest text-brand-dark shadow-sm">
                     {s.category}
                   </div>
 
@@ -179,13 +179,13 @@ const FullServicesSection = ({
 
                 {/* Text Info */}
                 <div className="flex flex-col flex-grow">
-                  <span className="text-[7.5px] font-bold text-brand-gold uppercase tracking-[0.3em] mb-1.5">
+                  <span className="text-[7.5px] font-semibold text-brand-gold uppercase tracking-[0.3em] mb-1.5">
                     Service Sector
                   </span>
-                  <h4 className="text-brand-dark font-bold text-xs uppercase tracking-[0.15em] leading-snug group-hover:text-brand-gold transition-colors duration-300">
+                  <h4 className="text-brand-dark font-semibold text-xs uppercase tracking-[0.15em] leading-snug group-hover:text-brand-gold transition-colors duration-300">
                     {s.title}
                   </h4>
-                  <p className="text-[10px] text-neutral-400 font-bold uppercase tracking-wider mt-2.5 flex items-center gap-1 group-hover:text-neutral-500 transition-colors">
+                  <p className="text-[10px] text-neutral-400 font-medium uppercase tracking-wider mt-2.5 flex items-center gap-1 group-hover:text-neutral-500 transition-colors">
                     Learn More <span>→</span>
                   </p>
                 </div>
@@ -223,7 +223,7 @@ const FullServicesSection = ({
                       <div className="absolute inset-0 bg-brand-dark/5 group-hover:bg-transparent transition-colors duration-500" />
 
                       {/* Category Tag Overlay */}
-                      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 text-[8px] font-bold uppercase tracking-widest text-brand-dark shadow-sm">
+                      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 text-[8px] font-semibold uppercase tracking-widest text-brand-dark shadow-sm">
                         {s.category}
                       </div>
 
@@ -235,13 +235,13 @@ const FullServicesSection = ({
 
                     {/* Text Info */}
                     <div className="flex flex-col flex-grow">
-                      <span className="text-[7.5px] font-bold text-brand-gold uppercase tracking-[0.3em] mb-1.5">
+                      <span className="text-[7.5px] font-semibold text-brand-gold uppercase tracking-[0.3em] mb-1.5">
                         Service Sector
                       </span>
-                      <h4 className="text-brand-dark font-bold text-xs uppercase tracking-[0.15em] leading-snug group-hover:text-brand-gold transition-colors duration-300">
+                      <h4 className="text-brand-dark font-semibold text-xs uppercase tracking-[0.15em] leading-snug group-hover:text-brand-gold transition-colors duration-300">
                         {s.title}
                       </h4>
-                      <p className="text-[10px] text-neutral-400 font-bold uppercase tracking-wider mt-2.5 flex items-center gap-1 group-hover:text-neutral-500 transition-colors">
+                      <p className="text-[10px] text-neutral-400 font-medium uppercase tracking-wider mt-2.5 flex items-center gap-1 group-hover:text-neutral-500 transition-colors">
                         Learn More <span>→</span>
                       </p>
                     </div>

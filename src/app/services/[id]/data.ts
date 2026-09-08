@@ -1954,79 +1954,102 @@ export const SUBCATEGORY_DATA: Record<string, any> = {
     ]
   },
   "tile-installation": {
-    title: "Ready to Install Premium Tiles?",
-    tagline: "Metro Retail specializes in office & mall fitouts.",
-    heroImage: "https://images.unsplash.com/photo-1561817223-f67e69e6bd6a?auto=format&fit=crop&q=80&w=1200",
-    desc: ["Book a free tile consultation and let our specialists install precision flooring and walls. We'll provide a detailed proposal with quality materials and transparent pricing.", "Professional installation of porcelain, ceramic, marble, mosaic, outdoor tiles, and large-format slabs with precision and quality craftsmanship.", "Porcelain Tile Installation tailored for reliable and high-quality tile installation execution."],
-    stats: [
-      { label: "Projects Completed", value: "300+", icon: Award }, { label: "Client Satisfaction", value: "100%", icon: CheckCircle2 }, { label: "Expert Specialists", value: "25+", icon: ShieldCheck }
+    title: "Premium Tile & Stone Installation",
+    tagline: "Metro Retail delivers precision flooring & architectural tiling.",
+    heroImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1200",
+    desc: [
+      "Book a free tile consultation and let our master stone masons and tile setters install precision flooring and walls. We provide comprehensive project proposals with verified Italian/Spanish porcelain, natural marble, and transparent turnkey pricing.",
+      "Professional laser-calibrated installation of porcelain, ceramic, bookmatched marble, glass mosaic, exterior anti-slip deck tiles, and seamless 3-meter large-format sintered stone slabs.",
+      "Our team utilizes German vibration leveling systems, 100% waterproof sub-membrane damp proofing, and stain-proof epoxy grouting to guarantee zero hollow spots, zero lippage, and lifetime durability."
     ],
-    process: [{ "step": "Initial Consultation", "desc": "Understanding your specific requirements for Ready to Install Premium Tiles? and assessing the space." }, { "step": "Design & Planning", "desc": "Developing tailored solutions, material selection, and precise technical planning." }, { "step": "Execution Phase", "desc": "Our expert technicians install and implement the Ready to Install Premium Tiles? with meticulous attention to detail." }, { "step": "Final Handover", "desc": "Comprehensive quality checks and final handover to ensure absolute perfection." }],
+    stats: [
+      { label: "Tiles Installed", value: "3M+ Sq.Ft", icon: Award },
+      { label: "Precision Leveling", value: "100% Zero-Lip", icon: CheckCircle2 },
+      { label: "Master Setters", value: "50+", icon: ShieldCheck }
+    ],
+    process: [
+      { step: "Sub-Floor Screed & Laser Leveling", desc: "Verifying moisture levels, applying self-leveling screed, and laser mapping floor gradients." },
+      { step: "Waterproofing Membrane", desc: "Applying dual-coat elastomeric waterproof membranes and anti-fracture underlayment." },
+      { step: "Laser-Guided Laying", desc: "Precision setting with heavy-duty polymer-modified adhesives and mechanical leveling spacers." },
+      { step: "Epoxy Grouting & Polish", desc: "Filling joints with high-performance stain-proof epoxy grout followed by crystalline sealing." }
+    ],
     gallery: [
       {
-        img: "https://images.unsplash.com/photo-1706629503586-2731f65587ae?auto=format&fit=crop&q=80&w=800",
+        slug: "porcelain-tiles",
+        img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&q=80&w=800",
         title: "Porcelain Tile Installation",
-        description: "Porcelain Tile Installation tailored for reliable and high-quality tile installation execution.",
+        description: "Precision installation of vitrified and polished porcelain tiles with laser-calibrated leveling and seamless epoxy joints.",
         tags: [
-          "PorcelainTiles",
-          "AllSectors"
+          "Porcelain Tiles",
+          "Laser Leveling",
+          "High Durability"
         ],
-        bullets: [],
+        bullets: ["Zero-lip laser alignment", "Stain-proof epoxy grouting", "Heavy footfall commercial durability"],
         buttonText: "PORCELAIN TILE INSTALLATION →"
       },
       {
-        img: "https://images.unsplash.com/photo-1523413307857-ef24c53571ae?auto=format&fit=crop&q=80&w=800",
-        title: "Ceramic Tile Installation",
-        description: "Ceramic Tile Installation tailored for reliable and high-quality tile installation execution.",
+        slug: "ceramic-tiles",
+        img: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&q=80&w=800",
+        title: "Ceramic Wall & Floor Tiles",
+        description: "Artisan ceramic tile laying for kitchens, bathrooms, and splashbacks with geometric precision and water-sealed backing.",
         tags: [
-          "CeramicTiles",
-          "AllSectors"
+          "Ceramic Tiles",
+          "Waterproofing",
+          "Accent Walls"
         ],
-        bullets: [],
+        bullets: ["Full membrane waterproofing", "Precision mitred tile corner trims", "Custom pattern layouts (Herringbone, Subway)"],
         buttonText: "CERAMIC TILE INSTALLATION →"
       },
       {
-        img: "https://images.unsplash.com/photo-1706629503586-2731f65587ae?auto=format&fit=crop&q=80&w=800",
-        title: "Marble Tile Installation",
-        description: "Marble Tile Installation tailored for reliable and high-quality tile installation execution.",
+        slug: "marble-tiles",
+        img: "https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?auto=format&fit=crop&q=80&w=800",
+        title: "Marble & Natural Stone Tiles",
+        description: "Bookmatched marble tiling, honed limestone, and granite installations with diamond-edge leveling and crystalline polishing.",
         tags: [
-          "MarbleTiles",
-          "AllSectors"
+          "Natural Stone",
+          "Bookmatched",
+          "Italian Marble"
         ],
-        bullets: [],
+        bullets: ["Bookmatch vein continuity", "Penetrating sealer protection", "Diamond polishing and buffing"],
         buttonText: "MARBLE TILE INSTALLATION →"
       },
       {
-        img: "https://images.unsplash.com/photo-1622227920933-7fcd7377703f?auto=format&fit=crop&q=80&w=800",
-        title: "Mosaic Tile Installation",
-        description: "Mosaic Tile Installation tailored for reliable and high-quality tile installation execution.",
+        slug: "mosaic-tiles",
+        img: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=800",
+        title: "Mosaic & Feature Tile Detailing",
+        description: "Intricate glass, ceramic, and stone mosaic installations for luxury shower niches, wet rooms, and feature walls.",
         tags: [
-          "MosaicTiles",
-          "AllSectors"
+          "Glass Mosaic",
+          "Wet Rooms",
+          "Artisan Detailing"
         ],
-        bullets: [],
+        bullets: ["Anti-slip wet room ratings", "Curved niche tile adaptation", "Translucent epoxy grout finishing"],
         buttonText: "MOSAIC TILE INSTALLATION →"
       },
       {
-        img: "https://images.unsplash.com/photo-1617887021567-fe8d2480bd96?auto=format&fit=crop&q=80&w=800",
-        title: "Outdoor Tile Installation",
-        description: "Outdoor Tile Installation tailored for reliable and high-quality tile installation execution.",
+        slug: "outdoor-tiles",
+        img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800",
+        title: "Outdoor & Anti-Slip Deck Tiles",
+        description: "Weatherproof anti-slip 20mm thick exterior porcelain pavers, swimming pool surround tiling, and terrace deck installations.",
         tags: [
-          "OutdoorTiles",
-          "AllSectors"
+          "20mm Pavers",
+          "Weatherproof",
+          "R11 Anti-Slip"
         ],
-        bullets: [],
+        bullets: ["R11+ high-grip safety rating", "Thermal shock and UV resistant", "Pedestal raised terrace installations"],
         buttonText: "OUTDOOR TILE INSTALLATION →"
       },
       {
-        img: "https://images.unsplash.com/photo-1774514580467-6492a3b54049?auto=format&fit=crop&q=80&w=800",
-        title: "Large-Format Slab Installation",
-        description: "Large-Format Slab Installation tailored for reliable and high-quality tile installation execution.",
+        slug: "large-format-slabs",
+        img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
+        title: "Large-Format Slabs & Mega-Tiles",
+        description: "Continuous seamless 3000x1500mm ultra-large porcelain slabs installed with vacuum lifters and zero-joint precision.",
         tags: [
-          "LargeFormatSlabs",
-          "AllSectors"
+          "Mega Slabs",
+          "Seamless Walls",
+          "Sintered Stone"
         ],
-        bullets: [],
+        bullets: ["Vacuum lifter precision placement", "Continuous vein architecture", "Minimal joint visual elegance"],
         buttonText: "LARGE-FORMAT SLAB INSTALLATION →"
       }
     ]
@@ -2213,6 +2236,156 @@ export const SUBCATEGORY_DATA: Record<string, any> = {
 };
 
 export const NESTED_SERVICE_DATA: Record<string, any> = {
+  "porcelain-tiles": {
+    title: "Porcelain Tile Installation",
+    tagline: "Laser-calibrated vitrified & porcelain tile installations.",
+    heroImage: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&q=80&w=1200",
+    contentTitle: "High-Performance Porcelain Tiling for Residential & Commercial Spaces",
+    contentDesc: "Porcelain tiles provide exceptional durability, zero water absorption, and timeless luxury. Our master tile setters employ mechanical leveling systems, precision laser cross-line alignment, and high-performance epoxy adhesives to ensure flawless results with zero lippage.",
+    gallery: [
+      {
+        img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&q=80&w=800",
+        title: "Vitrified High-Gloss Flooring",
+        description: "Mirror-finish vitrified floor tiles laid with zero-lip mechanical leveling.",
+        tags: ["Porcelain", "Living & Commercial"]
+      },
+      {
+        img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800",
+        title: "Luxury Bathroom Porcelain Walls",
+        description: "Floor-to-ceiling porcelain wall tiles with precision mitred corners.",
+        tags: ["Bathroom", "Waterproof"]
+      },
+      {
+        img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
+        title: "Commercial Open-Plan Flooring",
+        description: "Heavy-traffic porcelain tile installation for retail and corporate offices.",
+        tags: ["Commercial", "Heavy-Duty"]
+      },
+      {
+        img: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=800",
+        title: "Matte Designer Porcelain Finishes",
+        description: "Satin and matte porcelain tiles with stain-proof epoxy joints.",
+        tags: ["Designer", "Matte Finish"]
+      }
+    ]
+  },
+  "ceramic-tiles": {
+    title: "Ceramic Wall & Floor Tiling",
+    tagline: "Artisan ceramic tile laying for kitchens, bathrooms & splashbacks.",
+    heroImage: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&q=80&w=1200",
+    contentTitle: "Precision Ceramic Tile Craftsmanship & Waterproofed Backing",
+    contentDesc: "From classic subway tiles to intricate herringbone and geometric patterns, our ceramic tile installations combine aesthetic charm with long-lasting structural integrity. Backed by full-room tanking and waterproofing.",
+    gallery: [
+      {
+        img: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&q=80&w=800",
+        title: "Kitchen Backsplash Ceramic Tile",
+        description: "Geometric handcrafted ceramic tiles installed above counters.",
+        tags: ["Kitchen", "Backsplash"]
+      },
+      {
+        img: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=800",
+        title: "Herringbone Accent Tiling",
+        description: "Detailed herringbone pattern ceramic walls with contrasting grout.",
+        tags: ["Herringbone", "Accent Wall"]
+      },
+      {
+        img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800",
+        title: "Bathroom Ceramic Enclosure",
+        description: "Full waterproof backing with glazed ceramic wall tiles.",
+        tags: ["Bathroom", "Glazed Tiles"]
+      }
+    ]
+  },
+  "marble-tiles": {
+    title: "Marble & Natural Stone Tiling",
+    tagline: "Bookmatched Italian marble and honed natural stone craftsmanship.",
+    heroImage: "https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?auto=format&fit=crop&q=80&w=1200",
+    contentTitle: "Luxury Natural Stone & Marble Cladding Solutions",
+    contentDesc: "Imported marble and natural stone demand expert handling. We provide diamond cutting, vein-matching layouts, specialized non-staining adhesives, and diamond polishing to preserve stone luminosity.",
+    gallery: [
+      {
+        img: "https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?auto=format&fit=crop&q=80&w=800",
+        title: "Bookmatched Statuario Marble Wall",
+        description: "Continuous vein-matched Italian Statuario marble panels.",
+        tags: ["Italian Marble", "Bookmatched"]
+      },
+      {
+        img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&q=80&w=800",
+        title: "Honed Nero Marquina Bathroom",
+        description: "Dark marble stone floor and walls with waterproof diamond joints.",
+        tags: ["Natural Stone", "Luxury Spa"]
+      },
+      {
+        img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=800",
+        title: "Travertine Stone Living Hall",
+        description: "Honed Roman travertine natural stone flooring.",
+        tags: ["Travertine", "Living Hall"]
+      }
+    ]
+  },
+  "mosaic-tiles": {
+    title: "Mosaic & Feature Tile Detailing",
+    tagline: "Intricate glass, metallic & ceramic mosaic tiling.",
+    heroImage: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=1200",
+    contentTitle: "Artisan Mosaic Work for Wet Rooms, Spas & Feature Walls",
+    contentDesc: "Mosaic tiling transforms bathrooms, swimming pools, and feature niches into bespoke works of art. Our craftsmen ensure consistent spacing, seamless curve wrapping, and moisture-proof translucent epoxy grouting.",
+    gallery: [
+      {
+        img: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=800",
+        title: "Glass Mosaic Shower Niche",
+        description: "Seamless glass mosaic tiles with curved niche integration.",
+        tags: ["Glass Mosaic", "Shower Niche"]
+      },
+      {
+        img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800",
+        title: "Spa Wet Room Mosaic Walls",
+        description: "Iridescent mosaic tiles with anti-slip wet room ratings.",
+        tags: ["Spa", "Wet Room"]
+      }
+    ]
+  },
+  "outdoor-tiles": {
+    title: "Outdoor & Deck Paver Tiling",
+    tagline: "Heavy-duty 20mm exterior porcelain pavers & terrace decking.",
+    heroImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200",
+    contentTitle: "Weather-Resistant Exterior Pavers & Swimming Pool Tiling",
+    contentDesc: "Engineered for harsh thermal shifts, direct sunlight, and high moisture, our 20mm outdoor porcelain pavers offer R11 anti-slip safety, frost resistance, and pedestaled drainage systems for roof decks and garden courtyards.",
+    gallery: [
+      {
+        img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800",
+        title: "Terrace Porcelain Pavers",
+        description: "20mm heavy-duty anti-slip pavers on elevated pedestal supports.",
+        tags: ["Outdoor", "20mm Paver"]
+      },
+      {
+        img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
+        title: "Poolside Anti-Slip Tiling",
+        description: "R11 safety rated anti-slip porcelain pool coping and deck.",
+        tags: ["Pool Deck", "R11 Anti-Slip"]
+      }
+    ]
+  },
+  "large-format-slabs": {
+    title: "Large-Format Sintered Slabs",
+    tagline: "Seamless 3000x1500mm mega-slabs and continuous wall panels.",
+    heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200",
+    contentTitle: "Architectural Seamless Sintered Stone & Ultra-Large Slabs",
+    contentDesc: "Large-format sintered stone and porcelain slabs create breathtaking monolithic surfaces with minimal grout lines. Using specialized vacuum lifters and precision edge-mitering, we install continuous stone panels for bathrooms, feature walls, and luxury reception counters.",
+    gallery: [
+      {
+        img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800",
+        title: "Continuous 3-Meter Wall Slabs",
+        description: "Monolithic porcelain slabs with minimal hairline joints.",
+        tags: ["Mega Slab", "Monolithic"]
+      },
+      {
+        img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&q=80&w=800",
+        title: "Seamless Sintered Stone Island",
+        description: "Precision CNC mitred waterfall slab fabrication.",
+        tags: ["Sintered Stone", "Waterfall Island"]
+      }
+    ]
+  },
   "wood-ceilings": {
     title: "Ready to Install Wood Ceilings?",
     tagline: "Metro Retail specializes in office & showroom fitouts.",

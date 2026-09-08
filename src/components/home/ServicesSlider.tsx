@@ -69,8 +69,8 @@ const ServicesSlider = () => {
     <section id="services-slider" className="py-12 md:py-20 bg-white overflow-hidden border-t border-neutral-100">
       <div className="w-full px-6 md:px-12 max-w-7xl mx-auto">
         <div className="text-center mb-6 md:mb-10">
-          <h2 className="section-title text-brand-dark" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-            OUR CORE <span className="text-brand-gold italic font-normal ml-2 whitespace-nowrap" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>Services</span>
+          <h2 className="section-title text-brand-dark" >
+            OUR CORE <span className="text-brand-gold italic font-normal ml-2 whitespace-nowrap" >Services</span>
           </h2>
         </div>
 
@@ -80,7 +80,7 @@ const ServicesSlider = () => {
             <button
               key={i}
               onClick={() => setActiveTab(i)}
-              className={`shrink-0 whitespace-nowrap px-2.5 sm:px-4 py-2 sm:py-3 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-wider transition-all relative ${
+              className={`shrink-0 whitespace-nowrap px-2.5 sm:px-4 py-2 sm:py-3 text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider transition-all relative ${
                 activeTab === i ? 'text-brand-gold' : 'text-neutral-400 hover:text-brand-dark'
               }`}
             >
@@ -111,7 +111,7 @@ const ServicesSlider = () => {
                 <img src={services[activeTab].img} alt={services[activeTab].title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
               </div>
               <div className="lg:col-span-5 flex flex-col items-center text-center lg:items-start lg:text-left">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-serif text-brand-dark uppercase tracking-wider mb-3 md:mb-4" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-sans text-brand-dark uppercase tracking-wider mb-3 md:mb-4" >
                   {services[activeTab].title}
                 </h3>
                 <p className="text-neutral-600 text-xs sm:text-sm md:text-base font-light leading-relaxed mb-6 md:mb-8">
@@ -119,13 +119,13 @@ const ServicesSlider = () => {
                 </p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3.5 mb-8 w-full text-left">
                   {services[activeTab].features.map((f, j) => (
-                    <li key={j} className="flex items-center gap-2 sm:gap-2.5 text-neutral-800 text-[11px] sm:text-xs font-semibold uppercase tracking-wider">
+                    <li key={j} className="flex items-center gap-2 sm:gap-2.5 text-neutral-800 text-[11px] sm:text-xs font-medium uppercase tracking-wider">
                       <CheckCircle size={15} className="text-brand-gold shrink-0" />
                       <span>{f}</span>
                     </li>
                   ))}
                 </ul>
-                <a href={services[activeTab].link} className="inline-flex items-center gap-2.5 px-6 py-3 text-[10px] sm:text-xs font-bold uppercase tracking-widest bg-brand-dark text-white hover:bg-brand-gold hover:text-brand-dark transition-all rounded-full shadow-md hover:shadow-lg">
+                <a href={services[activeTab].link} className="inline-flex items-center gap-2.5 px-6 py-3 text-[10px] sm:text-xs font-semibold uppercase tracking-widest bg-brand-dark text-white hover:bg-brand-gold hover:text-brand-dark transition-all rounded-full shadow-md hover:shadow-lg">
                   Learn More <ArrowRight size={14} />
                 </a>
               </div>

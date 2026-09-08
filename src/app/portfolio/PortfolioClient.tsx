@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight, Filter } from 'lucide-react';
 import { FeaturedFitout } from '../../data/featuredFitouts';
+import InhouseManufacturingSection from '../../components/portfolio/InhouseManufacturingSection';
 
 const MAIN_CATEGORIES = ["All", "Commercial", "Residential", "Retail"];
 
@@ -32,10 +33,13 @@ const SUB_CATEGORIES: Record<string, string[]> = {
   ],
   "Retail": [
     "OVERVIEW",
-    "KIOSKS",
-    "F & B",
-    "CAFES",
-    "RESTAURANTS"
+    "CLOTHING AND FASHION",
+    "LUGGAGES",
+    "BEAUTY AND PERSONAL CARE",
+    "ELECTRONICS",
+    "JEWELLERY",
+    "KIDS TOYS",
+    "WATCHES"
   ]
 };
 
@@ -49,11 +53,34 @@ const getPortfolioSector = (category: string): string => {
   return category;
 };
 
+const BRAND_LOGOS = [
+  { name: "Safari Bags", logo: "/logos/safari.png" },
+  { name: "Uppercase", logo: "/logos/uppercase.webp" },
+  { name: "IT Luggage", logo: "/logos/itluggage.png" },
+  { name: "Peach Mode", logo: "/logos/peachmode.png" },
+  { name: "Cashify", logo: "/logos/cashify.svg" },
+  { name: "Van Heusen", logo: "/logos/vanheusen.png" },
+  { name: "Wendy's", logo: "/logos/Wendys-logo.png" },
+  { name: "Biba", logo: "/logos/biba logo.png" },
+  { name: "Raymond", logo: "/logos/raymond .png" },
+  { name: "Red Tape", logo: "/logos/red-tape-logo-png_seeklogo-304782.png" },
+  { name: "BlackBerry", logo: "/logos/images (1).png" },
+  { name: "Samsung", logo: "/logos/images (2).jpg" },
+  { name: "Domino's", logo: "/logos/images.jpg" },
+  { name: "KFC", logo: "/logos/images.png" },
+  { name: "Urban Jungle", logo: "/logos/urban-jungle.svg" },
+  { name: "Kiaasa", logo: "/logos/kiaasa.svg" },
+  { name: "Flying Machine", logo: "/logos/flying-machine.svg" },
+  { name: "Smytten", logo: "/logos/smytten.svg" },
+  { name: "Puma", logo: "/logos/puma.png" },
+  { name: "United Colors of Benetton", logo: "/logos/united-colors-of-benetton.svg" },
+];
+
 const CompanyProfile = () => {
   return (
     <section className="pt-8 pb-8 md:pt-12 md:pb-12 bg-neutral-50 border-b border-neutral-200">
       <div className="w-full px-6 md:px-12 text-center md:text-left">
-        <h2 className="mobile-heading-balance text-xl sm:text-2xl md:text-4xl font-serif text-brand-dark mb-6 uppercase tracking-tight" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
+        <h2 className="mobile-heading-balance text-xl sm:text-2xl md:text-4xl font-sans text-brand-dark mb-6 uppercase tracking-tight" >
           Metro Retail Solutions
         </h2>
         <p className="text-neutral-600 text-sm md:text-xl font-light leading-relaxed mb-6 md:mb-12">
@@ -112,6 +139,8 @@ const CompanyProfile = () => {
           </div>
         </div>
 
+        <InhouseManufacturingSection />
+
         <div className="mt-6 md:mt-12 bg-white p-8 border border-neutral-100 shadow-sm rounded-sm">
           <h3 className="text-brand-dark font-bold uppercase tracking-widest text-xs mb-4 text-center">
             Our Manufacturing Facility & Team
@@ -133,7 +162,7 @@ const CompanyProfile = () => {
             .animate-marquee {
               display: flex;
               width: max-content;
-              animation: marquee 20s linear infinite;
+              animation: marquee 30s linear infinite;
             }
             .animate-marquee:hover {
               animation-play-state: paused;
@@ -147,14 +176,29 @@ const CompanyProfile = () => {
             <div className="absolute inset-y-0 left-0 w-8 sm:w-20 bg-gradient-to-r from-neutral-50 to-transparent z-10 pointer-events-none" />
             <div className="absolute inset-y-0 right-0 w-8 sm:w-20 bg-gradient-to-l from-neutral-50 to-transparent z-10 pointer-events-none" />
 
-            <div className="animate-marquee gap-3 md:gap-8 py-2">
-              {['Safari', 'Uppercase', 'IT Luggage', 'Peach Mode', 'Cashify', 'Van Heusen', 'Safari', 'Uppercase', 'IT Luggage', 'Peach Mode', 'Cashify', 'Van Heusen'].map((brand, idx) => (
-                <span
-                  key={`${brand}-${idx}`}
-                  className="px-6 py-3 bg-neutral-100 text-neutral-700 text-[10px] sm:text-xs font-bold uppercase tracking-wider rounded-sm shrink-0 whitespace-nowrap"
+            <div className="animate-marquee gap-3 sm:gap-6 md:gap-8 py-3 items-center">
+              {[...BRAND_LOGOS, ...BRAND_LOGOS].map((brand, idx) => (
+                <div
+                  key={`${brand.name}-${idx}`}
+                  className="flex items-center justify-center h-14 sm:h-16 md:h-20 px-4 sm:px-6 md:px-8 py-2.5 bg-white border border-neutral-200/80 rounded-md shadow-xs shrink-0 transition-all duration-300 hover:shadow-md hover:scale-105 group"
                 >
-                  {brand}
-                </span>
+                  <img
+                    src={encodeURI(brand.logo)}
+                    alt={brand.name}
+                    className="max-h-8 sm:max-h-10 md:max-h-12 w-auto max-w-[120px] sm:max-w-[160px] md:max-w-[190px] object-contain transition-transform duration-300"
+                    onError={(e) => {
+                      const target = e.currentTarget;
+                      target.style.display = 'none';
+                      const parent = target.parentElement;
+                      if (parent && !parent.querySelector('.brand-fallback')) {
+                        const span = document.createElement('span');
+                        span.className = 'brand-fallback text-neutral-700 text-[10px] sm:text-xs font-bold uppercase tracking-wider whitespace-nowrap';
+                        span.innerText = brand.name;
+                        parent.appendChild(span);
+                      }
+                    }}
+                  />
+                </div>
               ))}
             </div>
           </div>
@@ -391,20 +435,20 @@ export default function PortfolioClient({ initialProjects }: { initialProjects: 
               Metro Portfolio
             </span>
             <h1
-              className="hero-title-1 font-serif text-white mb-4 uppercase tracking-tight text-center"
-              style={{ fontFamily: 'var(--font-cinzel), serif' }}
+              className="hero-title-1 font-sans text-white mb-4 uppercase tracking-tight text-center"
+              
             >
               Selected{" "}
               <span
                 className="text-brand-gold italic font-normal normal-case"
-                style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}
+                
               >
                 Works Showcase
               </span>
             </h1>
             <p
               className="hidden md:block text-neutral-300 text-base md:text-lg font-light max-w-2xl leading-relaxed mx-auto text-center"
-              style={{ fontFamily: 'var(--font-playfair), serif', fontStyle: 'italic' }}
+              
             >
               A premium showcase of our completed turnkey fit-out projects, delivered with absolute civil, MEP, and bespoke carpentry execution.
             </p>
@@ -491,7 +535,7 @@ export default function PortfolioClient({ initialProjects }: { initialProjects: 
                       <div className="absolute inset-0 bg-brand-dark/50 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6 md:p-10">
                         <div className="translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
                           <span className="text-brand-gold text-[9px] lg:text-[7px] font-bold uppercase tracking-[0.3em] mb-1 lg:mb-2 block">{proj.subcategory || "OVERVIEW"}</span>
-                          <h3 className="text-2xl lg:text-lg text-white font-serif uppercase tracking-tight mb-1 lg:mb-2 leading-snug">{proj.name}</h3>
+                          <h3 className="text-2xl lg:text-lg text-white font-sans uppercase tracking-tight mb-1 lg:mb-2 leading-snug">{proj.name}</h3>
 
                           {proj.executionTime && (
                             <span className="text-white/70 text-[8px] lg:text-[6px] uppercase tracking-[0.15em] block mb-3 lg:mb-4 font-bold">
@@ -516,7 +560,7 @@ export default function PortfolioClient({ initialProjects }: { initialProjects: 
                   <div className="space-y-1.5 sm:space-y-3 text-center">
                     <div className="flex flex-col items-center gap-1 sm:gap-2">
                       <a href={`/featured-fitouts/${proj.slug}`} className="block text-center">
-                        <h3 className="text-xs sm:text-lg md:text-xl font-serif text-brand-dark group-hover:text-brand-gold transition-colors duration-500 uppercase">{proj.name}</h3>
+                        <h3 className="text-xs sm:text-lg md:text-xl font-sans text-brand-dark group-hover:text-brand-gold transition-colors duration-500 uppercase">{proj.name}</h3>
                       </a>
                       <span className="text-[7px] sm:text-[9px] font-bold uppercase tracking-widest text-neutral-400 text-center">{proj.location || "India"}</span>
                     </div>
@@ -531,7 +575,7 @@ export default function PortfolioClient({ initialProjects }: { initialProjects: 
 
           {filteredProjects.length === 0 && (
             <div className="py-32 text-center max-w-md mx-auto border border-dashed border-neutral-200 rounded-lg p-10 bg-neutral-50/50">
-              <p className="text-neutral-400 font-serif text-xl italic mb-3">Custom executions coming soon.</p>
+              <p className="text-neutral-400 font-sans text-xl italic mb-3">Custom executions coming soon.</p>
               <p className="text-neutral-400 text-xs font-light leading-relaxed">
                 Our spatial designers are in the process of cataloging beautiful new turnkey fit-out projects for this point. Let us bring your vision to life today.
               </p>
@@ -551,7 +595,7 @@ export default function PortfolioClient({ initialProjects }: { initialProjects: 
               { label: "Hospitality Outlets", value: 25 }
             ].map((stat, i) => (
               <div key={i} className="flex flex-col items-center justify-start text-center border-l border-neutral-200 px-1 sm:px-4 md:px-8">
-                <div className="text-[23.625px] sm:text-[36px] font-serif text-brand-dark mb-1 sm:mb-2 md:mb-4 leading-none mt-2">
+                <div className="text-[23.625px] sm:text-[36px] font-sans text-brand-dark mb-1 sm:mb-2 md:mb-4 leading-none mt-2">
                   <CountUpNumber end={stat.value} />+
                 </div>
                 <div className="text-[8px] sm:text-[10px] font-bold uppercase tracking-widest text-brand-gold leading-tight md:leading-loose text-center mt-1">{stat.label}</div>

@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Cinzel", var(--font-cinzel), ui-serif, Georgia, serif;
-  --font-display: "Playfair Display", var(--font-playfair), ui-serif, Georgia, serif;
+  --font-sans: "Inter", var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Inter", var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Inter", var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-script: "Great Vibes", var(--font-great-vibes), cursive;
   
   --color-brand-gold: #E8A020;
@@ -18,19 +18,27 @@
 }
 
 :root {
+  --font-cinzel: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-playfair: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --brand-gold: #E8A020;
-  --brand-dark: #2A1E17; /* Dark coffee color from image */
+  --brand-dark: #1A1A1A;
 }
 
 body {
   background-color: white;
   color: var(--brand-dark);
-  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   overflow-x: hidden;
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif, [style*="font-cinzel"] {
+  font-family: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 500;
 }
 
 .font-signature {
-  font-family: var(--font-playfair), "Playfair Display", serif;
+  font-family: var(--font-inter), "Inter", sans-serif;
   font-style: italic;
 }
 
@@ -75,7 +83,7 @@ body {
 }
 
 @utility animate-marquee {
-  animation: marquee 40s linear infinite;
+  animation: marquee 90s linear infinite;
 }
 
 @utility hover-pause {
@@ -103,7 +111,7 @@ body {
   }
 
   .hero-eyebrow {
-    @apply text-[10px] font-bold uppercase tracking-[0.5em];
+    @apply text-[10px] font-medium uppercase tracking-[0.5em];
   }
 
   .hero-btn-text {
@@ -111,13 +119,17 @@ body {
   }
 
   .section-title {
-    @apply text-xl sm:text-2xl md:text-4xl xl:text-5xl font-serif uppercase tracking-tight leading-[1.1] md:leading-tight;
+    @apply text-lg sm:text-xl md:text-3xl xl:text-4xl font-medium uppercase tracking-wide leading-[1.15] md:leading-tight;
+    font-weight: 500 !important;
     text-wrap: balance;
     overflow-wrap: anywhere;
+    font-family: var(--font-inter), sans-serif !important;
   }
 
   .section-subtitle {
-    @apply text-xl sm:text-2xl xl:text-3xl font-serif uppercase tracking-tight leading-tight;
+    @apply text-base sm:text-lg xl:text-2xl font-medium uppercase tracking-wide leading-tight;
+    font-weight: 500 !important;
+    font-family: var(--font-inter), sans-serif !important;
   }
 }
 

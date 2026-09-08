@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 70" width="270" height="70">
+  <!-- Official Flying Machine Crimson Red Background -->
+  <rect width="270" height="70" rx="4" fill="#B80F1E"/>
+  
+  <!-- Left: Iconic Glider/Biplane Emblem -->
+  <g transform="translate(10, 8)" fill="#FFFFFF">
+    <!-- Top Wing with Wingtips -->
+    <path d="
+      M 6 22 
+      L 6 12 
+      L 10 9 
+      L 10 18 
+      L 110 18 
+      L 110 9 
+      L 114 12 
+      L 114 22 
+      L 110 22 
+      L 110 21 
+      L 10 21 
+      L 10 22 
+      Z
+    "/>
+    
+    <!-- Trapezoid Fuselage Mount under Wing -->
+    <polygon points="40,21 80,21 72,32 48,32"/>
+    
+    <!-- Main Center Ring -->
+    <circle cx="60" cy="40" r="15" stroke="#FFFFFF" stroke-width="4" fill="none"/>
+    
+    <!-- Propeller Center Bar & Hub -->
+    <rect x="34" y="38" width="52" height="4"/>
+    <circle cx="60" cy="40" r="4.5"/>
+    
+    <!-- Angled Landing Struts with upward hooks -->
+    <!-- Left Strut -->
+    <polygon points="49,49 46,46 30,62 30,54 26,56 26,67 38,67 36,63 35,63"/>
+    <!-- Right Strut -->
+    <polygon points="71,49 74,46 90,62 90,54 94,56 94,67 82,67 84,63 85,63"/>
+  </g>
+  
+  <!-- Right: FLYING MACHINE Bold Modern Geometric Typography -->
+  <g transform="translate(132, 0)">
+    <text x="0" y="32" font-family="'Montserrat', 'Arial Black', 'Helvetica Neue', sans-serif" font-weight="900" font-size="23" fill="#FFFFFF" letter-spacing="4">FLYING</text>
+    <text x="0" y="56" font-family="'Montserrat', 'Arial Black', 'Helvetica Neue', sans-serif" font-weight="900" font-size="23" fill="#FFFFFF" letter-spacing="3.5">MACHINE</text>
+  </g>
+</svg>

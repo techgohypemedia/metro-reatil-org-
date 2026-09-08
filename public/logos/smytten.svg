@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 140" width="140" height="140">
+  <!-- Official Smytten Deep Midnight Navy Circle Badge -->
+  <circle cx="70" cy="70" r="68" fill="#0E1626"/>
+  
+  <!-- smytten Lowercase Serif Typography with ball terminal style -->
+  <text x="70" y="70" text-anchor="middle" font-family="'Bodoni MT', 'Didot', 'Playfair Display', 'Georgia', serif" font-weight="700" font-size="33" fill="#FFFFFF" letter-spacing="-0.5">smytten</text>
+  
+  <!-- Three Iconic White Dots Below -->
+  <circle cx="50" cy="92" r="5.5" fill="#FFFFFF"/>
+  <circle cx="70" cy="92" r="5.5" fill="#FFFFFF"/>
+  <circle cx="90" cy="92" r="5.5" fill="#FFFFFF"/>
+</svg>

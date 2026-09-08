@@ -73,20 +73,20 @@ export default function DesignersArchitectsPage() {
               Partnership
             </span>
             <h1
-              className="hero-title-1 font-serif text-white mb-4 uppercase tracking-tight text-center"
-              style={{ fontFamily: 'var(--font-cinzel), serif' }}
+              className="hero-title-1 font-sans text-white mb-4 uppercase tracking-tight text-center"
+              
             >
               Ready to Partner With{" "}
               <span
                 className="text-brand-gold italic font-normal normal-case block md:inline mt-1 md:mt-0"
-                style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}
+                
               >
                 Metro?
               </span>
             </h1>
             <p
               className="hidden md:block text-neutral-300 text-base md:text-lg font-light max-w-2xl leading-relaxed mx-auto text-center"
-              style={{ fontFamily: 'var(--font-playfair), serif', fontStyle: 'italic' }}
+              
             >
               Book a partnership consultation and let's discuss collaboration opportunities. We'll provide detailed information about our services for designers and architects.
             </p>
@@ -97,8 +97,8 @@ export default function DesignersArchitectsPage() {
       {/* Intro Section */}
       <section className="py-12 md:py-24 bg-white text-gray-900 text-center">
         <div className="w-full px-6">
-          <h2 className="mobile-heading-balance text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-brand-dark uppercase font-light tracking-tight leading-[1] mb-8" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-            Flawless Execution <span className="text-brand-gold italic font-normal ml-2" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>for Interior Designers & Architects</span>
+          <h2 className="mobile-heading-balance text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-brand-dark uppercase font-light tracking-tight leading-[1] mb-8" >
+            Flawless Execution <span className="text-brand-gold italic font-normal ml-2" >for Interior Designers & Architects</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Metro Retail Solutions is the trusted execution partner for interior designers and architects. With approved engineers, in-house manufacturing, MEP coordination, and technical expertise, we bring your design vision to life with precision and quality. From concept to completion, we handle the complex technical execution while you focus on design.
@@ -110,8 +110,8 @@ export default function DesignersArchitectsPage() {
       <section className="py-12 md:py-24 bg-gray-50 text-gray-900">
         <div className="w-full px-6">
           <div className="text-center mb-8 md:mb-16">
-            <h2 className="mobile-heading-balance text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-brand-dark uppercase font-light tracking-tight leading-[1]" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-              Services for <span className="text-brand-gold italic font-normal" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>Designers & Architects</span>
+            <h2 className="mobile-heading-balance text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-brand-dark uppercase font-light tracking-tight leading-[1]" >
+              Services for <span className="text-brand-gold italic font-normal" >Designers & Architects</span>
             </h2>
           </div>
 
@@ -134,7 +134,7 @@ export default function DesignersArchitectsPage() {
 
                 {/* Content */}
                 <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                  <h3 className="text-xl font-bold font-serif text-white mb-2 group-hover:text-[#E8A020] transition-colors">
+                  <h3 className="text-xl font-bold font-sans text-white mb-2 group-hover:text-[#E8A020] transition-colors">
                     {service.title}
                   </h3>
                   <div className="h-0 overflow-hidden group-hover:h-auto group-hover:mt-2 opacity-0 group-hover:opacity-100 transition-all duration-300">
@@ -156,8 +156,8 @@ export default function DesignersArchitectsPage() {
       <section className="py-12 md:py-24 bg-[#0a0a0a] text-white">
         <div className="w-full px-6">
           <div className="text-center mb-10 md:mb-20">
-            <h2 className="mobile-heading-balance text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-white uppercase font-light tracking-tight leading-[1] mb-6" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-              Portfolio & <span className="text-brand-gold italic font-normal" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>Certifications</span>
+            <h2 className="mobile-heading-balance text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-white uppercase font-light tracking-tight leading-[1] mb-6" >
+              Portfolio & <span className="text-brand-gold italic font-normal" >Certifications</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-3xl mx-auto">
               We bring proven expertise and certified credentials to every project. Our portfolio showcases successful collaborations with designers and architects.
@@ -167,7 +167,7 @@ export default function DesignersArchitectsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16">
             {/* Certifications */}
             <div>
-              <h3 className="text-2xl font-bold font-serif mb-8 border-b border-white/10 pb-4">Certifications & Approvals</h3>
+              <h3 className="text-2xl font-bold font-sans mb-8 border-b border-white/10 pb-4">Certifications & Approvals</h3>
               <div className="space-y-8">
                 <div className="flex gap-6">
                   <div className="shrink-0 w-16 h-16 bg-[#E8A020]/20 rounded-full flex items-center justify-center text-[#E8A020]">
@@ -209,7 +209,7 @@ export default function DesignersArchitectsPage() {
 
             {/* Portfolio Highlights */}
             <div>
-              <h3 className="text-2xl font-bold font-serif mb-8 border-b border-white/10 pb-4">Portfolio Highlights</h3>
+              <h3 className="text-2xl font-bold font-sans mb-8 border-b border-white/10 pb-4">Portfolio Highlights</h3>
               <div className="space-y-6">
                 <div className="bg-white/5 border border-white/10 p-8 rounded-xl hover:border-[#E8A020]/50 transition-colors">
                   <div className="flex justify-between items-start mb-4">
@@ -256,8 +256,8 @@ export default function DesignersArchitectsPage() {
       <section className="py-12 md:py-24 bg-[#E8A020] text-white text-center">
         <div className="w-full px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="mobile-heading-balance text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-brand-dark uppercase font-light tracking-tight leading-[1] mb-6" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-              Let's Build Something <span className="text-brand-dark italic font-normal" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>Extraordinary</span>
+            <h2 className="mobile-heading-balance text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-brand-dark uppercase font-light tracking-tight leading-[1] mb-6" >
+              Let's Build Something <span className="text-brand-dark italic font-normal" >Extraordinary</span>
             </h2>
             <p className="text-white/90 text-lg mb-6 md:mb-10 leading-relaxed">
               Book a free site visit and let our experts assess your space. We'll provide a detailed consultation and transparent quote for your property transformation project.

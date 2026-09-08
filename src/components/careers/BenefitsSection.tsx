@@ -64,8 +64,8 @@ export default function BenefitsSection() {
         {/* Title Block */}
         <div className="flex flex-col md:flex-row gap-6 md:gap-12 items-start md:items-end mb-8 md:mb-16">
           <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-5xl text-white uppercase font-light tracking-tight leading-[1]" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-              Build Your Career <span className="text-brand-gold italic font-normal" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>With Us</span>
+            <h2 className="text-3xl md:text-5xl text-white uppercase font-light tracking-tight leading-[1]" >
+              Build Your Career <span className="text-brand-gold italic font-normal" >With Us</span>
             </h2>
           </div>
           <div className="md:w-1/2">
@@ -82,7 +82,7 @@ export default function BenefitsSection() {
               <div className="w-14 h-14 bg-brand-gold/20 rounded-sm flex items-center justify-center mb-6 text-brand-gold group-hover:scale-110 transition-transform">
                 <benefit.icon size={28} />
               </div>
-              <h3 className="text-xl font-bold mb-4" style={{ fontFamily: 'var(--font-cinzel), serif' }}>{benefit.title}</h3>
+              <h3 className="text-xl font-bold mb-4" >{benefit.title}</h3>
               <p className="text-neutral-400 leading-relaxed text-sm">
                 {benefit.description}
               </p>
@@ -106,7 +106,7 @@ export default function BenefitsSection() {
                       <div className="w-12 h-12 bg-brand-gold/20 rounded-sm flex items-center justify-center mb-6 text-brand-gold">
                         <benefit.icon size={24} />
                       </div>
-                      <h3 className="text-lg font-bold mb-3" style={{ fontFamily: 'var(--font-cinzel), serif' }}>{benefit.title}</h3>
+                      <h3 className="text-lg font-bold mb-3" >{benefit.title}</h3>
                       <p className="text-neutral-400 leading-relaxed text-xs">
                         {benefit.description}
                       </p>

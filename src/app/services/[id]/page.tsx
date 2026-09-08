@@ -88,14 +88,14 @@ export default function SubcategoryDetailPage() {
               <PenTool size={12} /> Specialized Capability
             </span>
             <h1
-              className="mobile-heading-balance hero-title-1 font-serif text-white uppercase tracking-tight text-center break-words hyphens-auto w-full"
-              style={{ fontFamily: 'var(--font-cinzel), serif' }}
+              className="mobile-heading-balance hero-title-1 font-sans text-white uppercase tracking-tight text-center break-words hyphens-auto w-full"
+              
             >
               {data.title}
             </h1>
             <p
               className="hidden md:block text-neutral-300 text-sm md:text-[18px] font-light italic mt-2 max-w-2xl mx-auto text-center px-4"
-              style={{ fontFamily: 'var(--font-playfair), serif' }}
+              
             >
               {data.tagline}
             </p>
@@ -111,14 +111,14 @@ export default function SubcategoryDetailPage() {
           <div className="flex lg:hidden flex-col items-center text-center space-y-3 mb-8">
             <span className="text-brand-gold text-[10px] font-bold uppercase tracking-[0.5em] block">Active Service</span>
             <h2
-              className="mobile-heading-balance text-xl sm:text-2xl font-serif text-brand-dark uppercase tracking-tight break-words hyphens-auto"
-              style={{ fontFamily: 'var(--font-cinzel), serif' }}
+              className="mobile-heading-balance text-xl sm:text-2xl font-sans text-brand-dark uppercase tracking-tight break-words hyphens-auto"
+              
             >
               {data.title}
             </h2>
             <p
               className="text-neutral-400 text-lg font-light italic"
-              style={{ fontFamily: 'var(--font-playfair), serif' }}
+              
             >
               {data.tagline}
             </p>
@@ -144,14 +144,14 @@ export default function SubcategoryDetailPage() {
               <div className="hidden lg:flex flex-col items-center lg:items-start text-center lg:text-left space-y-3 w-full">
                 <span className="text-brand-gold text-[10px] font-bold uppercase tracking-[0.5em] block">Active Service</span>
                 <h2
-                  className="mobile-heading-balance hero-title-1 font-serif text-brand-dark uppercase tracking-tight break-words hyphens-auto"
-                  style={{ fontFamily: 'var(--font-cinzel), serif' }}
+                  className="mobile-heading-balance hero-title-1 font-sans text-brand-dark uppercase tracking-tight break-words hyphens-auto"
+                  
                 >
                   {data.title}
                 </h2>
                 <p
                   className="hidden md:block text-neutral-400 text-sm md:text-xl font-light italic"
-                  style={{ fontFamily: 'var(--font-playfair), serif' }}
+                  
                 >
                   {data.tagline}
                 </p>
@@ -176,7 +176,7 @@ export default function SubcategoryDetailPage() {
                         <div className="text-brand-gold shrink-0 flex items-center justify-center">
                           <Icon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-4 lg:h-4" strokeWidth={1.5} />
                         </div>
-                        <div className="text-sm sm:text-base lg:text-sm font-serif text-brand-dark leading-tight">
+                        <div className="text-sm sm:text-base lg:text-sm font-sans text-brand-dark leading-tight">
                           <AnimatedNumber value={stat.value} />
                         </div>
                       </div>
@@ -206,8 +206,8 @@ export default function SubcategoryDetailPage() {
           <div className="mb-14 md:w-2/3 mx-auto text-center">
             <span className="text-brand-gold text-[10px] font-bold uppercase tracking-[0.5em] mb-4 block">Visuals</span>
             <h2
-              className="mobile-heading-balance text-[19px] sm:text-3xl md:text-5xl font-serif text-white uppercase tracking-tight mb-4 break-words hyphens-auto"
-              style={{ fontFamily: 'var(--font-cinzel), serif' }}
+              className="mobile-heading-balance text-[19px] sm:text-3xl md:text-5xl font-sans text-white uppercase tracking-tight mb-4 break-words hyphens-auto"
+              
             >
               Featured {data.title} Work
             </h2>
@@ -243,7 +243,7 @@ export default function SubcategoryDetailPage() {
                         <div className="absolute inset-0 px-3 pt-3 pb-3 sm:p-4 md:p-6 flex flex-col justify-end translate-y-0 opacity-100 md:translate-y-8 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-500 text-white z-10 pointer-events-none">
 
                           <div className="hidden md:block">
-                            <h3 className="text-[18px] lg:text-[15px] xl:text-lg 2xl:text-xl font-serif text-white uppercase tracking-tight mb-1 lg:mb-2 leading-snug">
+                            <h3 className="text-[18px] lg:text-[15px] xl:text-lg 2xl:text-xl font-sans text-white uppercase tracking-tight mb-1 lg:mb-2 leading-snug">
                               {title}
                             </h3>
 
@@ -294,7 +294,7 @@ export default function SubcategoryDetailPage() {
                         <div className="absolute inset-0 px-3 pt-3 pb-3 sm:p-4 md:p-6 flex flex-col justify-end translate-y-0 opacity-100 md:translate-y-8 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-500 text-white z-10 pointer-events-none">
 
                           <div className="hidden md:block">
-                            <h3 className="text-[18px] lg:text-[15px] xl:text-lg 2xl:text-xl font-serif text-white uppercase tracking-tight mb-1 lg:mb-2 leading-snug">
+                            <h3 className="text-[18px] lg:text-[15px] xl:text-lg 2xl:text-xl font-sans text-white uppercase tracking-tight mb-1 lg:mb-2 leading-snug">
                               {title}
                             </h3>
 
@@ -346,8 +346,8 @@ export default function SubcategoryDetailPage() {
           <div className="text-center mb-8 md:mb-16">
             <span className="text-brand-gold text-[10px] font-bold uppercase tracking-[0.5em] mb-4 block">Methodology</span>
             <h2
-              className="mobile-heading-balance text-xl sm:text-3xl md:text-4xl font-serif text-brand-dark uppercase tracking-tight break-words hyphens-auto"
-              style={{ fontFamily: 'var(--font-cinzel), serif' }}
+              className="mobile-heading-balance text-xl sm:text-3xl md:text-4xl font-sans text-brand-dark uppercase tracking-tight break-words hyphens-auto"
+              
             >
               Our Execution Process
             </h2>
@@ -357,8 +357,8 @@ export default function SubcategoryDetailPage() {
             {data.process.map((p, i) => (
               <div key={i} className="relative p-3 sm:p-6 md:p-8 border border-neutral-200 bg-white hover:shadow-xl transition-all duration-500 group flex flex-col justify-center min-h-[140px] sm:min-h-[200px]">
                 <div
-                  className="absolute top-2 right-2 sm:top-4 sm:right-5 text-3xl sm:text-6xl font-serif text-neutral-100 group-hover:text-brand-gold/10 transition-colors select-none"
-                  style={{ fontFamily: 'var(--font-cinzel), serif' }}
+                  className="absolute top-2 right-2 sm:top-4 sm:right-5 text-3xl sm:text-6xl font-sans text-neutral-100 group-hover:text-brand-gold/10 transition-colors select-none"
+                  
                 >
                   {i + 1}
                 </div>

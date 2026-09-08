@@ -10,7 +10,7 @@ const PROCESS_PHASES = [
     title: "Site Audit & Mobilization",
     subtitle: "Shell & Core Clearance & Approvals",
     icon: <HardHat className="w-6 h-6" />,
-    img: "/images/phase_01_site_audit.png",
+    img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1600&auto=format&fit=crop",
     desc: "Before laying a single brick, our technical engineering division conducts a multi-point site laser survey and MEP audit. We directly coordinate and obtain all required regulatory clearances—including Municipality, Civil Defense, and Mall Management—while building structural safety dust barriers and mobilizing specialized on-site machinery.",
     highlights: [
       "Laser-guided dimensional surveying",
@@ -29,7 +29,7 @@ const PROCESS_PHASES = [
     title: "Off-Site Prefabrication",
     subtitle: "State-of-the-Art Carpentry Manufacture",
     icon: <Hammer className="w-6 h-6" />,
-    img: "/images/phase_02_prefabrication.png",
+    img: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1600&auto=format&fit=crop",
     desc: "Parallel to site preparations, our private 9,000 sq.ft state-of-the-art carpentry workshop begins manufacturing bespoke elements. Master artisans fabricate custom wooden panels, luxury store counters, specialized showcases, and metal racks using precision German machinery. This offsite prefabrication slashes on-site construction timelines by over 45%.",
     highlights: [
       "9,000 sq.ft private carpentry unit",
@@ -48,7 +48,7 @@ const PROCESS_PHASES = [
     title: "On-Site Civil & MEP Installation",
     subtitle: "Flawless Technical Execution",
     icon: <Wrench className="w-6 h-6" />,
-    img: "/images/phase_03_installation.png",
+    img: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1600&auto=format&fit=crop",
     desc: "Our multi-disciplinary on-site crews install HVAC ducting, plumbing arrays, high-load electrical grids, fire suppression networks, and structural glass/drywall partition systems. By retaining all civil trades under a single master foreman, we eliminate the scheduling conflicts and quality drops associated with sub-contracting.",
     highlights: [
       "Certified HVAC ducting & grease traps",
@@ -67,7 +67,7 @@ const PROCESS_PHASES = [
     title: "Detailing & Handover",
     subtitle: "Pristine, Brand-Ready Handover",
     icon: <ShieldCheck className="w-6 h-6" />,
-    img: "/images/phase_04_handover.png",
+    img: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1600&auto=format&fit=crop",
     desc: "The final phase focuses on aesthetic detailing, prism architectural light testing, and strict internal snag clearance. We perform extensive electrical load tests and HVAC balance audits before executing a deep clinical sanitization. Your boutique or office is handed over fully powered and ready to load inventory immediately.",
     highlights: [
       "Comprehensive internal snag list clearing",
@@ -87,59 +87,73 @@ const ProcessDetailContent = ({ phase }: { phase: typeof PROCESS_PHASES[0] }) =>
   return (
     <div className="space-y-8 flex-grow">
       {/* Visual Image Header */}
-      <div className="relative aspect-[16/7] overflow-hidden rounded-sm bg-neutral-900 border border-white/5 shadow-inner">
+      <div className="relative aspect-[16/7] overflow-hidden rounded-sm bg-neutral-100 border border-neutral-200/80 shadow-sm">
         <img
           src={phase.img}
           alt={phase.title}
-          className="w-full h-full object-cover opacity-80 hover:opacity-100 hover:scale-105 transition-all duration-[1500ms]"
+          className="w-full h-full object-cover transition-all duration-[1500ms] hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark to-transparent" />
-
-
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
       </div>
 
       {/* Details Section */}
-      <div className="space-y-5">
+      <div className="space-y-4">
         <div className="flex flex-col gap-1">
-          <span className="text-[9px] xl:text-[10px] font-bold text-brand-gold uppercase tracking-[0.4em]">
+          <span className="text-[9px] xl:text-[10px] font-semibold text-brand-gold uppercase tracking-[0.4em]">
             Detailed Execution Log
           </span>
-          <h4 className="text-xl xl:text-2xl font-serif text-white uppercase tracking-wider" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
+          <h4
+            className="text-xl xl:text-2xl font-sans text-brand-dark uppercase tracking-wider"
+            
+          >
             {phase.title}
           </h4>
         </div>
-        <p className="text-neutral-400 text-xs xl:text-sm font-light leading-relaxed">
+        <p className="text-neutral-600 text-xs xl:text-sm font-light leading-relaxed">
           {phase.desc}
         </p>
       </div>
 
       {/* Scope Grid Checklist */}
-      <div className="pt-4">
-        <span className="text-[9px] font-bold text-neutral-400 uppercase tracking-widest block mb-4">
+      <div className="pt-2">
+        <span className="text-[9px] font-semibold text-neutral-500 uppercase tracking-widest block mb-4">
           Key Architectural & Engineering Scope:
         </span>
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3.5">
           {phase.highlights.map((h, i) => (
-            <li key={i} className="flex items-center gap-3 text-neutral-200 text-[11px] xl:text-xs font-medium">
-              <CheckCircle2 size={15} className="text-brand-gold shrink-0" />
+            <li key={i} className="flex items-center gap-3 text-neutral-800 text-[11px] xl:text-xs font-medium">
+              <CheckCircle2 size={16} className="text-brand-gold shrink-0" />
               <span>{h}</span>
             </li>
           ))}
         </ul>
       </div>
 
-      <div className="hidden sm:grid pt-8 border-t border-white/5 grid-cols-3 gap-6 text-left">
+      {/* Stats Row */}
+      <div className="hidden sm:grid pt-6 border-t border-neutral-200 grid-cols-3 gap-6 text-left">
         <div>
-          <span className="text-[7px] xl:text-[7.5px] font-bold uppercase tracking-[0.2em] text-neutral-500 block mb-1">Timeline</span>
-          <span className="text-brand-gold font-serif text-xs xl:text-sm uppercase tracking-wide font-medium">{phase.stats.duration}</span>
+          <span className="text-[7px] xl:text-[7.5px] font-semibold uppercase tracking-[0.2em] text-neutral-500 block mb-1">
+            Timeline
+          </span>
+          <span className="text-brand-dark font-sans text-xs xl:text-sm uppercase tracking-wide font-medium">
+            {phase.stats.duration}
+          </span>
         </div>
         <div>
-          <span className="text-[7px] xl:text-[7.5px] font-bold uppercase tracking-[0.2em] text-neutral-500 block mb-1">Human Resource</span>
-          <span className="text-brand-gold font-serif text-xs xl:text-sm uppercase tracking-wide font-medium">{phase.stats.crew || phase.stats.artisans || phase.stats.officers}</span>
+          <span className="text-[7px] xl:text-[7.5px] font-semibold uppercase tracking-[0.2em] text-neutral-500 block mb-1">
+            Human Resource
+          </span>
+          <span className="text-brand-dark font-sans text-xs xl:text-sm uppercase tracking-wide font-medium">
+            {phase.stats.crew || phase.stats.artisans || phase.stats.officers}
+          </span>
         </div>
         <div>
-          <span className="text-[7px] xl:text-[7.5px] font-bold uppercase tracking-[0.2em] text-neutral-500 block mb-1">Standard Vetted</span>
-          <span className="text-brand-gold font-serif text-xs xl:text-sm uppercase tracking-wide font-medium">{phase.stats.precision || phase.stats.compliance || phase.stats.inspections || phase.stats.snags}</span>
+          <span className="text-[7px] xl:text-[7.5px] font-semibold uppercase tracking-[0.2em] text-neutral-500 block mb-1">
+            Standard Vetted
+          </span>
+          <span className="text-brand-gold font-sans text-xs xl:text-sm uppercase tracking-wide font-medium">
+            {phase.stats.precision || phase.stats.compliance || phase.stats.inspections || phase.stats.snags}
+          </span>
         </div>
       </div>
     </div>
@@ -150,37 +164,42 @@ const ExecutionProcess = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <section className="py-12 md:py-16 bg-brand-dark text-white relative overflow-hidden">
+    <section className="py-12 md:py-16 bg-[#FAFAFA] text-brand-dark relative overflow-hidden border-t border-b border-neutral-200/60">
       {/* Background Subtle Elements */}
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-gold/5 rounded-full blur-[100px] -z-10" />
-      <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-white/5 rounded-full blur-[100px] -z-10" />
+      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-gold/5 rounded-full blur-[120px] -z-10" />
+      <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-neutral-200/40 rounded-full blur-[100px] -z-10" />
 
       <div className="w-full px-6 md:px-12 relative z-10">
-
         {/* Dynamic Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 xl:gap-12 items-start relative">
-
           {/* Left Column: Heading + Interactive Step Selector */}
           <div className="lg:col-span-5 flex flex-col gap-8 z-10">
             {/* Section Header */}
             <div className="flex flex-col items-center md:items-start w-full lg:-mt-3">
-              <h2 className="section-title text-white" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-                OUR TURNKEY FIT-OUT <br /> <span className="text-brand-gold italic block mt-2 whitespace-nowrap" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>Execution Process</span>
+              <h2
+                className="section-title text-brand-dark"
+              >
+                OUR METICULOUS <br />
+                <span className="text-brand-gold italic font-normal block mt-2">Execution Process</span>
               </h2>
+              <p className="text-neutral-500 text-sm xl:text-base font-light leading-relaxed max-w-md mt-4 text-center md:text-left">
+                Every bespoke interior follows a rigorous four-phase protocol, delivering architectural perfection with zero downtime.
+              </p>
             </div>
 
-            <div className="space-y-4">
+            <div className="flex flex-col gap-3">
               {PROCESS_PHASES.map((p, idx) => {
                 const isActive = activeStep === idx;
                 return (
-                  <div key={p.phase} className="space-y-4">
+                  <div key={p.phase} className="flex flex-col gap-3">
                     <button
                       type="button"
                       onClick={() => setActiveStep(idx)}
-                      className={`w-full text-left p-5 lg:p-6 xl:p-8 rounded-sm transition-all duration-500 border flex gap-4 xl:gap-6 items-center outline-none relative overflow-hidden group ${isActive
-                        ? 'bg-white/5 border-brand-gold/40 shadow-xl'
-                        : 'bg-transparent border-white/5 hover:border-white/15'
-                        }`}
+                      className={`group relative text-left p-4 sm:p-5 xl:p-6 rounded-sm border transition-all duration-300 flex items-center gap-4 sm:gap-6 ${
+                        isActive
+                          ? 'bg-white border-brand-gold shadow-[0_10px_30px_rgba(0,0,0,0.06)]'
+                          : 'bg-white/60 border-neutral-200/80 hover:border-neutral-300 hover:bg-white hover:shadow-sm'
+                      }`}
                     >
                       {/* Left Golden Accent Line on Active */}
                       {isActive && (
@@ -191,30 +210,48 @@ const ExecutionProcess = () => {
                       )}
 
                       {/* Circle Number */}
-                      <div className={`w-10 h-10 xl:w-12 xl:h-12 rounded-full border flex items-center justify-center font-bold text-[10px] xl:text-xs shrink-0 tracking-wider transition-all duration-500 ${isActive
-                        ? 'bg-brand-gold border-brand-gold text-white shadow-lg'
-                        : 'border-white/10 text-neutral-400 group-hover:border-white/30 group-hover:text-white'
-                        }`}>
+                      <div
+                        className={`w-10 h-10 xl:w-11 xl:h-11 rounded-full border flex items-center justify-center font-semibold text-[11px] xl:text-xs shrink-0 tracking-wider transition-all duration-300 ${
+                          isActive
+                            ? 'bg-brand-gold border-brand-gold text-white shadow-sm'
+                            : 'border-neutral-200 text-neutral-500 bg-neutral-50 group-hover:border-neutral-300 group-hover:text-neutral-800'
+                        }`}
+                      >
                         {p.phase}
                       </div>
 
                       {/* Title Info */}
-                      <div className="flex-grow">
-                        <span className={`hidden md:block text-[8px] xl:text-[8.5px] font-bold uppercase tracking-[0.25em] mb-1 transition-colors duration-500 ${isActive ? 'text-brand-gold' : 'text-neutral-500 group-hover:text-neutral-400'}`}>
+                      <div className="flex-grow min-w-0">
+                        <span
+                          className={`hidden md:block text-[8.5px] xl:text-[9px] font-semibold uppercase tracking-[0.25em] mb-1 transition-colors duration-300 ${
+                            isActive ? 'text-brand-gold' : 'text-neutral-500 group-hover:text-neutral-700'
+                          }`}
+                        >
                           {p.subtitle}
                         </span>
-                        <h3 className={`text-sm xl:text-base font-serif uppercase tracking-widest transition-colors duration-500 ${isActive ? 'text-white' : 'text-neutral-300 group-hover:text-white'}`} style={{ fontFamily: 'var(--font-cinzel), serif' }}>
+                        <h3
+                          className={`text-sm xl:text-base font-sans uppercase tracking-widest transition-colors duration-300 ${
+                            isActive ? 'text-brand-dark font-semibold' : 'text-neutral-700 group-hover:text-brand-dark'
+                          }`}
+                          
+                        >
                           {p.title}
                         </h3>
                       </div>
 
                       {/* Arrow Indicator */}
-                      <div className={`transition-all duration-300 shrink-0 ${isActive ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-40'}`}>
+                      <div
+                        className={`transition-all duration-300 shrink-0 ${
+                          isActive
+                            ? 'translate-x-0 opacity-100'
+                            : '-translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-60'
+                        }`}
+                      >
                         <ArrowRight size={18} className="text-brand-gold" />
                       </div>
                     </button>
 
-                    {/* Mobile Detail Accordion (Only shows on mobile, directly under the active section button) */}
+                    {/* Mobile Detail Accordion */}
                     <AnimatePresence initial={false}>
                       {isActive && (
                         <motion.div
@@ -222,7 +259,7 @@ const ExecutionProcess = () => {
                           animate={{ height: "auto", opacity: 1 }}
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                          className="lg:hidden overflow-hidden bg-white/[0.02] border border-white/5 p-6 md:p-8 rounded-sm shadow-xl"
+                          className="lg:hidden overflow-hidden bg-white border border-neutral-200 p-6 md:p-8 rounded-sm shadow-md"
                         >
                           <ProcessDetailContent phase={p} />
                         </motion.div>
@@ -235,14 +272,14 @@ const ExecutionProcess = () => {
           </div>
 
           {/* Right Column: Slide Panel Detail view */}
-          <div className="hidden lg:flex lg:col-span-7 bg-white/[0.02] border border-white/5 p-6 lg:p-8 xl:p-12 rounded-sm shadow-2xl min-h-[500px] flex-col justify-between">
+          <div className="hidden lg:flex lg:col-span-7 bg-white border border-neutral-200/90 p-6 lg:p-8 xl:p-12 rounded-sm shadow-[0_15px_40px_rgba(0,0,0,0.05)] min-h-[500px] flex-col justify-between">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeStep}
-                initial={{ opacity: 0, x: 30 }}
+                initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -30 }}
-                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 className="space-y-8 flex-grow"
               >
                 <ProcessDetailContent phase={PROCESS_PHASES[activeStep]} />
@@ -256,3 +293,5 @@ const ExecutionProcess = () => {
 };
 
 export default ExecutionProcess;
+
+

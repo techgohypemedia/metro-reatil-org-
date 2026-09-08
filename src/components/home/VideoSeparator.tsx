@@ -15,7 +15,7 @@ const VideoSeparator = ({ src, title }: { src: string, title?: string }) => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="relative z-20 text-white section-title tracking-[0.12em] md:tracking-widest text-center px-6"
-          style={{ fontFamily: 'var(--font-cinzel), serif' }}
+          
         >
           {title}
         </motion.h2>

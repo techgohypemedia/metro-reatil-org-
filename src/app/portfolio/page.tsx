@@ -26,6 +26,13 @@ export default async function PortfolioPage() {
     projects = featuredFitouts;
   }
 
+  // Filter out Mumbai/Office Safari project if returned from WP
+  projects = projects.filter(
+    (p) =>
+      p.slug.toLowerCase() !== "safari-boys" &&
+      !(p.name.toLowerCase().includes("safari") && p.location?.toLowerCase().includes("mumbai"))
+  );
+
   return (
     <Suspense fallback={
       <div className="min-h-screen bg-white flex items-center justify-center">

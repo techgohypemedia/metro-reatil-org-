@@ -100,20 +100,20 @@ export default function DesignStylesPage() {
               Styles
             </span>
             <h1
-              className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-serif text-white mb-4 uppercase tracking-tight leading-[1.1]"
-              style={{ fontFamily: 'var(--font-cinzel), serif' }}
+              className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-sans text-white mb-4 uppercase tracking-tight leading-[1.1]"
+              
             >
               Discover Your Perfect{" "}
               <span
                 className="text-brand-gold italic font-normal normal-case block md:inline mt-1 md:mt-0"
-                style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}
+                
               >
                 Design Style
               </span>
             </h1>
             <p
               className="hidden md:block text-neutral-300 text-base md:text-lg font-light max-w-2xl leading-relaxed mx-auto text-center mb-8"
-              style={{ fontFamily: 'var(--font-playfair), serif', fontStyle: 'italic' }}
+              
             >
               Book a free design consultation and let our experts help you choose the perfect style for your space. We create tailored proposals reflecting your brand vision.
             </p>
@@ -140,10 +140,10 @@ export default function DesignStylesPage() {
 
             {/* Text Section */}
             <div className="lg:col-span-6 xl:col-span-5 flex flex-col items-center text-center lg:items-start lg:text-left lg:pr-8">
-              <h2 className="mobile-heading-balance text-2xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-serif text-brand-dark uppercase tracking-tight mb-3 text-center lg:text-left" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
+              <h2 className="mobile-heading-balance text-2xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-sans text-brand-dark uppercase tracking-tight mb-3 text-center lg:text-left" >
                 Every Style
               </h2>
-              <div className="text-neutral-400 italic text-xl sm:text-2xl mb-8 font-light text-center lg:text-left" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>
+              <div className="text-neutral-400 italic text-xl sm:text-2xl mb-8 font-light text-center lg:text-left" >
                 Executed to Perfection
               </div>
 
@@ -173,8 +173,8 @@ export default function DesignStylesPage() {
       <section className="pt-8 md:pt-12 pb-24 bg-white">
         <div className="w-full px-6">
           <div className="mb-8 md:mb-16 text-center">
-            <h2 className="mobile-heading-balance text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-serif text-brand-dark uppercase tracking-tight" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-              Interior Design Styles <span className="text-brand-gold italic text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl font-normal ml-2" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>We Execute</span>
+            <h2 className="mobile-heading-balance text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-sans text-brand-dark uppercase tracking-tight" >
+              Interior Design Styles <span className="text-brand-gold italic text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl font-normal ml-2" >We Execute</span>
             </h2>
           </div>
 
@@ -195,7 +195,7 @@ export default function DesignStylesPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
 
                 <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                  <h3 className="text-xl md:text-2xl lg:text-lg xl:text-xl font-bold text-white mb-2 leading-snug group-hover:text-brand-gold transition-colors" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
+                  <h3 className="text-xl md:text-2xl lg:text-lg xl:text-xl font-bold text-white mb-2 leading-snug group-hover:text-brand-gold transition-colors" >
                     {style.name}
                   </h3>
                   <p className="hidden md:block text-neutral-300 text-sm md:text-base lg:text-xs xl:text-sm leading-relaxed mb-4 font-medium opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 h-0 md:group-hover:h-auto overflow-hidden">

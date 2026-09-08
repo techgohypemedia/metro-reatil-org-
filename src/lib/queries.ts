@@ -106,18 +106,23 @@ export function mapWordPressProjectToFitout(wpProject: any): FeaturedFitout {
     galleryGroup.galleryimage10?.node?.sourceUrl,
   ].filter(Boolean); // removes undefined or null
 
+  let rawTitle = wpProject.title || "";
+  let name = rawTitle;
+  let img = wpProject.featuredImage?.node?.sourceUrl || "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800";
+  let gallery = images.length > 0 ? images : (details.gallery?.nodes ? details.gallery.nodes.map((g: any) => g.sourceUrl) : []);
+
   return {
     slug: wpProject.slug,
-    name: wpProject.title,
+    name: name,
     category: categoryStr,
     subcategory: details.subcategory || "OVERVIEW",
     location: details.location || "",
-    img: wpProject.featuredImage?.node?.sourceUrl || "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800",
+    img: img,
     intro: details.intro || "",
     description: details.description || "",
     executionTime: details.executionTime || "",
     projectScale: details.projectScale || "",
-    gallery: images.length > 0 ? images : (details.gallery?.nodes ? details.gallery.nodes.map((g: any) => g.sourceUrl) : []),
+    gallery: gallery,
     // Hardcoded scope for now or extract from details if you add it later
     scopeOfWork: []
   };

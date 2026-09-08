@@ -38,8 +38,8 @@ const JoineryTeamSection = () => {
       <div className="w-full px-6 md:px-12">
         <div className="text-center mb-8 md:mb-16">
           <h2
-            className="text-[19px] sm:text-3xl md:text-5xl font-serif text-brand-dark uppercase tracking-tight mb-4 md:mb-6"
-            style={{ fontFamily: 'var(--font-cinzel), serif' }}
+            className="text-[19px] sm:text-3xl md:text-5xl font-sans text-brand-dark uppercase tracking-tight mb-4 md:mb-6"
+            
           >
             Our Joinery Team Is At Work
           </h2>

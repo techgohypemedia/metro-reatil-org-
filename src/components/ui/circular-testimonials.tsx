@@ -203,7 +203,7 @@ export const CircularTestimonials = ({
                 style={getImageStyle(index)}
               >
                 <div className="mb-6 scale-125">{testimonial.icon}</div>
-                <h3 className="text-lg font-serif text-brand-dark mb-4 uppercase tracking-widest">{testimonial.name}</h3>
+                <h3 className="text-lg font-sans text-brand-dark mb-4 uppercase tracking-widest">{testimonial.name}</h3>
                 <p className="text-neutral-500 text-sm font-light leading-relaxed">{testimonial.quote}</p>
               </div>
             )
@@ -222,7 +222,7 @@ export const CircularTestimonials = ({
                 transition={{ duration: 0.3, ease: "easeInOut" }}
               >
                 <h3
-                  className="name font-serif uppercase tracking-widest"
+                  className="name font-sans uppercase tracking-widest"
                   style={{ color: colorName, fontSize: fontSizeName }}
                 >
                   {activeTestimonial.name}

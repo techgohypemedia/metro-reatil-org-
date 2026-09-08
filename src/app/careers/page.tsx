@@ -47,20 +47,20 @@ export default async function CareersPage() {
               Careers
             </span>
             <h1
-              className="hero-title-1 font-serif text-white mb-4 uppercase tracking-tight text-center"
-              style={{ fontFamily: 'var(--font-cinzel), serif' }}
+              className="hero-title-1 font-sans text-white mb-4 uppercase tracking-tight text-center"
+              
             >
               Join the{" "}
               <span
                 className="text-brand-gold italic font-normal block md:inline mt-2 md:mt-0"
-                style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}
+                
               >
                 Metro Team
               </span>
             </h1>
             <p
               className="hidden md:block text-neutral-300 text-sm md:text-lg font-light max-w-2xl leading-relaxed mx-auto text-center"
-              style={{ fontFamily: 'var(--font-playfair), serif', fontStyle: 'italic' }}
+              
             >
               Future openings at Metro Retail Solutions will be posted soon. Explore the teams behind our premium fitout, joinery and interior design work.
             </p>
@@ -75,8 +75,8 @@ export default async function CareersPage() {
       <section className="py-12 md:py-24 bg-neutral-50 text-brand-dark" id="open-positions">
         <div className="w-full px-6">
           <div className="mb-8 md:mb-16 text-center">
-            <h2 className="section-title text-brand-dark mb-8" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-              Careers Will Be <span className="text-brand-gold italic font-normal ml-2" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>Posted Soon</span>
+            <h2 className="section-title text-brand-dark mb-8" >
+              Careers Will Be <span className="text-brand-gold italic font-normal ml-2" >Posted Soon</span>
             </h2>
             <p className="text-neutral-500 leading-[1.8] text-lg font-light max-w-2xl mx-auto">
               We are preparing the next set of vacancies for Metro Retail Solutions. Use the search and filters below to explore the career areas most relevant to our design, fitout, carpentry and project delivery teams.
@@ -90,7 +90,7 @@ export default async function CareersPage() {
                 <span className="inline-block px-3 py-1 bg-neutral-100 text-neutral-600 text-sm font-semibold rounded-sm mb-4">
                   No live vacancies yet
                 </span>
-                <h3 className="text-2xl font-bold mb-2 uppercase tracking-tight" style={{ fontFamily: 'var(--font-cinzel), serif' }}>Current openings will be announced soon.</h3>
+                <h3 className="text-2xl font-bold mb-2 uppercase tracking-tight" >Current openings will be announced soon.</h3>
                 <p className="text-neutral-600">Until then, you can review our application process and send your CV for future consideration.</p>
               </div>
               <a href="#apply" className="shrink-0 px-8 py-3 bg-brand-gold hover:bg-yellow-600 text-white font-semibold rounded-sm transition-colors">
@@ -103,7 +103,7 @@ export default async function CareersPage() {
                 <span className="inline-block px-3 py-1 bg-brand-gold/10 text-brand-gold text-sm font-semibold rounded-sm mb-4">
                   We are hiring!
                 </span>
-                <h3 className="text-2xl font-bold mb-2 uppercase tracking-tight" style={{ fontFamily: 'var(--font-cinzel), serif' }}>Join our growing team.</h3>
+                <h3 className="text-2xl font-bold mb-2 uppercase tracking-tight" >Join our growing team.</h3>
                 <p className="text-neutral-600">Review the open positions below and submit your application through the form.</p>
               </div>
               <a href="#apply" className="shrink-0 px-8 py-3 bg-brand-gold hover:bg-yellow-600 text-white font-semibold rounded-sm transition-colors">
@@ -120,8 +120,8 @@ export default async function CareersPage() {
       <section className="py-12 md:py-24 bg-white text-brand-dark">
         <div className="w-full px-6">
           <div className="mb-8 md:mb-16 text-center">
-            <h2 className="section-title text-brand-dark mb-8" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-              Our Hiring <span className="text-brand-gold italic font-normal ml-2" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>Process</span>
+            <h2 className="section-title text-brand-dark mb-8" >
+              Our Hiring <span className="text-brand-gold italic font-normal ml-2" >Process</span>
             </h2>
             <p className="text-neutral-500 leading-[1.8] text-lg font-light max-w-2xl mx-auto">
               While current roles are being prepared, here is the process candidates can expect once openings are published.
@@ -131,10 +131,10 @@ export default async function CareersPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 text-center md:text-left">
             {processSteps.map((step, index) => (
               <div key={index} className="relative flex flex-col items-center md:items-start">
-                <div className="text-6xl font-bold text-neutral-100 mb-6 font-serif tracking-wide uppercase">
+                <div className="text-6xl font-bold text-neutral-100 mb-6 font-sans tracking-wide uppercase">
                   {step.step}
                 </div>
-                <h3 className="text-xl font-bold mb-4 font-serif tracking-wide uppercase text-brand-dark">{step.title}</h3>
+                <h3 className="text-xl font-bold mb-4 font-sans tracking-wide uppercase text-brand-dark">{step.title}</h3>
                 <p className="text-neutral-600 leading-relaxed text-center md:text-left">
                   {step.desc}
                 </p>
@@ -149,8 +149,8 @@ export default async function CareersPage() {
         <div className="w-full px-6">
           <div className="flex flex-col lg:flex-row items-start gap-8 md:gap-16">
             <div className="w-full lg:w-1/2 lg:sticky lg:top-32">
-              <h2 className="section-title text-white mb-6" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-                Join the <span className="text-brand-gold italic font-normal ml-2" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>Metro Legacy</span>
+              <h2 className="section-title text-white mb-6" >
+                Join the <span className="text-brand-gold italic font-normal ml-2" >Metro Legacy</span>
               </h2>
               <p className="text-neutral-400 text-base mb-8 leading-relaxed">
                 If your experience aligns with Metro Retail Solutions, submit your profile here. We hire exceptional designers, detail-oriented project managers, expert carpenters, and technical engineers.
@@ -180,11 +180,11 @@ export default async function CareersPage() {
               <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row gap-4 md:gap-8">
                 <div>
                   <h3 className="text-brand-gold text-[10px] font-bold uppercase tracking-widest mb-1.5">Direct Careers Email</h3>
-                  <a href="mailto:careers@metroretailsolutions.com" className="text-sm font-serif tracking-wide uppercase hover:text-brand-gold transition-colors">careers@metroretailsolutions.com</a>
+                  <a href="mailto:careers@metroretailsolutions.com" className="text-sm font-sans tracking-wide uppercase hover:text-brand-gold transition-colors">careers@metroretailsolutions.com</a>
                 </div>
                 <div>
                   <h3 className="text-brand-gold text-[10px] font-bold uppercase tracking-widest mb-1.5">Careers Hotline</h3>
-                  <a href="tel:+918800607967" className="text-sm font-serif tracking-wide uppercase hover:text-brand-gold transition-colors whitespace-nowrap">+91 8800607967</a>
+                  <a href="tel:+918800607967" className="text-sm font-sans tracking-wide uppercase hover:text-brand-gold transition-colors whitespace-nowrap">+91 8800607967</a>
                 </div>
               </div>
             </div>
@@ -199,8 +199,8 @@ export default async function CareersPage() {
       <section className="py-12 md:py-24 bg-neutral-50 border-t border-neutral-100 text-center">
         <div className="w-full px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="section-title text-brand-dark mb-6" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-              Ready to Discuss <span className="text-brand-gold italic font-normal ml-2" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>a Project?</span>
+            <h2 className="section-title text-brand-dark mb-6" >
+              Ready to Discuss <span className="text-brand-gold italic font-normal ml-2" >a Project?</span>
             </h2>
             <p className="text-neutral-500 leading-[1.8] text-lg font-light mb-6 md:mb-10 max-w-lg mx-auto">
               For project enquiries, book a site visit with our fitout and joinery specialists.

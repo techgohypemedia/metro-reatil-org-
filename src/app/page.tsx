@@ -10,7 +10,6 @@ import ExpertiseSection from '../components/home/ExpertiseSection';
 import ServicesSlider from '../components/home/ServicesSlider';
 import FeaturedFitouts from '../components/home/FeaturedFitouts';
 import VideoSeparator from '../components/home/VideoSeparator';
-import ManufacturingSection from '../components/home/ManufacturingSection';
 import FullServicesSection from '../components/home/FullServicesSection';
 import Testimonials from '../components/home/Testimonials';
 import WhatsAppCTA from '../components/home/WhatsAppCTA';
@@ -48,7 +47,6 @@ export default function Page() {
           title="Engineered to Perfection"
         />
 
-        <ManufacturingSection />
         <ClientsSection />
 
         <FullServicesSection />

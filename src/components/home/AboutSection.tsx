@@ -21,8 +21,8 @@ const AboutSection = () => {
             {/* Floating Badge */}
             <div className="absolute -bottom-8 -right-8 bg-white/95 backdrop-blur-sm p-6 rounded-sm shadow-[0_20px_50px_rgba(0,0,0,0.1)] flex items-center gap-5 border-l-4 border-brand-gold hidden sm:flex transform transition-transform duration-700 group-hover:-translate-y-2">
               <div>
-                <div className="text-4xl font-light text-brand-dark" style={{ fontFamily: 'var(--font-playfair), serif' }}>25+</div>
-                <div className="text-[11px] font-bold uppercase tracking-[0.2em] text-neutral-500 mt-1">Years of<br />Excellence</div>
+                <div className="text-4xl font-light text-brand-dark" >25+</div>
+                <div className="text-[11px] font-medium uppercase tracking-[0.2em] text-neutral-500 mt-1">Years of<br />Excellence</div>
               </div>
             </div>
           </div>
@@ -31,14 +31,14 @@ const AboutSection = () => {
           <div className="lg:col-span-5 lg:pl-6 xl:pl-10 relative z-10 flex flex-col items-center text-center lg:items-start lg:text-left">
             {/* Mobile Heading */}
             <div className="block lg:hidden text-center mb-8 relative z-10">
-              <h2 className="section-title text-brand-dark w-full" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-                EXECUTING <span className="text-brand-gold italic font-normal ml-2 whitespace-nowrap" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>Turnkey Fit-Outs</span>
+              <h2 className="section-title text-brand-dark w-full">
+                EXECUTING <span className="text-brand-gold italic font-normal ml-2">Turnkey Fit-Outs</span>
               </h2>
             </div>
 
-            <h2 className="hidden lg:block section-title text-brand-dark w-full mb-6 md:mb-8" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
+            <h2 className="hidden lg:block section-title text-brand-dark w-full mb-6 md:mb-8">
               EXECUTING <br />
-              <span className="text-brand-gold italic block mt-2 whitespace-nowrap" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>Turnkey Fit-Outs</span>
+              <span className="text-brand-gold italic font-normal block mt-2">Turnkey Fit-Outs</span>
             </h2>
 
             {/* Mobile Image (hidden on lg) */}
@@ -58,25 +58,25 @@ const AboutSection = () => {
             </p>
 
             <ul className="grid grid-cols-2 gap-3 md:gap-4 xl:gap-6 mb-8 md:mb-8 xl:mb-12 w-full text-left">
-               <li className="flex items-start justify-start gap-2 xl:gap-3 text-brand-dark text-[8px] sm:text-[10px] xl:text-xs font-bold uppercase tracking-widest">
+               <li className="flex items-start justify-start gap-2 xl:gap-3 text-brand-dark text-[8px] sm:text-[10px] xl:text-xs font-semibold uppercase tracking-widest">
                   <CheckCircle size={14} className="text-brand-gold w-3 h-3 xl:w-4 xl:h-4 shrink-0 mt-[1px] md:mt-0" />
                   <span>In-House Manufacturing</span>
                </li>
-               <li className="flex items-start justify-start gap-2 xl:gap-3 text-brand-dark text-[8px] sm:text-[10px] xl:text-xs font-bold uppercase tracking-widest">
+               <li className="flex items-start justify-start gap-2 xl:gap-3 text-brand-dark text-[8px] sm:text-[10px] xl:text-xs font-semibold uppercase tracking-widest">
                   <CheckCircle size={14} className="text-brand-gold w-3 h-3 xl:w-4 xl:h-4 shrink-0 mt-[1px] md:mt-0" />
                   <span>24x7 Operations</span>
                </li>
-               <li className="flex items-start justify-start gap-2 xl:gap-3 text-brand-dark text-[8px] sm:text-[10px] xl:text-xs font-bold uppercase tracking-widest">
+               <li className="flex items-start justify-start gap-2 xl:gap-3 text-brand-dark text-[8px] sm:text-[10px] xl:text-xs font-semibold uppercase tracking-widest">
                   <CheckCircle size={14} className="text-brand-gold w-3 h-3 xl:w-4 xl:h-4 shrink-0 mt-[1px] md:mt-0" />
                   <span>Pan India Presence</span>
                </li>
-               <li className="flex items-start justify-start gap-2 xl:gap-3 text-brand-dark text-[8px] sm:text-[10px] xl:text-xs font-bold uppercase tracking-widest">
+               <li className="flex items-start justify-start gap-2 xl:gap-3 text-brand-dark text-[8px] sm:text-[10px] xl:text-xs font-semibold uppercase tracking-widest">
                   <CheckCircle size={14} className="text-brand-gold w-3 h-3 xl:w-4 xl:h-4 shrink-0 mt-[1px] md:mt-0" />
                   <span>Complete MEP & Civil</span>
                </li>
             </ul>
 
-            <a href="/about" className="inline-flex items-center justify-center gap-2 md:gap-3 xl:gap-4 px-4 py-2 sm:px-6 md:px-8 sm:py-2.5 md:py-3 text-[8px] sm:text-[9px] font-bold uppercase tracking-widest bg-brand-dark text-white hover:bg-brand-gold transition-all rounded-full w-[max-content]">
+            <a href="/about" className="inline-flex items-center justify-center gap-2 md:gap-3 xl:gap-4 px-4 py-2 sm:px-6 md:px-8 sm:py-2.5 md:py-3 text-[8px] sm:text-[9px] font-semibold uppercase tracking-widest bg-brand-dark text-white hover:bg-brand-gold transition-all rounded-full w-[max-content]">
               Discover Our Story <ArrowRight size={14} className="w-3 h-3 xl:w-4 xl:h-4 shrink-0" />
             </a>
           </div>

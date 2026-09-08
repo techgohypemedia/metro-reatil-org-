@@ -48,20 +48,20 @@ export default function ContactPage() {
               Get In Touch
             </span>
             <h1
-              className="hero-title-1 font-serif text-white mb-4 uppercase tracking-tight text-center"
-              style={{ fontFamily: 'var(--font-cinzel), serif' }}
+              className="hero-title-1 font-sans text-white mb-4 uppercase tracking-tight text-center"
+              
             >
               LET'S DISCUSS YOUR{" "}
               <span
                 className="text-brand-gold italic font-normal normal-case block md:inline mt-1 md:mt-0"
-                style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}
+                
               >
                 Next Project
               </span>
             </h1>
             <p
               className="hidden md:block text-neutral-300 text-sm md:text-lg font-light max-w-2xl leading-relaxed mx-auto text-center"
-              style={{ fontFamily: 'var(--font-playfair), serif', fontStyle: 'italic' }}
+              
             >
               Contact Metro Retail for office and showroom fitouts.
             </p>
@@ -78,8 +78,8 @@ export default function ContactPage() {
             <div className="lg:col-span-7">
               <div className="bg-brand-dark p-6 md:p-8 xl:p-12">
                 <h2
-                  className="text-xl sm:text-2xl md:text-4xl xl:text-5xl font-serif text-white mb-6 md:mb-10 xl:mb-16 uppercase tracking-tight text-center md:text-left"
-                  style={{ fontFamily: "var(--font-cinzel), serif" }}
+                  className="text-xl sm:text-2xl md:text-4xl xl:text-5xl font-sans text-white mb-6 md:mb-10 xl:mb-16 uppercase tracking-tight text-center md:text-left"
+                  
                 >
                   Send Us a Message
                 </h2>
@@ -93,8 +93,8 @@ export default function ContactPage() {
               {/* Info Cards */}
               <div className="bg-neutral-50 px-6 py-8 md:p-8 xl:p-12 border border-neutral-100">
                 <h2
-                  className="text-xl font-serif text-brand-dark mb-6 md:mb-8 xl:mb-10 uppercase tracking-tight text-center md:text-left"
-                  style={{ fontFamily: "var(--font-cinzel), serif" }}
+                  className="text-xl font-sans text-brand-dark mb-6 md:mb-8 xl:mb-10 uppercase tracking-tight text-center md:text-left"
+                  
                 >
                   Contact Information
                 </h2>
@@ -128,8 +128,8 @@ export default function ContactPage() {
               <div className="px-6 py-8 md:p-8 xl:p-12 bg-brand-dark text-white relative overflow-hidden text-center md:text-left flex flex-col items-center md:items-start">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-brand-gold/10 blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
                 <h3
-                  className="text-xl font-serif mb-4 uppercase tracking-tight"
-                  style={{ fontFamily: "var(--font-cinzel), serif" }}
+                  className="text-xl font-sans mb-4 uppercase tracking-tight"
+                  
                 >
                   Follow Our Work
                 </h3>
@@ -183,7 +183,7 @@ export default function ContactPage() {
         {/* Floating Address Card - Top Right, Match Map light/gray theme */}
         <div className="absolute top-2 right-2 left-2 md:left-auto md:top-4 md:right-4 md:bottom-auto bg-white/95 text-brand-dark p-6 md:p-8 max-w-sm border border-neutral-200 shadow-2xl backdrop-blur-md">
           <span className="text-brand-gold text-[9px] font-bold uppercase tracking-[0.3em] block mb-3">Our Workshop</span>
-          <h4 className="text-lg font-serif mb-2 uppercase tracking-wide text-brand-dark">Metro Retail Solutions</h4>
+          <h4 className="text-lg font-sans mb-2 uppercase tracking-wide text-brand-dark">Metro Retail Solutions</h4>
           <p className="text-neutral-600 text-xs font-light leading-relaxed mb-6">
             F-1, SITE-5 KASNA, E 147,<br />
             Surajpur Site V, Greater Noida (U.P.)

@@ -250,7 +250,7 @@ export default function CareerForm() {
         <div className="w-16 h-16 bg-brand-gold/10 border border-brand-gold rounded-full flex items-center justify-center mb-6 text-brand-gold animate-bounce">
           <Check size={28} />
         </div>
-        <h3 className="text-2xl font-serif text-white uppercase tracking-wider mb-4" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
+        <h3 className="text-2xl font-sans text-white uppercase tracking-wider mb-4" >
           Application Submitted
         </h3>
         <p className="hidden md:block text-neutral-300 text-sm leading-relaxed max-w-sm mb-8">
@@ -268,7 +268,7 @@ export default function CareerForm() {
 
   return (
     <div className="bg-white/5 border border-white/10 p-4 sm:p-8 lg:p-10 backdrop-blur-md rounded-sm">
-      <h3 className="text-xl md:text-2xl font-serif text-brand-gold uppercase tracking-wider mb-8" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
+      <h3 className="text-xl md:text-2xl font-sans text-brand-gold uppercase tracking-wider mb-8" >
         Submit Your Application
       </h3>
 

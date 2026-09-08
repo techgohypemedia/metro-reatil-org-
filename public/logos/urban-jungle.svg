@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" fill="none">
+  <!-- Exact Geometric Urban Jungle Emblem -->
+  <g transform="translate(6, 4) scale(0.42)">
+    <!-- Top-Left Separate Pillar Block -->
+    <rect x="15" y="18" width="25" height="40" fill="#111111"/>
+    
+    <!-- Connected 'U-J' Lower Curve & Right Wing -->
+    <path d="
+      M 15 68 
+      L 40 68 
+      L 40 80 
+      A 17 17 0 0 0 74 80 
+      L 74 18 
+      L 125 18 
+      L 120 38 
+      L 99 38 
+      L 99 80 
+      A 42 42 0 0 1 15 80 
+      Z
+    " fill="#111111"/>
+  </g>
+  
+  <!-- Urban Jungle Clean Modern Street Typography -->
+  <text x="68" y="27" font-family="'Impact', 'Arial Black', 'Helvetica Neue', sans-serif" font-weight="900" font-size="18" fill="#111111" letter-spacing="2">URBAN</text>
+  <text x="68" y="46" font-family="'Impact', 'Arial Black', 'Helvetica Neue', sans-serif" font-weight="900" font-size="17" fill="#111111" letter-spacing="3.5">JUNGLE</text>
+</svg>

@@ -31,10 +31,13 @@ const COMMERCIAL_LINKS = [
 
 const RETAIL_LINKS = [
   { name: 'OVERVIEW', href: '/portfolio?filter=Retail' },
-  { name: 'KIOSKS', href: '/portfolio?filter=Retail&subFilter=KIOSKS' },
-  { name: 'F & B', href: '/portfolio?filter=Retail&subFilter=F%20%26%20B' },
-  { name: 'CAFES', href: '/portfolio?filter=Retail&subFilter=CAFES' },
-  { name: 'RESTAURANTS', href: '/portfolio?filter=Retail&subFilter=RESTAURANTS' }
+  { name: 'CLOTHING & FASHION', href: '/portfolio?filter=Retail&subFilter=CLOTHING%20AND%20FASHION' },
+  { name: 'LUGGAGES', href: '/portfolio?filter=Retail&subFilter=LUGGAGES' },
+  { name: 'BEAUTY & PERSONAL CARE', href: '/portfolio?filter=Retail&subFilter=BEAUTY%20AND%20PERSONAL%20CARE' },
+  { name: 'ELECTRONICS', href: '/portfolio?filter=Retail&subFilter=ELECTRONICS' },
+  { name: 'JEWELLERY', href: '/portfolio?filter=Retail&subFilter=JEWELLERY' },
+  { name: 'KIDS TOYS', href: '/portfolio?filter=Retail&subFilter=KIDS%20TOYS' },
+  { name: 'WATCHES', href: '/portfolio?filter=Retail&subFilter=WATCHES' }
 ];
 
 const SERVICES_LINKS = [
@@ -212,17 +215,17 @@ export const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex flex-1 justify-center items-center gap-4 xl:gap-5 2xl:gap-8 whitespace-nowrap">
-            <a href="/" className={`shrink-0 text-[9.5px] xl:text-[11px] font-bold tracking-[0.05em] xl:tracking-[0.2em] 2xl:tracking-[0.3em] uppercase transition-colors hover:text-brand-gold ${isSolid ? 'text-brand-dark' : 'text-white'}`}>Home</a>
-            <a href="/portfolio" className={`shrink-0 text-[9.5px] xl:text-[11px] font-bold tracking-[0.05em] xl:tracking-[0.2em] 2xl:tracking-[0.3em] uppercase transition-colors hover:text-brand-gold ${isSolid ? 'text-brand-dark' : 'text-white'}`}>Portfolio</a>
+            <a href="/" className={`shrink-0 text-[9.5px] xl:text-[11px] font-semibold tracking-[0.05em] xl:tracking-[0.2em] 2xl:tracking-[0.3em] uppercase transition-colors hover:text-brand-gold ${isSolid ? 'text-brand-dark' : 'text-white'}`}>Home</a>
+            <a href="/portfolio" className={`shrink-0 text-[9.5px] xl:text-[11px] font-semibold tracking-[0.05em] xl:tracking-[0.2em] 2xl:tracking-[0.3em] uppercase transition-colors hover:text-brand-gold ${isSolid ? 'text-brand-dark' : 'text-white'}`}>Portfolio</a>
 
             <div className="relative py-2 shrink-0" onMouseEnter={() => setActiveMenu('retail')}>
-              <a href="/portfolio?filter=Retail" className={`flex items-center gap-1 text-[9.5px] xl:text-[11px] font-bold tracking-[0.05em] xl:tracking-[0.2em] 2xl:tracking-[0.3em] uppercase transition-colors hover:text-brand-gold ${isSolid ? 'text-brand-dark' : 'text-white'}`}>
+              <a href="/portfolio?filter=Retail" className={`flex items-center gap-1 text-[9.5px] xl:text-[11px] font-semibold tracking-[0.05em] xl:tracking-[0.2em] 2xl:tracking-[0.3em] uppercase transition-colors hover:text-brand-gold ${isSolid ? 'text-brand-dark' : 'text-white'}`}>
                 Retail <ChevronDown size={14} className={`transition-transform duration-300 ${activeMenu === 'retail' ? 'rotate-180' : ''}`} />
               </a>
             </div>
 
             <div className="relative py-2 shrink-0" onMouseEnter={() => setActiveMenu('commercial')}>
-              <a href="/portfolio?filter=Commercial" className={`flex items-center gap-1 text-[9.5px] xl:text-[11px] font-bold tracking-[0.05em] xl:tracking-[0.2em] 2xl:tracking-[0.3em] uppercase transition-colors hover:text-brand-gold ${isSolid ? 'text-brand-dark' : 'text-white'}`}>
+              <a href="/portfolio?filter=Commercial" className={`flex items-center gap-1 text-[9.5px] xl:text-[11px] font-semibold tracking-[0.05em] xl:tracking-[0.2em] 2xl:tracking-[0.3em] uppercase transition-colors hover:text-brand-gold ${isSolid ? 'text-brand-dark' : 'text-white'}`}>
                 Commercial <ChevronDown size={14} className={`transition-transform duration-300 ${activeMenu === 'commercial' ? 'rotate-180' : ''}`} />
               </a>
             </div>
@@ -230,25 +233,25 @@ export const Navbar = () => {
 
 
             <div className="relative py-2 shrink-0" onMouseEnter={() => setActiveMenu('residential')}>
-              <a href="/portfolio?filter=Residential" className={`flex items-center gap-1 text-[9.5px] xl:text-[11px] font-bold tracking-[0.05em] xl:tracking-[0.2em] 2xl:tracking-[0.3em] uppercase transition-colors hover:text-brand-gold ${isSolid ? 'text-brand-dark' : 'text-white'}`}>
+              <a href="/portfolio?filter=Residential" className={`flex items-center gap-1 text-[9.5px] xl:text-[11px] font-semibold tracking-[0.05em] xl:tracking-[0.2em] 2xl:tracking-[0.3em] uppercase transition-colors hover:text-brand-gold ${isSolid ? 'text-brand-dark' : 'text-white'}`}>
                 Residential <ChevronDown size={14} className={`transition-transform duration-300 ${activeMenu === 'residential' ? 'rotate-180' : ''}`} />
               </a>
             </div>
 
             <div className="relative py-2 shrink-0" onMouseEnter={() => setActiveMenu('services')}>
-              <a href="/services" className={`flex items-center gap-1 text-[9.5px] xl:text-[11px] font-bold tracking-[0.05em] xl:tracking-[0.2em] 2xl:tracking-[0.3em] uppercase transition-colors hover:text-brand-gold ${isSolid ? 'text-brand-dark' : 'text-white'}`}>
+              <a href="/services" className={`flex items-center gap-1 text-[9.5px] xl:text-[11px] font-semibold tracking-[0.05em] xl:tracking-[0.2em] 2xl:tracking-[0.3em] uppercase transition-colors hover:text-brand-gold ${isSolid ? 'text-brand-dark' : 'text-white'}`}>
                 Services <ChevronDown size={14} className={`transition-transform duration-300 ${activeMenu === 'services' ? 'rotate-180' : ''}`} />
               </a>
             </div>
 
             <div className="relative py-2 shrink-0" onMouseEnter={() => setActiveMenu('styles')}>
-              <a href="/design-styles" className={`flex items-center gap-1 text-[9.5px] xl:text-[11px] font-bold tracking-[0.05em] xl:tracking-[0.2em] 2xl:tracking-[0.3em] uppercase transition-colors hover:text-brand-gold ${isSolid ? 'text-brand-dark' : 'text-white'}`}>
+              <a href="/design-styles" className={`flex items-center gap-1 text-[9.5px] xl:text-[11px] font-semibold tracking-[0.05em] xl:tracking-[0.2em] 2xl:tracking-[0.3em] uppercase transition-colors hover:text-brand-gold ${isSolid ? 'text-brand-dark' : 'text-white'}`}>
                 Styles <ChevronDown size={14} className={`transition-transform duration-300 ${activeMenu === 'styles' ? 'rotate-180' : ''}`} />
               </a>
             </div>
 
             <div className="relative py-2 shrink-0" onMouseEnter={() => setActiveMenu('more')}>
-              <button onClick={(e) => e.preventDefault()} className={`flex items-center gap-1 text-[9.5px] xl:text-[11px] font-bold tracking-[0.05em] xl:tracking-[0.2em] 2xl:tracking-[0.3em] uppercase transition-colors hover:text-brand-gold ${isSolid ? 'text-brand-dark' : 'text-white'}`}>
+              <button onClick={(e) => e.preventDefault()} className={`flex items-center gap-1 text-[9.5px] xl:text-[11px] font-semibold tracking-[0.05em] xl:tracking-[0.2em] 2xl:tracking-[0.3em] uppercase transition-colors hover:text-brand-gold ${isSolid ? 'text-brand-dark' : 'text-white'}`}>
                 More <ChevronDown size={14} className={`transition-transform duration-300 ${activeMenu === 'more' ? 'rotate-180' : ''}`} />
               </button>
             </div>
@@ -256,7 +259,7 @@ export const Navbar = () => {
 
           {/* Right Actions */}
           <div className="flex items-center gap-4 md:gap-8 shrink-0">
-            <a href="/contact" className={`hidden md:block shrink-0 px-5 py-2.5 xl:px-6 xl:py-3 text-[9px] font-bold uppercase tracking-[0.25em] transition-all duration-500 border ${isSolid
+            <a href="/contact" className={`hidden md:block shrink-0 px-5 py-2.5 xl:px-6 xl:py-3 text-[9px] font-semibold uppercase tracking-[0.25em] transition-all duration-500 border ${isSolid
               ? 'bg-brand-dark text-white border-brand-dark hover:bg-brand-gold hover:border-brand-gold'
               : 'bg-white text-brand-dark border-white hover:bg-transparent hover:text-white'
               }`}>
@@ -304,7 +307,7 @@ export const Navbar = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex justify-between items-center gap-4 mb-12 sm:mb-20 md:mb-24">
-                <img src="/logo.png" alt="Metro Retail" className="h-[30px] w-auto brightness-0 invert" />
+                <img src="/logo.png" alt="Metro Retail" className="h-[30px] w-auto" />
                 <button onClick={() => setIsMobileMenuOpen(false)} className="text-white text-[9px] font-bold uppercase tracking-widest border border-neutral-700 px-5 py-3 hover:bg-neutral-800 transition-colors">Close</button>
               </div>
 

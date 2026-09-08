@@ -48,7 +48,7 @@ const services = [
     id: 'carpentry',
     title: 'Carpentry',
     description: 'Carpentry delivered with precise execution and authority-ready planning.',
-    image: 'https://images.unsplash.com/photo-1534224039826-c7a0dea0e66a?auto=format&fit=crop&q=80&w=600',
+    image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80&w=600',
     tags: ['Bespoke Carpentry', 'Home'],
     href: '/services/carpentry',
   },
@@ -184,7 +184,7 @@ const services = [
     id: 'tile-installation',
     title: 'Tile Installation',
     description: 'Tile Installation delivered with precise execution and authority-ready planning.',
-    image: 'https://images.unsplash.com/photo-1502005229762-fc1b2b812ca5?auto=format&fit=crop&q=80&w=600',
+    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600',
     tags: ['Tile Installation', 'All Sectors'],
     href: '/services/tile-installation',
   },
@@ -246,20 +246,20 @@ export default function ServicesPage() {
               Services
             </span>
             <h1
-              className="hero-title-1 font-serif text-white mb-4 uppercase tracking-tight text-center"
-              style={{ fontFamily: 'var(--font-cinzel), serif' }}
+              className="hero-title-1 font-sans text-white mb-4 uppercase tracking-tight text-center"
+              
             >
               Complete Fitout{" "}
               <span
                 className="text-brand-gold italic font-normal normal-case block md:inline mt-1 md:mt-0"
-                style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}
+                
               >
                 & Interior Transformation
               </span>
             </h1>
             <p
               className="hidden md:block text-neutral-300 text-base md:text-lg font-light max-w-4xl leading-relaxed mx-auto text-center"
-              style={{ fontFamily: 'var(--font-playfair), serif', fontStyle: 'italic' }}
+              
             >
               Book a free consultation and let our experts assess your project. We'll provide a comprehensive proposal with transparent timelines and pricing for your fitout.
             </p>
@@ -286,10 +286,10 @@ export default function ServicesPage() {
 
             {/* Text Section (Right) */}
             <div className="lg:col-span-6 xl:col-span-5 order-1 lg:order-2 lg:pr-8 flex flex-col items-center text-center lg:items-start lg:text-left">
-              <h2 className="mobile-heading-balance text-2xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-serif text-brand-dark uppercase tracking-tight mb-3 text-center lg:text-left" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
+              <h2 className="mobile-heading-balance text-2xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-sans text-brand-dark uppercase tracking-tight mb-3 text-center lg:text-left" >
                 Complete Turnkey Fitout
               </h2>
-              <div className="text-neutral-400 italic text-xl sm:text-2xl mb-8 font-light text-center lg:text-left" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>
+              <div className="text-neutral-400 italic text-xl sm:text-2xl mb-8 font-light text-center lg:text-left" >
                 & Interior Transformation
               </div>
 
@@ -310,8 +310,8 @@ export default function ServicesPage() {
       <section className="py-12 md:py-24 bg-neutral-950 text-white">
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-8 md:mb-16 text-center">
-            <h2 className="mobile-heading-balance text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-serif text-white uppercase tracking-tight" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-              Services We <span className="text-brand-gold italic text-xl sm:text-2xl md:text-4xl lg:text-5xl font-normal ml-2" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>Offer</span>
+            <h2 className="mobile-heading-balance text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-sans text-white uppercase tracking-tight" >
+              Services We <span className="text-brand-gold italic text-xl sm:text-2xl md:text-4xl lg:text-5xl font-normal ml-2" >Offer</span>
             </h2>
           </div>
 

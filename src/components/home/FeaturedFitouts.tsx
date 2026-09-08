@@ -101,8 +101,8 @@ const FeaturedFitouts = () => {
     <section id="featured-fitouts" className="py-12 md:py-16 bg-white relative overflow-hidden">
       <div className="w-full px-6 md:px-16 relative">
         <div className="text-center mb-6 md:mb-8">
-          <h2 className="section-title text-brand-dark mb-6 md:mb-8" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
-            OUR TURNKEY <span className="text-brand-gold italic whitespace-nowrap ml-2" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>Fitout</span>
+          <h2 className="section-title text-brand-dark mb-6 md:mb-8" >
+            OUR TURNKEY <span className="text-brand-gold italic font-normal whitespace-nowrap ml-2" >Fitout</span>
           </h2>
 
           {/* Filter Tabs */}
@@ -115,7 +115,7 @@ const FeaturedFitouts = () => {
                   setActiveFilter(filter);
                   setActiveIndex(0);
                 }}
-                className={`shrink-0 whitespace-nowrap px-3 sm:px-4 py-2 sm:py-3 text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-wider sm:tracking-widest transition-all relative ${
+                className={`shrink-0 whitespace-nowrap px-3 sm:px-4 py-2 sm:py-3 text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider sm:tracking-widest transition-all relative ${
                   activeFilter === filter ? 'text-brand-gold' : 'text-neutral-400 hover:text-brand-dark'
                 }`}
               >
@@ -146,10 +146,10 @@ const FeaturedFitouts = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
 
                   <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                    <span className="text-[9px] font-bold text-brand-gold uppercase tracking-[0.4em] mb-2.5">
+                    <span className="text-[9px] font-semibold text-brand-gold uppercase tracking-[0.4em] mb-2.5">
                       {project.category}
                     </span>
-                    <h3 className="text-xl sm:text-2xl text-white font-serif uppercase tracking-tight mb-4 leading-tight">
+                    <h3 className="text-xl sm:text-2xl text-white font-sans uppercase tracking-tight mb-4 leading-tight">
                       {project.name}
                     </h3>
                     <div className="w-12 h-[1px] bg-brand-gold group-hover:w-20 transition-all duration-500" />
@@ -189,10 +189,10 @@ const FeaturedFitouts = () => {
                       <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
 
                       <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                        <span className="text-[9px] font-bold text-brand-gold uppercase tracking-[0.4em] mb-2.5">
+                        <span className="text-[9px] font-semibold text-brand-gold uppercase tracking-[0.4em] mb-2.5">
                           {project.category}
                         </span>
-                        <h3 className="text-xl sm:text-2xl text-white font-serif uppercase tracking-tight mb-4 leading-tight">
+                        <h3 className="text-xl sm:text-2xl text-white font-sans uppercase tracking-tight mb-4 leading-tight">
                           {project.name}
                         </h3>
                         <div className="w-12 h-[1px] bg-brand-gold group-hover:w-20 transition-all duration-500" />

@@ -203,8 +203,8 @@ const FeaturedFitoutDetail = ({ project, suggestedProjects }: FeaturedFitoutDeta
                 {project.category}
               </span>
               <h1
-                className="text-3xl font-serif uppercase leading-tight tracking-tight text-brand-dark"
-                style={{ fontFamily: 'var(--font-cinzel), serif' }}
+                className="text-3xl font-sans uppercase leading-tight tracking-tight text-brand-dark"
+                
               >
                 {project.name}
               </h1>
@@ -238,8 +238,8 @@ const FeaturedFitoutDetail = ({ project, suggestedProjects }: FeaturedFitoutDeta
                 {project.category}
               </span>
               <h1
-                className="mobile-heading-balance text-2xl sm:text-3xl font-serif uppercase leading-tight tracking-tight text-brand-dark md:text-4xl lg:text-4xl"
-                style={{ fontFamily: 'var(--font-cinzel), serif' }}
+                className="mobile-heading-balance text-2xl sm:text-3xl font-sans uppercase leading-tight tracking-tight text-brand-dark md:text-4xl lg:text-4xl"
+                
               >
                 {project.name}
               </h1>
@@ -247,7 +247,7 @@ const FeaturedFitoutDetail = ({ project, suggestedProjects }: FeaturedFitoutDeta
 
             <p
               className="mb-5 text-lg font-light italic leading-relaxed text-neutral-500"
-              style={{ fontFamily: 'var(--font-playfair), serif' }}
+              
             >
               {project.intro}
             </p>
@@ -272,13 +272,13 @@ const FeaturedFitoutDetail = ({ project, suggestedProjects }: FeaturedFitoutDeta
                   {project.executionTime && (
                     <div>
                       <span className="text-[8px] font-bold uppercase tracking-widest text-neutral-400 block mb-1">Timeframe</span>
-                      <span className="text-xs font-serif uppercase text-brand-dark font-bold">{project.executionTime}</span>
+                      <span className="text-xs font-sans uppercase text-brand-dark font-bold">{project.executionTime}</span>
                     </div>
                   )}
                   {project.projectScale && (
                     <div>
                       <span className="text-[8px] font-bold uppercase tracking-widest text-neutral-400 block mb-1">Physical Scale</span>
-                      <span className="text-xs font-serif uppercase text-brand-dark font-bold">{project.projectScale}</span>
+                      <span className="text-xs font-sans uppercase text-brand-dark font-bold">{project.projectScale}</span>
                     </div>
                   )}
                 </div>
@@ -311,8 +311,8 @@ const FeaturedFitoutDetail = ({ project, suggestedProjects }: FeaturedFitoutDeta
                 Project Photos
               </span>
               <h2 
-                className="mobile-heading-balance text-2xl sm:text-3xl font-serif uppercase leading-tight tracking-tight text-brand-dark md:text-4xl lg:text-4xl"
-                style={{ fontFamily: 'var(--font-cinzel), serif' }}
+                className="mobile-heading-balance text-2xl sm:text-3xl font-sans uppercase leading-tight tracking-tight text-brand-dark md:text-4xl lg:text-4xl"
+                
               >
                 Detailed Views
               </h2>
@@ -393,8 +393,8 @@ const FeaturedFitoutDetail = ({ project, suggestedProjects }: FeaturedFitoutDeta
               Suggested Products
             </span>
               <h2 
-                className="mobile-heading-balance text-2xl sm:text-3xl font-serif uppercase leading-tight tracking-tight text-brand-dark md:text-4xl lg:text-4xl"
-              style={{ fontFamily: 'var(--font-cinzel), serif' }}
+                className="mobile-heading-balance text-2xl sm:text-3xl font-sans uppercase leading-tight tracking-tight text-brand-dark md:text-4xl lg:text-4xl"
+              
             >
               Continue Exploring
             </h2>

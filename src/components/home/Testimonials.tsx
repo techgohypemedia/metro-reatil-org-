@@ -78,7 +78,7 @@ const Testimonials = () => {
             {/* Top Line: WHAT OUR CLIENTS (Black) */}
             <div
               className="section-title text-brand-dark flex justify-center items-center mb-4 flex-wrap"
-              style={{ fontFamily: 'var(--font-cinzel), serif' }}
+              
             >
               {"WHAT OUR CLIENTS".split("").map((char, i) => (
                 <motion.span
@@ -97,8 +97,7 @@ const Testimonials = () => {
 
             {/* Bottom Line: Say About Us (Gold, Italic) */}
             <div
-              className="text-xl sm:text-2xl md:text-4xl xl:text-5xl text-brand-gold italic flex justify-center items-center flex-wrap"
-              style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}
+              className="text-lg sm:text-xl md:text-3xl xl:text-4xl text-brand-gold italic font-normal flex justify-center items-center flex-wrap"
             >
               {"Say About Us".split("").map((char, i) => (
                 <motion.span
@@ -144,7 +143,7 @@ const Testimonials = () => {
                   <img src={t.photo} alt={t.name} className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <h5 className="text-brand-gold font-bold text-sm leading-tight">{t.name}</h5>
+                  <h5 className="text-brand-gold font-semibold text-sm leading-tight">{t.name}</h5>
                   <p className="text-brand-dark/60 text-[10px] uppercase tracking-wider font-medium">{t.role}</p>
                 </div>
               </div>
@@ -181,7 +180,7 @@ const Testimonials = () => {
                   <img src={testimonials[currentIndex].photo} alt={testimonials[currentIndex].name} className="w-full h-full object-cover" />
                 </div>
                 <div className="text-center">
-                  <h5 className="text-brand-gold font-bold text-sm leading-tight">{testimonials[currentIndex].name}</h5>
+                  <h5 className="text-brand-gold font-semibold text-sm leading-tight">{testimonials[currentIndex].name}</h5>
                   <p className="text-brand-dark/60 text-[10px] uppercase tracking-wider font-medium mt-1">{testimonials[currentIndex].role}</p>
                 </div>
               </div>

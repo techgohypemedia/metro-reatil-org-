@@ -6,8 +6,8 @@ export default function NotFound() {
           Page Not Found
         </p>
         <h1
-          className="mobile-heading-balance mb-8 text-4xl font-serif uppercase leading-tight text-brand-dark md:text-6xl"
-          style={{ fontFamily: 'var(--font-cinzel), serif' }}
+          className="mobile-heading-balance mb-8 text-4xl font-sans uppercase leading-tight text-brand-dark md:text-6xl"
+          
         >
           This Page Is Not Available
         </h1>

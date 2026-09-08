@@ -85,39 +85,51 @@ const CATEGORY_DETAILS: Record<string, {
     ]
   },
   "retail": {
-    title: "Retail & F&B Outlets",
-    tagline: "High-Traffic Luxury Sales & Dining Environments",
-    desc: "Leading turnkey visual layouts approved by all major GCC shopping complexes and municipal authorities. We construct stunning facades, boutiques, cafes, and custom dining lounges matching strict safety and design mandates.",
+    title: "Retail Outlets & Boutiques",
+    tagline: "High-Traffic Luxury Sales & Boutique Environments",
+    desc: "Turnkey retail visual layouts approved by all major shopping complexes and mall authorities. We construct stunning flagship boutiques, counters, and specialized displays matching strict safety and design mandates.",
     subcategories: [
       {
-        title: "Mall Boutiques",
-        slug: "mall-boutiques",
-        image: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&q=80&w=800",
-        desc: "Immersive luxury showrooms featuring custom brass details and safety panels."
+        title: "Clothing & Fashion",
+        slug: "clothing-and-fashion",
+        image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800",
+        desc: "Flagship luxury apparel ateliers featuring custom hanging systems, fitting lounges, and lighting."
       },
       {
-        title: "Dining Halls",
-        slug: "dining-halls",
-        image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&q=80&w=800",
-        desc: "Atmospheric dining rooms, custom leather banquettes, and specialized lighting systems."
+        title: "Luggages",
+        slug: "luggages",
+        image: "https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&q=80&w=800",
+        desc: "Heavy-duty modular display gondolas and luggage showroom fixtures."
       },
       {
-        title: "Bar Counters",
-        slug: "bar-counters",
-        image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&q=80&w=800",
-        desc: "Masterfully manufactured carpentry setups with brass fixtures and high-end marble tops."
+        title: "Beauty & Personal Care",
+        slug: "beauty-and-personal-care",
+        image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=800",
+        desc: "High-CRI illuminated makeup vanity bars and bespoke cosmetics consultation counters."
       },
       {
-        title: "High-Street Outlets",
-        slug: "high-street",
-        image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80&w=800",
-        desc: "Grand street-facing facades with highly optimized civil works."
+        title: "Electronics",
+        slug: "electronics",
+        image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&q=80&w=800",
+        desc: "Interactive technology demonstration pods with concealed power/data grids and anti-theft fixtures."
       },
       {
-        title: "Airport Kiosks",
-        slug: "airport-kiosks",
-        image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=800",
-        desc: "Highly-secure, specialized, lightweight, airport boutique modules."
+        title: "Jewellery",
+        slug: "jewellery",
+        image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=800",
+        desc: "Ultra-high security anti-burglary glass display showcases with precision diamond optical illumination."
+      },
+      {
+        title: "Kids Toys",
+        slug: "kids-toys",
+        image: "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&q=80&w=800",
+        desc: "Playful, safe, modular toy displays and experiential pick-a-brick build zones."
+      },
+      {
+        title: "Watches",
+        slug: "watches",
+        image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=800",
+        desc: "High-precision horology showcases with climate-controlled vault storage and luxury viewing lounges."
       }
     ]
   }
@@ -138,13 +150,13 @@ export default function CategoryLandingPage() {
             <span className="text-brand-gold text-[10px] font-bold uppercase tracking-[0.5em] mb-4 block text-center">Metro Portfolio</span>
             <h1
               className="section-title text-brand-dark mb-4 text-center"
-              style={{ fontFamily: 'var(--font-cinzel), serif' }}
+              
             >
               {data.title}
             </h1>
             <p
               className="text-neutral-500 text-lg font-light leading-relaxed mb-6 text-center mx-auto max-w-2xl"
-              style={{ fontFamily: 'var(--font-playfair), serif', fontStyle: 'italic' }}
+              
             >
               {data.tagline}
             </p>
@@ -190,7 +202,7 @@ export default function CategoryLandingPage() {
                   <span className="text-brand-gold text-[8px] font-bold uppercase tracking-[0.4em] mb-2 block">
                     Category Sub-sector
                   </span>
-                  <h3 className="text-2xl font-serif text-brand-dark group-hover:text-brand-gold transition-colors duration-500 uppercase mb-4">
+                  <h3 className="text-2xl font-sans text-brand-dark group-hover:text-brand-gold transition-colors duration-500 uppercase mb-4">
                     {sub.title}
                   </h3>
                   <p className="text-neutral-500 text-sm font-light leading-relaxed mb-6">

@@ -15,15 +15,14 @@ const WhatsAppCTA = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="mobile-heading-balance section-title text-white mb-10 md:mb-12"
-          style={{ fontFamily: 'var(--font-cinzel), serif' }}
         >
-          READY TO TRANSFORM <br /> <span className="text-white italic block mt-2 whitespace-nowrap" style={{ fontFamily: 'var(--font-playfair), serif', textTransform: 'none' }}>Your Property?</span>
+          READY TO TRANSFORM <br /> <span className="text-white italic block mt-2">Your Property?</span>
         </motion.h2>
         <div className="flex flex-col md:flex-row justify-center gap-8">
-          <a href="https://wa.me/918800607967" className="bg-white text-brand-gold px-4 py-2 sm:px-6 md:px-8 sm:py-2.5 md:py-3 text-[8px] sm:text-[9px] font-bold uppercase tracking-widest rounded-full flex items-center justify-center gap-3 md:gap-4 hover:bg-brand-dark hover:text-white transition-all shadow-xl group">
+          <a href="https://wa.me/918800607967" className="bg-white text-brand-gold px-4 py-2 sm:px-6 md:px-8 sm:py-2.5 md:py-3 text-[8px] sm:text-[9px] font-semibold uppercase tracking-widest rounded-full flex items-center justify-center gap-3 md:gap-4 hover:bg-brand-dark hover:text-white transition-all shadow-xl group">
             <Phone size={18} /> WhatsApp Now <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform" />
           </a>
-          <a href="tel:+918800607967" className="bg-brand-dark text-white px-4 py-2 sm:px-6 md:px-8 sm:py-2.5 md:py-3 text-[8px] sm:text-[9px] font-bold uppercase tracking-widest rounded-full flex items-center justify-center gap-3 md:gap-4 hover:bg-white hover:text-brand-dark transition-all shadow-xl group">
+          <a href="tel:+918800607967" className="bg-brand-dark text-white px-4 py-2 sm:px-6 md:px-8 sm:py-2.5 md:py-3 text-[8px] sm:text-[9px] font-semibold uppercase tracking-widest rounded-full flex items-center justify-center gap-3 md:gap-4 hover:bg-white hover:text-brand-dark transition-all shadow-xl group">
             Call Us Today <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform" />
           </a>
         </div>

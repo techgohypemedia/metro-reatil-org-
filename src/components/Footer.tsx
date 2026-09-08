@@ -28,7 +28,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="col-span-1 lg:col-span-3 xl:col-span-2">
-            <h4 className="text-[10px] font-bold uppercase tracking-[0.5em] text-white mb-4 border-b border-white/10 pb-2">Quick Links</h4>
+            <h4 className="text-[10px] font-semibold uppercase tracking-[0.5em] text-white mb-4 border-b border-white/10 pb-2">Quick Links</h4>
             <ul className="space-y-4">
               {[
                 { name: 'Home', href: '/' },
@@ -39,7 +39,7 @@ const Footer = () => {
                 { name: 'Contact', href: '/contact' }
               ].map((item) => (
                 <li key={item.name}>
-                  <a href={item.href} className="text-neutral-400 text-[11px] font-bold uppercase tracking-widest hover:text-brand-gold transition-all duration-300">
+                  <a href={item.href} className="text-neutral-400 text-[11px] font-semibold uppercase tracking-widest hover:text-brand-gold transition-all duration-300">
                     {item.name}
                   </a>
                 </li>
@@ -49,7 +49,7 @@ const Footer = () => {
 
           {/* Services */}
           <div className="col-span-1 lg:col-span-3 xl:col-span-2">
-            <h4 className="text-[10px] font-bold uppercase tracking-[0.5em] text-white mb-4 border-b border-white/10 pb-2">Services</h4>
+            <h4 className="text-[10px] font-semibold uppercase tracking-[0.5em] text-white mb-4 border-b border-white/10 pb-2">Services</h4>
             <ul className="space-y-4">
               {[
                 { name: 'Fitouts', href: '/services/fitout' },
@@ -58,7 +58,7 @@ const Footer = () => {
                 { name: 'Bespoke Carpentry', href: '/services/carpentry' }
               ].map((item) => (
                 <li key={item.name}>
-                  <a href={item.href} className="text-neutral-400 text-[11px] font-bold uppercase tracking-widest hover:text-brand-gold transition-all duration-300">
+                  <a href={item.href} className="text-neutral-400 text-[11px] font-semibold uppercase tracking-widest hover:text-brand-gold transition-all duration-300">
                     {item.name}
                   </a>
                 </li>
@@ -68,7 +68,7 @@ const Footer = () => {
 
           {/* Contact Details */}
           <div className="col-span-2 sm:col-span-1 lg:col-span-6 xl:col-span-2 lg:mt-8 xl:mt-0">
-            <h4 className="text-[10px] font-bold uppercase tracking-[0.5em] text-white mb-4 border-b border-white/10 pb-2">Contact Info</h4>
+            <h4 className="text-[10px] font-semibold uppercase tracking-[0.5em] text-white mb-4 border-b border-white/10 pb-2">Contact Info</h4>
             <ul className="space-y-5">
               <li className="flex items-start gap-3 group">
                 <MapPin size={15} className="text-brand-gold shrink-0 mt-0.5" />
@@ -76,20 +76,20 @@ const Footer = () => {
                   href="https://www.google.com/maps/search/?api=1&query=F-1,+SITE-5+KASNA,+Greater+Noida,+Uttar+Pradesh+201312"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-neutral-400 text-[11px] font-bold uppercase tracking-widest leading-relaxed hover:text-white transition-colors"
+                  className="text-neutral-400 text-[11px] font-semibold uppercase tracking-widest leading-relaxed hover:text-white transition-colors"
                 >
                   F-1, SITE-5 KASNA, <br />Greater Noida (U.P.)
                 </a>
               </li>
               <li className="flex items-center gap-3 group">
                 <Phone size={15} className="text-brand-gold shrink-0" />
-                <a href="tel:+918800607967" className="text-neutral-400 text-[11px] font-bold uppercase tracking-widest hover:text-white transition-colors">
+                <a href="tel:+918800607967" className="text-neutral-400 text-[11px] font-semibold uppercase tracking-widest hover:text-white transition-colors">
                   +91 8800607967
                 </a>
               </li>
               <li className="flex items-center gap-3 group">
                 <Mail size={15} className="text-brand-gold shrink-0" />
-                <a href="mailto:info@metroretail.ae" className="text-neutral-400 text-[11px] font-bold uppercase tracking-widest hover:text-white transition-colors lowercase">
+                <a href="mailto:info@metroretail.ae" className="text-neutral-400 text-[11px] font-semibold uppercase tracking-widest hover:text-white transition-colors lowercase">
                   info@metroretail.ae
                 </a>
               </li>
@@ -98,7 +98,7 @@ const Footer = () => {
                   href="https://wa.me/918800607967"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 border border-brand-gold text-brand-gold text-[9px] font-bold uppercase tracking-widest hover:bg-brand-gold hover:text-brand-dark transition-all duration-300 whitespace-nowrap"
+                  className="inline-flex items-center gap-2 px-4 py-2 border border-brand-gold text-brand-gold text-[9px] font-semibold uppercase tracking-widest hover:bg-brand-gold hover:text-brand-dark transition-all duration-300 whitespace-nowrap"
                 >
                   <MessageCircle size={12} /> WhatsApp Us
                 </a>
