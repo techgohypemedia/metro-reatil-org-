@@ -5,6 +5,18 @@ import React from 'react';
 import Magnetic from '../Magnetic';
 
 const Hero = ({ isLoaded }: { isLoaded: boolean }) => {
+  const videoRef = React.useRef<HTMLVideoElement>(null);
+
+  React.useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 1.25;
+    }
+  }, []);
+
+  const handleVideoRate = (e: React.SyntheticEvent<HTMLVideoElement>) => {
+    e.currentTarget.playbackRate = 1.25;
+  };
+
   return (
     <section className="relative min-h-[680px] h-[100svh] flex items-center justify-center overflow-hidden bg-brand-dark">
       {/* Background with Subtle Zoom */}
@@ -18,11 +30,19 @@ const Hero = ({ isLoaded }: { isLoaded: boolean }) => {
         className="absolute inset-0 z-0 bg-brand-dark"
       >
         <div className="hero-overlay" />
-        <img
-          src="/hero.webp"
-          alt="Luxury Mall Retail Interior"
+        <video
+          ref={videoRef}
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/hero.webp"
+          onLoadedMetadata={handleVideoRate}
+          onPlay={handleVideoRate}
           className="w-full h-full object-cover object-center"
-        />
+        >
+          <source src="/METRO%20RETAIL%20HOME%20PAGE%20VIDEO%201.mp4" type="video/mp4" />
+        </video>
       </motion.div>
 
       <div className="relative z-20 text-center px-6 max-w-5xl">
@@ -87,16 +107,7 @@ const Hero = ({ isLoaded }: { isLoaded: boolean }) => {
         </motion.div>
       </div>
 
-      {/* Subtle Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={isLoaded ? { opacity: 1 } : {}}
-        transition={{ delay: 2 }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4"
-      >
-        <span className="text-white/30 text-[9px] uppercase tracking-[0.4em] rotate-90 origin-left translate-x-2">Scroll</span>
-        <div className="w-[1px] h-12 bg-gradient-to-b from-brand-gold to-transparent" />
-      </motion.div>
+
     </section>
   );
 };
