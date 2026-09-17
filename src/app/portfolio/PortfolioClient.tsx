@@ -412,19 +412,24 @@ export default function PortfolioClient({ initialProjects }: { initialProjects: 
     >
 
       {/* ── Hero Banner ── */}
-      <section className="relative h-[35vh] md:h-[60vh] min-h-[300px] md:min-h-[440px] overflow-hidden flex items-center justify-center bg-brand-dark">
-        <motion.img
+      <section className="relative h-[calc(100svh-5rem)] min-h-[440px] overflow-hidden flex items-center justify-center bg-brand-dark">
+        <motion.video
           initial={{ scale: 1.15, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{
             opacity: { duration: 1.8, ease: "easeOut" },
             scale: { duration: 8, ease: [0.25, 1, 0.5, 1] }
           }}
-          src="/hero/contemporary_commercial_fitout_1785750899227.png"
-          alt="Metro Portfolio"
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/hero/contemporary_commercial_fitout_1785750899227.png"
+          aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="hero-overlay" />
+        >
+          <source src="/metro%20retail%20portfolio%20page%20video.mp4" type="video/mp4" />
+        </motion.video>
 
 
         <div className="relative w-full px-6 md:px-12 z-10 w-full">
