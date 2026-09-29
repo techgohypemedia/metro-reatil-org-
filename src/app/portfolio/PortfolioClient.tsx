@@ -84,7 +84,7 @@ const CompanyProfile = () => {
           Metro Retail Solutions
         </h2>
         <p className="text-neutral-600 text-sm md:text-xl font-light leading-relaxed mb-6 md:mb-12">
-          We are a turnkey fit-out company handling complete MEP, civil, and interior works, with over 25+ years of experience and having in-house manufacturing of complete modular fixtures (wooden, metal, powder coat units, etc.).
+          We are a turnkey fit-out company handling complete MEP, civil, CNC cutting, and interior works, with over 28+ years of experience and having in-house manufacturing of complete modular fixtures (wooden, metal, powder coat units, etc.).
         </p>
 
         <div className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-12">

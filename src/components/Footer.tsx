@@ -89,8 +89,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-3 group">
                 <Mail size={15} className="text-brand-gold shrink-0" />
-                <a href="mailto:info@metroretail.ae" className="text-neutral-400 text-[11px] font-semibold uppercase tracking-widest hover:text-white transition-colors lowercase">
-                  info@metroretail.ae
+                <a href="mailto:metrosolutions1@gmail.com" className="text-neutral-400 text-[11px] font-bold uppercase tracking-widest hover:text-white transition-colors lowercase">
+                  metrosolutions1@gmail.com
                 </a>
               </li>
               <li className="pt-2">

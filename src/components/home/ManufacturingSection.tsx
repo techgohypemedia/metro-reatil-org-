@@ -53,7 +53,7 @@ const ManufacturingSection = () => {
             </h2>
             <div className="text-neutral-500 text-sm xl:text-base font-light leading-relaxed max-w-xl text-center lg:text-left space-y-4">
               <p>
-                Metro Retail has 25+ years of experience, a 9K square feet factory size, and 100+ master artisans, guaranteeing delivery within 45 days.
+                Metro Retail has 28+ years of experience, a 9K square feet factory size, and 100+ master artisans, guaranteeing delivery within 45 days.
               </p>
               <p>
                 Having our own manufacturing facility allows us to maintain strict quality control, optimize production timelines, and deliver bespoke carpentry that perfectly matches the design intent. We eliminate third-party dependencies to ensure your project is completed flawlessly.
@@ -61,7 +61,7 @@ const ManufacturingSection = () => {
             </div>
             <div className="grid grid-cols-3 gap-3 md:gap-8 text-center lg:text-left w-full mt-4">
               <div>
-                <span className="text-2xl md:text-4xl font-sans text-brand-gold mb-2 block"><CountUp end={25} suffix="+" /></span>
+                <span className="text-2xl md:text-4xl font-serif text-brand-gold mb-2 block"><CountUp end={28} suffix="+" /></span>
                 <span className="text-[8px] md:text-[10px] font-bold uppercase tracking-widest text-brand-dark">Years of Experience</span>
               </div>
               <div>

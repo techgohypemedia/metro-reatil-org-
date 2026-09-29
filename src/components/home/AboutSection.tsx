@@ -21,8 +21,8 @@ const AboutSection = () => {
             {/* Floating Badge */}
             <div className="absolute -bottom-8 -right-8 bg-white/95 backdrop-blur-sm p-6 rounded-sm shadow-[0_20px_50px_rgba(0,0,0,0.1)] flex items-center gap-5 border-l-4 border-brand-gold hidden sm:flex transform transition-transform duration-700 group-hover:-translate-y-2">
               <div>
-                <div className="text-4xl font-light text-brand-dark" >25+</div>
-                <div className="text-[11px] font-medium uppercase tracking-[0.2em] text-neutral-500 mt-1">Years of<br />Excellence</div>
+                <div className="text-4xl font-light text-brand-dark" style={{ fontFamily: 'var(--font-playfair), serif' }}>28+</div>
+                <div className="text-[11px] font-bold uppercase tracking-[0.2em] text-neutral-500 mt-1">Years of<br />Excellence</div>
               </div>
             </div>
           </div>
@@ -52,27 +52,41 @@ const AboutSection = () => {
             </div>
 
             <p className="text-neutral-500 text-sm xl:text-base font-light leading-relaxed mb-6 md:mb-8 xl:mb-12">
-              Metro Retail Solutions is a turnkey fit-out company handling complete MEP, civil, and interior works, with over 25+ years of experience.
+              Metro Retail Solutions is a turnkey fit-out company handling complete MEP, civil, CNC cutting, and interior works, with over 28+ years of experience.
               <br /><br />
-              We feature in-house manufacturing of complete modular fixtures (wooden, metal, and powder coat units) at our dedicated facilities in Delhi and Greater Noida. Equipped with the latest machinery and a skilled technical workforce operating 24x7, we provide exceptional retail fixtures and everything under one roof.
+              We feature in-house manufacturing of complete modular fixtures (wooden, metal, and powder coat units) at our dedicated facilities in Delhi and Greater Noida. Equipped with the latest machinery and a skilled technical workforce operating 24x7, we provide exceptional retail fixtures.
             </p>
+
+            <div className="w-full mb-4 md:mb-6">
+              <h3 className="text-sm md:text-base font-bold text-brand-dark uppercase tracking-widest text-center lg:text-left" style={{ fontFamily: 'var(--font-cinzel), serif' }}>
+                Everything Under One Roof
+              </h3>
+            </div>
 
             <ul className="grid grid-cols-2 gap-3 md:gap-4 xl:gap-6 mb-8 md:mb-8 xl:mb-12 w-full text-left">
                <li className="flex items-start justify-start gap-2 xl:gap-3 text-brand-dark text-[8px] sm:text-[10px] xl:text-xs font-semibold uppercase tracking-widest">
                   <CheckCircle size={14} className="text-brand-gold w-3 h-3 xl:w-4 xl:h-4 shrink-0 mt-[1px] md:mt-0" />
-                  <span>In-House Manufacturing</span>
+                  <span>Metal Work</span>
                </li>
                <li className="flex items-start justify-start gap-2 xl:gap-3 text-brand-dark text-[8px] sm:text-[10px] xl:text-xs font-semibold uppercase tracking-widest">
                   <CheckCircle size={14} className="text-brand-gold w-3 h-3 xl:w-4 xl:h-4 shrink-0 mt-[1px] md:mt-0" />
-                  <span>24x7 Operations</span>
+                  <span>Wooden Work</span>
                </li>
                <li className="flex items-start justify-start gap-2 xl:gap-3 text-brand-dark text-[8px] sm:text-[10px] xl:text-xs font-semibold uppercase tracking-widest">
                   <CheckCircle size={14} className="text-brand-gold w-3 h-3 xl:w-4 xl:h-4 shrink-0 mt-[1px] md:mt-0" />
-                  <span>Pan India Presence</span>
+                  <span>Paint Work</span>
                </li>
                <li className="flex items-start justify-start gap-2 xl:gap-3 text-brand-dark text-[8px] sm:text-[10px] xl:text-xs font-semibold uppercase tracking-widest">
                   <CheckCircle size={14} className="text-brand-gold w-3 h-3 xl:w-4 xl:h-4 shrink-0 mt-[1px] md:mt-0" />
-                  <span>Complete MEP & Civil</span>
+                  <span>Powder Coating</span>
+               </li>
+               <li className="flex items-start justify-start gap-2 xl:gap-3 text-brand-dark text-[8px] sm:text-[10px] xl:text-xs font-bold uppercase tracking-widest">
+                  <CheckCircle size={14} className="text-brand-gold w-3 h-3 xl:w-4 xl:h-4 shrink-0 mt-[1px] md:mt-0" />
+                  <span>CNC Cutting</span>
+               </li>
+               <li className="flex items-start justify-start gap-2 xl:gap-3 text-brand-dark text-[8px] sm:text-[10px] xl:text-xs font-bold uppercase tracking-widest">
+                  <CheckCircle size={14} className="text-brand-gold w-3 h-3 xl:w-4 xl:h-4 shrink-0 mt-[1px] md:mt-0" />
+                  <span>Printing Work</span>
                </li>
             </ul>
 

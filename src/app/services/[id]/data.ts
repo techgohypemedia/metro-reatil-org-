@@ -190,7 +190,7 @@ export const SUBCATEGORY_DATA: Record<string, any> = {
     desc: [
       "A stunning interior is useless if the infrastructure fails. Our certified in-house MEP engineers provide comprehensive mechanical, electrical, and plumbing services that serve as the invisible lifeline of your space. From high-capacity HVAC ducting and smart load distribution to robust sanitary plumbing, we ensure absolute operational reliability.",
       "Our electrical division handles high-voltage distribution, backup generator integration, IT data cabling, and complex server room setups. The mechanical division engineers advanced climate control systems, fresh air handling units, and industrial exhaust hoods for F&B projects. Our plumbing experts manage everything from luxury bathroom piping to commercial grease traps.",
-      "Compliance and safety are our highest priorities. All MEP systems designed and installed by our team undergo rigorous load testing and pressure checks. We manage the entire bureaucratic process, securing approvals and completion certificates directly from local authorities, including DEWA and Civil Defense, guaranteeing a fully legal, safe handover."
+      "Compliance and safety are our highest priorities. All MEP systems designed and installed by our team undergo rigorous load testing and pressure checks. We manage the entire bureaucratic process, securing approvals and completion certificates directly from local authorities, including Civil Defense, guaranteeing a fully legal, safe handover."
     ],
     stats: [
       { label: "Systems Engineered", value: "1,000+", icon: Award },
@@ -200,7 +200,7 @@ export const SUBCATEGORY_DATA: Record<string, any> = {
     process: [
       { step: "Load Calculations", desc: "Engineering exact power consumption, cooling tonnage, and water capacity requirements." },
       { step: "First Fix Routing", desc: "Laying internal concealed pipes, electrical conduits, and large HVAC galvanized ducting." },
-      { step: "Authority Inspections", desc: "Submitting schematics and securing site approvals from DEWA, Civil Defense, and local bodies." },
+      { step: "Authority Inspections", desc: "Submitting schematics and securing site approvals from, Civil Defense, and local bodies." },
       { step: "Second Fix & Testing", desc: "Installing fixtures, lighting, switches, and performing final pressure and electrical load tests." }
     ],
     gallery: ["https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80", "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80", "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80", "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&q=80"]
@@ -264,96 +264,80 @@ export const SUBCATEGORY_DATA: Record<string, any> = {
         img: "/images/fitout_dubai_r2/structural.webp",
         title: "Structural Modifications",
         description: "Precision structural modifications to reconfigure layouts for residential and commercial spaces.",
-        tags: [
-          "LoadBearingWalls",
-          "SlabOpenings",
-          "ColumnWrapping"
-        ],
-        bullets: [
-          "Structural modification contractor",
-          "Load bearing wall removal villa",
-          "Luxury apartment structural alteration"
-        ],
+        tags: ["LoadBearingWalls", "SlabOpenings", "ColumnWrapping"],
+        bullets: ["Structural modification contractor", "Load bearing wall removal villa", "Luxury apartment structural alteration"],
         buttonText: "STRUCTURAL MODIFICATIONS →"
       },
       {
         img: "/images/fitout_dubai_r2/lighting.webp",
         title: "Ceiling works and lighting",
         description: "Complete ceiling solutions with integrated lighting for refined interiors.",
-        tags: [
-          "FalseCeilings",
-          "CofferedCeilings",
-          "LEDIntegration"
-        ],
-        bullets: [
-          "False ceiling installation",
-          "Luxury coffered ceiling design villa",
-          "LED ceiling light integration contractor"
-        ],
+        tags: ["FalseCeilings", "CofferedCeilings", "LEDIntegration"],
+        bullets: ["False ceiling installation", "Luxury coffered ceiling design villa", "LED ceiling light integration contractor"],
         buttonText: "CEILING WORKS AND LIGHTING →"
       },
       {
         img: "/images/fitout_dubai_r2/hvac.webp",
         title: "Full MEP and HVAC",
-        description: "Full MEP and HVAC coordination by DEWA certified engineers for peak performance.",
-        tags: [
-          "Ductwork",
-          "ChillerSystems",
-          "FireSafety"
-        ],
-        bullets: [
-          "MEP contractor fitout",
-          "HVAC ductwork installation villa",
-          "DEWA certified MEP engineer"
-        ],
+        description: "Full MEP and HVAC coordination by certified engineers for peak performance.",
+        tags: ["Ductwork", "ChillerSystems", "FireSafety"],
+        bullets: ["MEP contractor fitout", "HVAC ductwork installation villa", "certified MEP engineer"],
         buttonText: "FULL MEP AND HVAC →"
+      },
+      {
+        img: "/images/fitout_dubai_r2/electrical.webp",
+        title: "Electrical rewiring",
+        description: "Complete electrical rewiring and DB upgrades by certified engineers.",
+        tags: ["DBUpgrades", "CircuitInstallation", "AuthorityCompliance"],
+        bullets: ["Electrical rewiring contractor", "approved electrical upgrade villa", "Distribution board upgrade apartment"],
+        buttonText: "ELECTRICAL REWIRING →"
+      },
+      {
+        img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80",
+        title: "Tiling",
+        description: "Premium tiling solutions for floors and walls with meticulous attention to detail.",
+        tags: ["FloorTiling", "WallTiling", "Ceramic"],
+        bullets: ["Premium tile installation", "Custom floor patterns", "Bathroom and kitchen tiling"],
+        buttonText: "TILING →"
+      },
+      {
+        img: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80",
+        title: "Wall Paneling",
+        description: "Custom wall paneling to add texture and depth to your interiors.",
+        tags: ["WoodPaneling", "AcousticPanels", "DecorativePanels"],
+        bullets: ["Custom wood paneling", "Acoustic wall solutions", "Decorative feature walls"],
+        buttonText: "WALL PANELING →"
+      },
+      {
+        img: "https://images.unsplash.com/photo-1562663474-6cbb3eaa4d14?auto=format&fit=crop&q=80",
+        title: "Textured & Paint",
+        description: "High-quality textured finishes and professional painting services.",
+        tags: ["TexturedPaint", "InteriorPainting", "WallFinishes"],
+        bullets: ["Professional interior painting", "Custom textured finishes", "Premium wall coatings"],
+        buttonText: "TEXTURED & Paint →"
+      },
+      {
+        img: "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&q=80",
+        title: "Partitions",
+        description: "Functional and aesthetic space division with custom partition walls.",
+        tags: ["GlassPartitions", "GypsumWalls", "OfficePartitions"],
+        bullets: ["Glass partition systems", "Gypsum wall installation", "Acoustic office partitions"],
+        buttonText: "PARTITIONS →"
       },
       {
         img: "/images/fitout_dubai_r2/drainage.webp",
         title: "Plumbing Drainage",
         description: "Professional plumbing and drainage installation to meet all authority standards.",
-        tags: [
-          "CopperPiping",
-          "PPRPiping",
-          "DrainageSystems"
-        ],
-        bullets: [
-          "Plumbing contractor fitout",
-          "Luxury bathroom plumbing installation",
-          "Drainage system upgrade villa"
-        ],
+        tags: ["CopperPiping", "PPRPiping", "DrainageSystems"],
+        bullets: ["Plumbing contractor fitout", "Luxury bathroom plumbing installation", "Drainage system upgrade villa"],
         buttonText: "PLUMBING DRAINAGE →"
-      },
-      {
-        img: "/images/fitout_dubai_r2/electrical.webp",
-        title: "Electrical rewiring",
-        description: "Complete electrical rewiring and DB upgrades by DEWA certified engineers.",
-        tags: [
-          "DBUpgrades",
-          "CircuitInstallation",
-          "DEWACompliance"
-        ],
-        bullets: [
-          "Electrical rewiring contractor",
-          "DEWA approved electrical upgrade villa",
-          "Distribution board upgrade apartment"
-        ],
-        buttonText: "ELECTRICAL REWIRING →"
       },
       {
         img: "/images/fitout_dubai_r2/smarthome.webp",
         title: "Smart home integration",
         description: "Modern smart home systems for automated lighting, security, and climate control.",
-        tags: [
-          "LightingAutomation",
-          "SecuritySystems",
-          "AVSystems"
-        ],
-        bullets: [
-          "Smart home automation",
-          "Luxury home automation system villa",
-          "KNX smart lighting installation"
-        ],
+        tags: ["LightingAutomation", "SecuritySystems", "AVSystems"],
+        bullets: ["Smart home automation", "Luxury home automation system villa", "KNX smart lighting installation"],
         buttonText: "SMART HOME INTEGRATION →"
       }
     ]
@@ -362,12 +346,21 @@ export const SUBCATEGORY_DATA: Record<string, any> = {
     title: "Bespoke In-House Joinery",
     tagline: "Premium retail showrooms & office fitouts by Metro.",
     heroImage: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80&w=1200",
-    desc: ["Book a free joinery consultation and let our craftsmen assess your requirements. We'll provide detailed designs and transparent pricing for your custom joinery project", "Introducing the Metro Retail SIGNATURE range of Luxury Wardrobes, Kitchens, Cabinets, Vanities and Wall Panels", "Custom bar counters and vanity units crafted for function and style."],
+    desc: ["Book a free joinery consultation and let our craftsmen assess your requirements. We'll provide detailed designs and transparent pricing for your custom joinery project", "Introducing Metro Retail Signature range of luxury Fixtures for your store, Restaurants, Display, Kitchens cabinets, Vanities and wall panels.", "Custom bar counters and vanity units crafted for function and style."],
     stats: [
       { label: "Projects Completed", value: "300+", icon: Award }, { label: "Client Satisfaction", value: "100%", icon: CheckCircle2 }, { label: "Expert Specialists", value: "25+", icon: ShieldCheck }
     ],
     process: [{ "step": "Initial Consultation", "desc": "Understanding your specific requirements for Bespoke In-House Joinery and assessing the space." }, { "step": "Design & Planning", "desc": "Developing tailored solutions, material selection, and precise technical planning." }, { "step": "Execution Phase", "desc": "Our expert technicians install and implement the Bespoke In-House Joinery with meticulous attention to detail." }, { "step": "Final Handover", "desc": "Comprehensive quality checks and final handover to ensure absolute perfection." }],
     gallery: [
+      {
+        slug: "retail-fixtures",
+        img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80",
+        title: "Retail fixtures",
+        description: "Custom retail fixtures for optimal product display and store aesthetics.",
+        tags: ["Retail Fixtures", "Display Units", "Store Fixtures"],
+        bullets: ["Slotted pipe", "GANDOLAS", "Hanging rods", "Modular fixtures", "Niche fixtures"],
+        buttonText: "RETAIL FIXTURES →"
+      },
       {
         slug: "bar-counters-vanities",
         img: "/images/joinery_r2/HALO-bar-counter.webp",
@@ -1078,7 +1071,7 @@ export const SUBCATEGORY_DATA: Record<string, any> = {
     title: "Ready to Install MEP & HVAC?",
     tagline: "Expert retail and office fitouts by Metro Retail!",
     heroImage: "/images/mep_hvac_dubai_r2/electrical.webp",
-    desc: ["Book a free MEP consultation and let our DEWA-certified engineers design your systems. We'll provide a detailed proposal with technical solutions and transparent pricing for MEP works.", "Certified mechanical, electrical, plumbing, and air conditioning works — from rewiring to full MEP installations. Our certified engineers ensure all systems meet Municipality and DEWA standards.", "Electrical Works tailored for reliable and high-quality mep & hvac execution."],
+    desc: ["Book a free MEP consultation and let our certified engineers design your systems. We'll provide a detailed proposal with technical solutions and transparent pricing for MEP works.", "Certified mechanical, electrical, plumbing, and air conditioning works — from rewiring to full MEP installations. Our certified engineers ensure all systems meet Municipality and standards.", "Electrical Works tailored for reliable and high-quality mep & hvac execution."],
     stats: [
       { label: "Projects Completed", value: "300+", icon: Award }, { label: "Client Satisfaction", value: "100%", icon: CheckCircle2 }, { label: "Expert Specialists", value: "25+", icon: ShieldCheck }
     ],
@@ -2883,6 +2876,69 @@ export const NESTED_SERVICE_DATA: Record<string, any> = {
     process: [{ "step": "Initial Consultation", "desc": "Understanding your brand guidelines and space requirements." }, { "step": "Design & Planning", "desc": "Creating retail layouts and 3D visual merchandising plans." }, { "step": "Execution Phase", "desc": "Our team executes the fitout flawlessly." }, { "step": "Final Handover", "desc": "Quality checks and handover for launch." }],
     gallery: [
       {
+        slug: "clothing-and-fashion",
+        img: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&q=80&w=800",
+        title: "Clothing And Fashion",
+        description: "Premium clothing and fashion retail store designs.",
+        tags: ["Clothing", "Fashion", "Retail"],
+        bullets: ["Boutique layout planning", "Apparel display systems", "Fitting room design"],
+        buttonText: "VIEW DETAILS →"
+      },
+      {
+        slug: "luggage",
+        img: "https://images.unsplash.com/photo-1553531384-cc64ac80f931?auto=format&fit=crop&q=80&w=800",
+        title: "Luggage",
+        description: "Specialized retail fitouts for luggage and travel accessories.",
+        tags: ["Luggage", "Travel", "Retail"],
+        bullets: ["Heavy-duty shelving", "Space optimization", "Brand storytelling"],
+        buttonText: "VIEW DETAILS →"
+      },
+      {
+        slug: "beauty-and-personal-care",
+        img: "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&q=80&w=800",
+        title: "Beauty And Personal Care",
+        description: "Completed projects for top brands like Nyka, MAC, Maybelline, and Sephora.",
+        tags: ["Beauty", "Cosmetics", "Retail"],
+        bullets: ["Nyka store fitouts", "MAC & Sephora displays", "Maybelline kiosks"],
+        buttonText: "VIEW DETAILS →"
+      },
+      {
+        slug: "electronics",
+        img: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&q=80&w=800",
+        title: "Electronics",
+        description: "State-of-the-art electronics showrooms for brands like SAMSUNG, CROMA, VIVO, and Apple.",
+        tags: ["Electronics", "Technology", "Retail"],
+        bullets: ["SAMSUNG & VIVO experience zones", "Apple store aesthetics", "CROMA retail layouts"],
+        buttonText: "VIEW DETAILS →"
+      },
+      {
+        slug: "jewellery",
+        img: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=800",
+        title: "Jewellery",
+        description: "Luxury jewellery store fitouts for Blue stone, Malabar, GIVA, MIA, and Caratlane.",
+        tags: ["Jewellery", "Luxury", "Retail"],
+        bullets: ["Blue stone & Caratlane designs", "Malabar gold displays", "GIVA & MIA boutique interiors"],
+        buttonText: "VIEW DETAILS →"
+      },
+      {
+        slug: "kids-and-toys",
+        img: "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?auto=format&fit=crop&q=80&w=800",
+        title: "Kids & Toys",
+        description: "Vibrant and engaging toy stores for Hamleys, ToysRus, and Hot Wheels.",
+        tags: ["Kids", "Toys", "Retail"],
+        bullets: ["Hamleys magical interiors", "ToysRus large-format stores", "Hot wheels interactive zones"],
+        buttonText: "VIEW DETAILS →"
+      },
+      {
+        slug: "watches",
+        img: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&q=80&w=800",
+        title: "Watches",
+        description: "Precision watch boutique designs for Titan, Helios, Fossil, and Casio.",
+        tags: ["Watches", "Accessories", "Retail"],
+        bullets: ["Titan & Helios showrooms", "Fossil vintage displays", "Casio modern kiosks"],
+        buttonText: "VIEW DETAILS →"
+      },
+      {
         slug: "retail-store-design",
         img: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&q=80&w=800",
         title: "Retail Store Design",
@@ -3216,7 +3272,78 @@ export const NESTED_SERVICE_DATA: Record<string, any> = {
         buttonText: "VIEW DETAILS →"
       }
     ]
-  }
+  },
+
+  "clothing-and-fashion": {
+    title: "Ready for Clothing & Fashion Retail Fitout?",
+    tagline: "High-end boutique and fashion store interiors.",
+    heroImage: "/images/retail_ai/clothing_ai.jpg",
+    contentTitle: "Clothing & Fashion Interior Design",
+    contentDesc: "We design and build premium clothing and fashion retail stores, ensuring optimal space planning, attractive display systems, and luxurious fitting rooms.",
+    gallery: [
+      { img: "/images/retail_ai/clothing_ai.jpg", title: "Luxury Fashion Store", description: "Bespoke design for clothing retail.", tags: ["Fashion", "Retail"] }
+    ]
+  },
+  "luggage": {
+    title: "Ready for Premium Luggage Retail Design?",
+    tagline: "Specialized fitouts for luggage and travel accessories.",
+    heroImage: "/images/retail_ai/luggage_ai.jpg",
+    contentTitle: "Luggage Store Interior Design",
+    contentDesc: "Our luggage store interiors are designed for heavy-duty shelving, space optimization, and compelling brand storytelling to elevate the travel retail experience.",
+    gallery: [
+      { img: "/images/retail_ai/luggage_ai.jpg", title: "Premium Luggage Display", description: "Modern shelving for travel bags.", tags: ["Luggage", "Retail"] }
+    ]
+  },
+  "beauty-and-personal-care": {
+    title: "Ready for Beauty & Personal Care Retail Fitout?",
+    tagline: "Completed projects for top brands.",
+    heroImage: "/images/retail_ai/beauty_ai.jpg",
+    contentTitle: "Beauty & Cosmetics Interior Design",
+    contentDesc: "Specialized in luxury beauty retail fitouts, featuring brightly lit makeup display counters and aesthetics resembling premium brands like Nyka, MAC, Maybelline, and Sephora.",
+    gallery: [
+      { img: "/images/retail_ai/beauty_ai.jpg", title: "Luxury Beauty Cosmetics", description: "Completed project for beauty brand.", tags: ["Beauty", "Cosmetics"] }
+    ]
+  },
+  "electronics": {
+    title: "Ready for State-of-the-art Electronics Showroom?",
+    tagline: "Premium technology store interiors.",
+    heroImage: "/images/retail_ai/electronics_ai.jpg",
+    contentTitle: "Electronics Retail Store Design",
+    contentDesc: "We create minimalist and interactive electronics showrooms, bringing out the best in technology retail for brands like SAMSUNG, CROMA, VIVO, and Apple.",
+    gallery: [
+      { img: "/images/retail_ai/electronics_ai.jpg", title: "Premium Tech Store", description: "Apple-style electronics showroom.", tags: ["Electronics", "Technology"] }
+    ]
+  },
+  "jewellery": {
+    title: "Ready for Luxury Jewellery Store Design?",
+    tagline: "Elegant displays and warm lighting.",
+    heroImage: "/images/retail_ai/jewellery_ai.jpg",
+    contentTitle: "Jewellery Boutique Interior",
+    contentDesc: "Our jewellery fitouts feature warm gold lighting and elegant glass display cases, tailored for premium brands like Blue stone, Malabar, GIVA, MIA, and Caratlane.",
+    gallery: [
+      { img: "/images/retail_ai/jewellery_ai.jpg", title: "Luxury Jewellery Store", description: "Premium jewellery display cases.", tags: ["Jewellery", "Luxury"] }
+    ]
+  },
+  "kids-and-toys": {
+    title: "Ready for a Magical Toy Store Fitout?",
+    tagline: "Vibrant and engaging spaces for kids.",
+    heroImage: "/images/retail_ai/kids_ai.jpg",
+    contentTitle: "Toy Store Interior Design",
+    contentDesc: "We design vibrant, interactive, and magical toy store interiors, resembling the scale and wonder of brands like Hamleys, ToysRus, and Hot wheels.",
+    gallery: [
+      { img: "/images/retail_ai/kids_ai.jpg", title: "Magical Toy Store", description: "Interactive displays for kids.", tags: ["Kids", "Toys"] }
+    ]
+  },
+  "watches": {
+    title: "Ready for a Luxury Watch Boutique?",
+    tagline: "Precision designs for premium timepieces.",
+    heroImage: "/images/retail_ai/watches_ai.jpg",
+    contentTitle: "Watch Store Interior Design",
+    contentDesc: "Dark, elegant aesthetics with specialized glass display cases, creating the perfect ambiance for luxury watch brands like Titan, Helios, Fossil, and Casio.",
+    gallery: [
+      { img: "/images/retail_ai/watches_ai.jpg", title: "Luxury Watch Boutique", description: "Premium timepiece display.", tags: ["Watches", "Luxury"] }
+    ]
+  },
 };
 
 Object.assign(NESTED_SERVICE_DATA, {

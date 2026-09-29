@@ -65,9 +65,13 @@ const FullServicesSection = ({
       { title: "Turnkey Office Fitout", image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=600", category: "OFFICE FITOUT", id: "office-fitout/turnkey-office-fitout" }
     ],
     retail: [
-      { title: "Retail Store Design", image: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&q=80&w=600", category: "RETAIL FITOUT", id: "retail-fitout/retail-store-design" },
-      { title: "Luxury Retail Interior Design", image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=600", category: "RETAIL FITOUT", id: "retail-fitout/luxury-retail-interior-design" },
-      { title: "Store Fitout Company", image: "https://images.unsplash.com/photo-1555529902-5261145633bf?auto=format&fit=crop&q=80&w=600", category: "RETAIL FITOUT", id: "retail-fitout/store-fitout-company" }
+      { title: "Clothing And Fashion", image: "/images/clothing_retail_1790599142219.jpg", category: "RETAIL FITOUT", id: "retail-fitout/clothing-and-fashion" },
+      { title: "Beauty And Personal Care", image: "/images/beauty_retail_1790599153071.jpg", category: "RETAIL FITOUT", id: "retail-fitout/beauty-and-personal-care" },
+      { title: "Electronics", image: "/images/electronics_retail_1790599170084.jpg", category: "RETAIL FITOUT", id: "retail-fitout/electronics" },
+      { title: "Luggage", image: "/images/luggage_retail_1790599193377.jpg", category: "RETAIL FITOUT", id: "retail-fitout/luggage" },
+      { title: "Jewellery", image: "/images/jewellery_retail_1790599208044.jpg", category: "RETAIL FITOUT", id: "retail-fitout/jewellery" },
+      { title: "Kids & Toys", image: "/images/toys_retail_1790599223166.jpg", category: "RETAIL FITOUT", id: "retail-fitout/kids-and-toys" },
+      { title: "Watches", image: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&q=80&w=600", category: "RETAIL FITOUT", id: "retail-fitout/watches" }
     ],
     commercial: [
       { title: "Commercial Interior Design", image: "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?auto=format&fit=crop&q=80&w=600", category: "COMMERCIAL FITOUT", id: "commercial-contractors/commercial-interior-design" },

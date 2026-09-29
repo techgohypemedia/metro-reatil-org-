@@ -2,11 +2,11 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
-import { Settings, Hammer, Paintbrush, Layers, CheckCircle2 } from 'lucide-react';
+import { Settings, Hammer, Paintbrush, Layers, CheckCircle2, Cpu, Printer } from 'lucide-react';
 import AboutSummary from '../../components/home/AboutSummary';
 
 const STATS = [
-  { label: "Years Experience", value: "25+" },
+  { label: "Years Experience", value: "28+" },
   { label: "Projects Completed", value: "500+" },
   { label: "Skilled Staff", value: "200+" },
   { label: "Client Satisfaction", value: "100%" }
@@ -32,6 +32,16 @@ const CAPABILITIES = [
     title: "Powder Coating",
     desc: "Complete setup for durable and premium powder coating work.",
     icon: Layers
+  },
+  {
+    title: "CNC Cutting",
+    desc: "Complete setup for precision CNC cutting and routing for various materials.",
+    icon: Cpu
+  },
+  {
+    title: "Printing Work",
+    desc: "Complete setup for high-quality UV and large format printing solutions.",
+    icon: Printer
   }
 ];
 
@@ -165,7 +175,7 @@ export default function AboutPage() {
               className="hidden md:block text-neutral-300 text-sm md:text-base font-light max-w-2xl leading-relaxed mx-auto text-center"
               
             >
-              Over 25+ years of experience handling complete MEP, civil, and interior works with in-house manufacturing of modular fixtures.
+              Over 28+ years of experience handling complete MEP, civil, CNC cutting, and interior works with in-house manufacturing of modular fixtures.
             </motion.p>
           </div>
         </div>
@@ -181,7 +191,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 md:space-y-8 mb-0 lg:mb-8 md:mb-16 text-center lg:text-left">
                 <p className="text-neutral-500 text-base leading-relaxed font-light">
-                  Metro Retail Solutions is a turnkey fit-out company handling complete MEP, civil, and interior works. We bring over 25+ years of experience and feature in-house manufacturing of complete modular fixtures including wooden, metal, and powder coat units.
+                  Metro Retail Solutions is a turnkey fit-out company handling complete MEP, civil, CNC cutting, and interior works. We bring over 28+ years of experience and feature in-house manufacturing of complete modular fixtures including wooden, metal, and powder coat units.
                 </p>
                 <p className="text-neutral-500 text-base leading-relaxed font-light">
                   We have a manufacturing facility based in Delhi and Greater Noida with many skilled technical manpower (Carpenters, Painters, Electrician, Welders, etc.), and many more supporting staffs with full of all latest machineries and skilled/experienced manpower who works in many shift 24x7 days as per client's need and satisfaction.
@@ -242,7 +252,7 @@ export default function AboutPage() {
             <p className="text-neutral-500 text-sm md:text-lg font-light">Complete setups equipped with the latest machinery and skilled craftsmen for every requirement.</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-px bg-neutral-200 border border-neutral-200">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-px bg-neutral-200 border border-neutral-200">
             {CAPABILITIES.map((cap, i) => (
               <div key={i} className="bg-white p-4 sm:p-6 md:p-12 hover:bg-neutral-50 transition-colors duration-500 group flex flex-col items-start text-left h-full">
                 <div className="flex flex-row items-center gap-2 md:gap-4 mb-1 md:mb-2">
