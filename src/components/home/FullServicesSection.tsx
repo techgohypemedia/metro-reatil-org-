@@ -3,8 +3,9 @@
 import { motion } from 'motion/react';
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
-import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from '../ui/carousel';
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext, type CarouselApi } from '../ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
+// Force recompile
 
 const SERVICE_IMAGES = [
   // DESIGN
@@ -39,7 +40,7 @@ const FullServicesSection = ({
   subtitle?: string;
   showTabs?: boolean;
 }) => {
-  const plugin = React.useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
+  const plugin = React.useRef(Autoplay({ delay: 1000, stopOnInteraction: false }));
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
@@ -71,7 +72,7 @@ const FullServicesSection = ({
       { title: "Luggage", image: "/images/luggage_retail_1790599193377.jpg", category: "RETAIL FITOUT", id: "retail-fitout/luggage" },
       { title: "Jewellery", image: "/images/jewellery_retail_1790599208044.jpg", category: "RETAIL FITOUT", id: "retail-fitout/jewellery" },
       { title: "Kids & Toys", image: "/images/toys_retail_1790599223166.jpg", category: "RETAIL FITOUT", id: "retail-fitout/kids-and-toys" },
-      { title: "Watches", image: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&q=80&w=600", category: "RETAIL FITOUT", id: "retail-fitout/watches" }
+      { title: "Watches", image: "/images/watches_retail_1790664080576.jpg", category: "RETAIL FITOUT", id: "retail-fitout/watches" }
     ],
     commercial: [
       { title: "Commercial Interior Design", image: "https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?auto=format&fit=crop&q=80&w=600", category: "COMMERCIAL FITOUT", id: "commercial-contractors/commercial-interior-design" },
@@ -131,12 +132,11 @@ const FullServicesSection = ({
                 { id: "retail", label: "Retail Fitout" },
                 { id: "commercial", label: "Commercial & Turnkey" }
               ].map((tab) => (
-                <button 
+                <button
                   key={tab.id}
-                  onClick={() => setActiveTab(tab.id as any)} 
-                  className={`shrink-0 whitespace-nowrap px-3 sm:px-4 py-2 sm:py-3 text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider sm:tracking-widest transition-all relative ${
-                    activeTab === tab.id ? 'text-brand-gold' : 'text-neutral-400 hover:text-brand-dark'
-                  }`}
+                  onClick={() => setActiveTab(tab.id as any)}
+                  className={`shrink-0 whitespace-nowrap px-3 sm:px-4 py-2 sm:py-3 text-[10px] sm:text-xs md:text-sm font-semibold uppercase tracking-wider sm:tracking-widest transition-all relative ${activeTab === tab.id ? 'text-brand-gold' : 'text-neutral-400 hover:text-brand-dark'
+                    }`}
                 >
                   {tab.label}
                   {activeTab === tab.id && (
@@ -200,15 +200,13 @@ const FullServicesSection = ({
 
         {/* Mobile/Forced Carousel */}
         <div
-          className={forceCarousel ? "block" : "block md:hidden"}
-          onMouseEnter={plugin.current.stop}
-          onMouseLeave={plugin.current.reset}
+          className={forceCarousel ? "block relative group" : "block md:hidden relative group"}
         >
           <Carousel
             setApi={setApi}
             opts={{ align: "start", loop: true }}
-            plugins={[plugin.current]}
-            className="w-full"
+            plugins={[Autoplay({ delay: 2000, stopOnInteraction: false, stopOnMouseEnter: true })]}
+            className="w-full static"
           >
             <CarouselContent className="py-12 -my-12">
               {services.map((s, i) => (
@@ -253,6 +251,11 @@ const FullServicesSection = ({
                 </CarouselItem>
               ))}
             </CarouselContent>
+
+            <div className="hidden sm:block opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 h-10 w-10 bg-white border border-neutral-200 shadow-lg text-brand-dark hover:bg-brand-gold hover:text-white hover:border-brand-gold z-10" />
+              <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 h-10 w-10 bg-white border border-neutral-200 shadow-lg text-brand-dark hover:bg-brand-gold hover:text-white hover:border-brand-gold z-10" />
+            </div>
           </Carousel>
         </div>
 

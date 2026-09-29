@@ -2967,7 +2967,7 @@ export const NESTED_SERVICE_DATA: Record<string, any> = {
       },
       {
         slug: "retail-fitout-services",
-        img: "https://images.unsplash.com/photo-1581373449483-374456832f05?auto=format&fit=crop&q=80&w=800",
+        img: "/images/fixed_ai/retail_fitout_broken_1790666226495.jpg",
         title: "Retail Fitout Services",
         description: "Retail Fitout Services",
         tags: ["Fitout", "Services"],
@@ -2985,7 +2985,7 @@ export const NESTED_SERVICE_DATA: Record<string, any> = {
       },
       {
         slug: "flagship-store-design",
-        img: "https://images.unsplash.com/photo-1558769132-cb1fac08b14b?auto=format&fit=crop&q=80&w=800",
+        img: "/images/fixed_ai/flagship_store.jpg",
         title: "Flagship Store Design",
         description: "Flagship Store Design services",
         tags: ["Flagship", "Design"],
@@ -3003,7 +3003,7 @@ export const NESTED_SERVICE_DATA: Record<string, any> = {
       },
       {
         slug: "retail-space-design-experts",
-        img: "https://images.unsplash.com/photo-1556740738-f6a46e114ece?auto=format&fit=crop&q=80&w=800",
+        img: "/images/fixed_ai/retail_space.jpg",
         title: "Retail Space Design Experts",
         description: "Retail Space Design Experts services",
         tags: ["Retail", "Experts"],
@@ -3078,7 +3078,7 @@ export const NESTED_SERVICE_DATA: Record<string, any> = {
       },
       {
         slug: "office-renovation-services",
-        img: "https://images.unsplash.com/photo-1531973486364-5fa64260d752?auto=format&fit=crop&q=80&w=800",
+        img: "/images/fixed_ai/office_fitout_broken_1790666253062.jpg",
         title: "Office Renovation Services",
         description: "Office Renovation Services",
         tags: ["Renovation", "Office"],
@@ -3105,7 +3105,7 @@ export const NESTED_SERVICE_DATA: Record<string, any> = {
       },
       {
         slug: "workspace-interior-solutions",
-        img: "https://images.unsplash.com/photo-1582653291997-059a56958d4a?auto=format&fit=crop&q=80&w=800",
+        img: "/images/fixed_ai/office_fitout_broken_1790666253062.jpg",
         title: "Workspace Interior Solutions",
         description: "Workspace Interior Solutions",
         tags: ["Workspace", "Solutions"],
@@ -3180,7 +3180,7 @@ export const NESTED_SERVICE_DATA: Record<string, any> = {
       },
       {
         slug: "food-court-interior-design",
-        img: "https://images.unsplash.com/photo-1525648199593-ce5cafe386d8?auto=format&fit=crop&q=80&w=800",
+        img: "/images/fixed_ai/restaurant_fitout_broken_1790666280539.jpg",
         title: "Food Court Interior Design",
         description: "Food Court Interior Design services",
         tags: ["Food Court", "Design"],
@@ -3198,7 +3198,7 @@ export const NESTED_SERVICE_DATA: Record<string, any> = {
       },
       {
         slug: "f-b-interior-design",
-        img: "https://images.unsplash.com/photo-1551632436-421b5b4cc601?auto=format&fit=crop&q=80&w=800",
+        img: "/images/fixed_ai/fb_interior.jpg",
         title: "F&B Interior Design",
         description: "F&B Interior Design services",
         tags: ["F&B", "Design"],
@@ -3207,7 +3207,7 @@ export const NESTED_SERVICE_DATA: Record<string, any> = {
       },
       {
         slug: "turnkey-restaurant-fitout",
-        img: "https://images.unsplash.com/photo-1528605248644-14bf524458f3?auto=format&fit=crop&q=80&w=800",
+        img: "/images/fixed_ai/turnkey_restaurant.jpg",
         title: "Turnkey Restaurant Fitout",
         description: "Turnkey Restaurant Fitout services",
         tags: ["Turnkey", "Fitout"],
@@ -3491,7 +3491,7 @@ Object.assign(NESTED_SERVICE_DATA, {
         buttonText: "VIEW DETAILS →"
       },
       {
-        img: "https://images.unsplash.com/photo-1556910103-1c02745a8728?auto=format&fit=crop&q=80",
+        img: "/images/fixed_ai/custom_table_broken_1790666306036.jpg",
         title: "Cafe Service Counter",
         description: "Custom cafe service counters built for high traffic and aesthetic appeal.",
         tags: ["Restaurant", "Counters"],
@@ -3499,7 +3499,7 @@ Object.assign(NESTED_SERVICE_DATA, {
         buttonText: "VIEW DETAILS →"
       },
       {
-        img: "https://images.unsplash.com/photo-1572116469696-31de0f17ce67?auto=format&fit=crop&q=80",
+        img: "/images/fixed_ai/custom_table_broken_1790666306036.jpg",
         title: "Bar Console",
         description: "Luxury bar consoles for restaurants and hospitality venues.",
         tags: ["Restaurant", "Bar"],
@@ -3686,7 +3686,7 @@ Object.assign(NESTED_SERVICE_DATA, {
     contentDesc: "We design and manufacture premium custom tables tailored to your exact requirements, from retail display tables to luxury dining tables.",
     gallery: [
       {
-        img: "https://images.unsplash.com/photo-1441984904996-e0b6edfe0b14?auto=format&fit=crop&q=80",
+        img: "/images/fixed_ai/custom_table_broken_1790666306036.jpg",
         title: "Retail Display Table",
         description: "Premium display tables crafted for high-end retail environments.",
         tags: ["Retail", "Display"],
@@ -3865,10 +3865,10 @@ Object.assign(NESTED_SERVICE_DATA, {
   "retail-fitout-services": {
     title: "Ready for Retail Fitout Services?",
     tagline: "Delivering premium retail showrooms & office fitouts.",
-    heroImage: "https://images.unsplash.com/photo-1581373449483-374456832f05?auto=format&fit=crop&q=80&w=1200",
+    heroImage: "/images/fixed_ai/flagship_store.jpg",
     contentTitle: "Retail Fitout Services",
     contentDesc: "Retail Fitout Services",
-    gallery: [{ img: "https://images.unsplash.com/photo-1581373449483-374456832f05?auto=format&fit=crop&q=80&w=800", title: "Retail Fitout Services" }]
+    gallery: [{ img: "/images/fixed_ai/flagship_store.jpg", title: "Retail Fitout Services" }]
   },
   "boutique-interior-design": {
     title: "Ready for Boutique Interior Design?",
@@ -3881,10 +3881,10 @@ Object.assign(NESTED_SERVICE_DATA, {
   "flagship-store-design": {
     title: "Ready for Flagship Store Design?",
     tagline: "Expert office fitouts & retail showrooms by Metro.",
-    heroImage: "https://images.unsplash.com/photo-1558769132-cb1fac08b14b?auto=format&fit=crop&q=80&w=1200",
+    heroImage: "/images/fixed_ai/flagship_store.jpg",
     contentTitle: "Flagship Store Design",
     contentDesc: "Flagship Store Design services",
-    gallery: [{ img: "https://images.unsplash.com/photo-1558769132-cb1fac08b14b?auto=format&fit=crop&q=80&w=800", title: "Flagship Store Design" }]
+    gallery: [{ img: "/images/fixed_ai/flagship_store.jpg", title: "Flagship Store Design" }]
   },
   "pop-up-store-design-services": {
     title: "Ready for Pop-Up Store Design Services?",
@@ -3897,10 +3897,10 @@ Object.assign(NESTED_SERVICE_DATA, {
   "retail-space-design-experts": {
     title: "Ready for Retail Space Design Experts?",
     tagline: "Expert retail fitout works for showrooms and malls.",
-    heroImage: "https://images.unsplash.com/photo-1556740738-f6a46e114ece?auto=format&fit=crop&q=80&w=1200",
+    heroImage: "/images/fixed_ai/flagship_store.jpg",
     contentTitle: "Retail Space Design Experts",
     contentDesc: "Retail Space Design Experts services",
-    gallery: [{ img: "https://images.unsplash.com/photo-1556740738-f6a46e114ece?auto=format&fit=crop&q=80&w=800", title: "Retail Space Design Experts" }]
+    gallery: [{ img: "/images/fixed_ai/retail_space.jpg", title: "Retail Space Design Experts" }]
   },
   "retail-commercial-fitout": {
     title: "Ready for Retail & Commercial Fitout?",
@@ -3953,10 +3953,10 @@ Object.assign(NESTED_SERVICE_DATA, {
   "office-renovation-services": {
     title: "Ready for Office Renovation Services?",
     tagline: "Delivering premium retail showrooms & office fitouts.",
-    heroImage: "https://images.unsplash.com/photo-1531973486364-5fa64260d752?auto=format&fit=crop&q=80&w=1200",
+    heroImage: "/images/fixed_ai/office_fitout_broken_1790666253062.jpg",
     contentTitle: "Office Renovation Services",
     contentDesc: "Office Renovation Services",
-    gallery: [{ img: "https://images.unsplash.com/photo-1531973486364-5fa64260d752?auto=format&fit=crop&q=80&w=800", title: "Office Renovation Services" }]
+    gallery: [{ img: "/images/fixed_ai/office_fitout_broken_1790666253062.jpg", title: "Office Renovation Services" }]
   },
   "luxury-office-design": {
     title: "Ready for Luxury Office Design?",
@@ -3977,10 +3977,10 @@ Object.assign(NESTED_SERVICE_DATA, {
   "workspace-interior-solutions": {
     title: "Ready for Workspace Interior Solutions?",
     tagline: "Metro Retail builds premium office & mall fitouts.",
-    heroImage: "https://images.unsplash.com/photo-1582653291997-059a56958d4a?auto=format&fit=crop&q=80&w=1200",
+    heroImage: "/images/fixed_ai/office_fitout_broken_1790666253062.jpg",
     contentTitle: "Workspace Interior Solutions",
     contentDesc: "Workspace Interior Solutions",
-    gallery: [{ img: "https://images.unsplash.com/photo-1582653291997-059a56958d4a?auto=format&fit=crop&q=80&w=800", title: "Workspace Interior Solutions" }]
+    gallery: [{ img: "/images/fixed_ai/office_fitout_broken_1790666253062.jpg", title: "Workspace Interior Solutions" }]
   },
   "restaurant-interior-design": {
     title: "Ready for Restaurant Interior Design?",
@@ -4033,10 +4033,10 @@ Object.assign(NESTED_SERVICE_DATA, {
   "food-court-interior-design": {
     title: "Ready for Food Court Interior Design?",
     tagline: "Metro Retail: Expert office and retail fitout works.",
-    heroImage: "https://images.unsplash.com/photo-1525648199593-ce5cafe386d8?auto=format&fit=crop&q=80&w=1200",
+    heroImage: "/images/fixed_ai/fb_interior.jpg",
     contentTitle: "Food Court Interior Design",
     contentDesc: "Food Court Interior Design services",
-    gallery: [{ img: "https://images.unsplash.com/photo-1525648199593-ce5cafe386d8?auto=format&fit=crop&q=80&w=800", title: "Food Court Interior Design" }]
+    gallery: [{ img: "/images/fixed_ai/fb_interior.jpg", title: "Food Court Interior Design" }]
   },
   "restaurant-renovation-experts": {
     title: "Ready for Restaurant Renovation Experts?",
@@ -4049,18 +4049,18 @@ Object.assign(NESTED_SERVICE_DATA, {
   "f-b-interior-design": {
     title: "Ready for F&B Interior Design?",
     tagline: "Metro Retail specializes in office & showroom fitouts.",
-    heroImage: "https://images.unsplash.com/photo-1551632436-421b5b4cc601?auto=format&fit=crop&q=80&w=1200",
+    heroImage: "/images/fixed_ai/fb_interior.jpg",
     contentTitle: "F&B Interior Design",
     contentDesc: "F&B Interior Design services",
-    gallery: [{ img: "https://images.unsplash.com/photo-1551632436-421b5b4cc601?auto=format&fit=crop&q=80&w=800", title: "F&B Interior Design" }]
+    gallery: [{ img: "/images/fixed_ai/fb_interior.jpg", title: "F&B Interior Design" }]
   },
   "turnkey-restaurant-fitout": {
     title: "Ready for Turnkey Restaurant Fitout?",
     tagline: "Expert office fitouts & retail showrooms by Metro.",
-    heroImage: "https://images.unsplash.com/photo-1528605248644-14bf524458f3?auto=format&fit=crop&q=80&w=1200",
+    heroImage: "/images/fixed_ai/turnkey_restaurant.jpg",
     contentTitle: "Turnkey Restaurant Fitout",
     contentDesc: "Turnkey Restaurant Fitout services",
-    gallery: [{ img: "https://images.unsplash.com/photo-1528605248644-14bf524458f3?auto=format&fit=crop&q=80&w=800", title: "Turnkey Restaurant Fitout" }]
+    gallery: [{ img: "/images/fixed_ai/turnkey_restaurant.jpg", title: "Turnkey Restaurant Fitout" }]
   },
   "commercial-interior-design": {
     title: "Ready for Commercial Interior Design?",
